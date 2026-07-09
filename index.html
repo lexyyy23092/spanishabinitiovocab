@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banco de Vocabulario General</title>
+<style>
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  background:#e7f6ea;
+  color:#22303e;
+  font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+  min-height:100vh;
+  padding:36px 16px 60px;
+}
+
+#app{ max-width:640px; margin:0 auto; }
+
+h1.title{
+  text-align:center;
+  color:#d6304a;
+  font-size:1.85rem;
+  font-weight:700;
+  margin:0 0 6px;
+}
+p.subtitle{
+  text-align:center;
+  color:#5c6b74;
+  font-size:0.92rem;
+  margin:0 0 26px;
+}
+
+.panel{
+  background:#ffffff;
+  border:1px solid #e1e6e2;
+  border-radius:10px;
+  padding:20px 22px;
+  margin-bottom:20px;
+  box-shadow:0 2px 6px rgba(20,40,30,0.06);
+}
+
+.field-label{
+  font-size:0.85rem;
+  font-weight:600;
+  color:#22303e;
+  margin-bottom:6px;
+  display:block;
+}
+select, input[type=text]{
+  width:100%;
+  padding:10px 12px;
+  border-radius:7px;
+  border:1px solid #c7d0cb;
+  font-size:0.92rem;
+  color:#22303e;
+  background:#fbfdfb;
+  font-family:inherit;
+}
+select:focus, input[type=text]:focus{
+  outline:none;
+  border-color:#4a7ba6;
+  box-shadow:0 0 0 3px rgba(74,123,166,0.15);
+}
+.field{ margin-bottom:14px; }
+.field:last-child{ margin-bottom:0; }
+
+.flashcard-panel{
+  background:#ffffff;
+  border:2px solid #5b8fc7;
+  border-radius:10px;
+  padding:30px 24px;
+  text-align:center;
+  min-height:190px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  margin-bottom:14px;
+  user-select:none;
+  transition:box-shadow .15s ease;
+}
+.flashcard-panel:hover{ box-shadow:0 4px 14px rgba(91,143,199,0.25); }
+.card-label{
+  font-size:0.78rem;
+  letter-spacing:0.12em;
+  color:#7c8892;
+  font-weight:600;
+  margin-bottom:14px;
+}
+.card-word{
+  font-size:1.9rem;
+  font-weight:700;
+  color:#1f3a5f;
+  word-break:break-word;
+  line-height:1.3;
+}
+.card-hint{
+  margin-top:16px;
+  font-size:0.8rem;
+  color:#8b96a0;
+  font-style:italic;
+}
+
+.card-counter{
+  text-align:center;
+  font-weight:700;
+  color:#1f3a5f;
+  font-size:0.95rem;
+  margin-bottom:14px;
+}
+
+.btn-row{
+  display:flex;
+  gap:10px;
+  margin-bottom:6px;
+}
+button.action-btn{
+  flex:1;
+  background:#4a7ba6;
+  color:#fff;
+  border:none;
+  border-radius:7px;
+  padding:12px 10px;
+  font-size:0.9rem;
+  font-weight:600;
+  cursor:pointer;
+  font-family:inherit;
+  transition:background .12s ease;
+}
+button.action-btn:hover{ background:#3d6890; }
+button.action-btn:disabled{ background:#a9bcc9; cursor:not-allowed; }
+
+.panel-heading{
+  font-size:1.05rem;
+  font-weight:700;
+  color:#22303e;
+  margin:0 0 16px;
+}
+
+.add-row{
+  display:flex;
+  gap:10px;
+}
+.add-row .field{ flex:1; margin-bottom:0; }
+button.add-btn{
+  background:#4a7ba6;
+  color:#fff;
+  border:none;
+  border-radius:7px;
+  padding:0 20px;
+  font-size:0.9rem;
+  font-weight:600;
+  cursor:pointer;
+  font-family:inherit;
+  align-self:stretch;
+}
+button.add-btn:hover{ background:#3d6890; }
+
+.add-msg{
+  margin-top:10px;
+  font-size:0.85rem;
+  min-height:1.1em;
+}
+.add-msg.success{ color:#2c8a4a; }
+.add-msg.error{ color:#c1453b; }
+
+@media (max-width:480px){
+  .add-row{ flex-direction:column; }
+  button.add-btn{ padding:12px; }
+}
+
+</style>
+</head>
+<body>
+<div id="app">
+  <h1 class="title">Banco de Vocabulario General</h1>
+  <p class="subtitle">Spanish Ab Initio SL — {TOTAL}+ Words Active Engine</p>
+
+  <div class="panel">
+    <div class="field">
+      <label class="field-label" for="unit-select">Selecciona Bloque / Tema:</label>
+      <select id="unit-select"></select>
+    </div>
+    <div class="field">
+      <label class="field-label" for="direction-select">Dirección del Estudio:</label>
+      <select id="direction-select">
+        <option value="alt">Alternando (English &lt;-&gt; Español)</option>
+        <option value="es-en">Español -&gt; English</option>
+        <option value="en-es">English -&gt; Español</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="flashcard-panel" id="flashcard">
+    <div class="card-label" id="card-label">ESPAÑOL</div>
+    <div class="card-word" id="card-word">—</div>
+    <div class="card-hint" id="card-hint"></div>
+  </div>
+
+  <div class="card-counter" id="card-counter">Tarjeta 1 de 1</div>
+
+  <div class="btn-row">
+    <button class="action-btn" id="prev-btn">Anterior</button>
+    <button class="action-btn" id="shuffle-btn">Mezclar (Shuffle)</button>
+    <button class="action-btn" id="next-btn">Siguiente</button>
+  </div>
+
+  <div class="panel" style="margin-top:24px;">
+    <div class="panel-heading">Añadir vocabulario personalizado</div>
+    <div class="field">
+      <label class="field-label" for="add-unit-select">Añadir a esta unidad:</label>
+      <select id="add-unit-select"></select>
+    </div>
+    <div class="add-row">
+      <div class="field">
+        <input type="text" id="input-es" placeholder="Español">
+      </div>
+      <div class="field">
+        <input type="text" id="input-en" placeholder="English">
+      </div>
+      <button class="add-btn" id="add-btn">Añadir</button>
+    </div>
+    <div class="add-msg" id="add-msg"></div>
+  </div>
+</div>
+
+<script id="units-data" type="application/json">
+[{"theme":"Adjetivos comunes (Common Adjectives)","subtheme":"Adjetivos comunes","pairs":[["absurdo","absurd"],["aburrido","boring"],["acogedor","cosy, welcoming"],["agradable","pleasant"],["amable","kind"],["amigable","friendly"],["animado","lively"],["blando","soft"],["bueno, mejor","good, better"],["cálido","warm"],["caliente","hot"],["cierto","certain, true"],["cómodo","comfortable"],["correcto","correct"],["delgado","thin, slim"],["diferente","different"],["difícil","difficult"],["duro","hard"],["educado","polite"],["emocionante","exciting"],["enorme","huge"],["estrecho","narrow"],["estricto","strict"],["estupendo","wonderful"],["exacto","exact"],["fácil","easy"],["fantástico","fantastic"],["frío","cold"],["fuerte","strong"],["general","general"],["genial","great"],["grande, más grande/mayor, el más grande/mayor","big, bigger, biggest"],["gratis","free (no cost)"],["harto","fed up"],["húmedo","humid, damp"],["importante","important"],["imposible","impossible"],["incorrecto","incorrect"],["infeliz","unhappy"],["inteligente","intelligent"],["inútil","useless"],["lento","slow"],["libre","free"],["ligero","light (weight)"],["listo","clever, ready"],["lleno","full"],["maleducado","rude, impolite"],["malo, peor","bad, worse"],["mismo, el mismo que","same, the same as"],["moderno","modern"],["mojado","wet"],["necesario","necessary"],["negativo","negative"],["normal","normal"],["nuevo","new"],["parecido","similar"],["pequeño, más pequeño/menor, el más pequeño/menor","small, smaller, smallest"],["perfecto","perfect"],["pesado","heavy"],["popular","popular"],["posible","possible"],["positivo","positive"],["preparado","prepared, ready"],["previo","previous"],["probable","probable"],["profundo","deep"],["rápido","fast"],["reciente","recent"],["rico","rich, tasty"],["ruidoso","noisy"],["seco","dry"],["seguro","safe, sure"],["sencillo","simple"],["silencioso","silent, quiet"],["similar","similar"],["simple","simple"],["solitario","lonely, solitary"],["solo","alone, only"],["suave","soft, smooth"],["tímido","shy"],["típico","typical"],["tonto","silly, stupid"],["tradicional","traditional"],["útil","useful"],["vacante","vacant"],["vacío","empty"],["valioso","valuable"],["verdadero","true, real"],["viejo","old"]]},{"theme":"Adverbios y preposiciones comunes (Common Adverbs and Prepositions)","subtheme":"Adverbios y preposiciones comunes","pairs":[["a","to, at"],["afuera","outside"],["al lado de","next to"],["allí/allá","there"],["alrededor de","around"],["aquí/acá","here"],["bajo","under"],["con","with"],["de","of, from"],["debajo de","under, below"],["dentro de","inside"],["desde","since, from"],["detrás de","behind"],["en","in, on"],["en algún lugar / en algún sitio","somewhere"],["en lugar de / en vez de","instead of"],["encima de","on top of"],["entre","between"],["fuera","outside"],["hacia","towards"],["junto a","next to"],["para","for, in order to"],["por","for, by, through"],["sin","without"],["sobre","on, about"]]},{"theme":"Adverbios y preposiciones comunes (Common Adverbs and Prepositions)","subtheme":"Posibilidad","pairs":[["ciertamente","certainly"],["definitivamente","definitely"],["probablemente","probably"],["quizá, quizás","maybe, perhaps"]]},{"theme":"Adverbios y preposiciones comunes (Common Adverbs and Prepositions)","subtheme":"Frecuencia","pairs":[["a menudo","often"],["cada día / todos los días","every day"],["diario/diariamente","daily"],["normalmente","normally"],["nunca","never"],["raramente / rara vez","rarely"],["siempre","always"],["solo/solamente","only"]]},{"theme":"Adverbios y preposiciones comunes (Common Adverbs and Prepositions)","subtheme":"Modo","pairs":[["bien","well"],["exactamente","exactly"],["despacio","slowly"],["lentamente/lento","slowly"],["mal","badly"],["rápidamente/rápido","quickly"]]},{"theme":"Adverbios y preposiciones comunes (Common Adverbs and Prepositions)","subtheme":"Énfasis","pairs":[["especialmente","especially"],["realmente","really"],["verdaderamente","truly"]]},{"theme":"Adverbios y preposiciones comunes (Common Adverbs and Prepositions)","subtheme":"Calificativos","pairs":[["bastante","quite, enough"],["demasiado (poco)","too much (too little)"],["insuficiente","insufficient"],["montón, un montón","loads, a lot"],["mucho","a lot"],["muy","very"],["poco","little"],["solo/solamente","only"],["tan","so"],["todo","all, everything"]]},{"theme":"Los números (Numbers)","subtheme":"Los números cardinales","pairs":[["cero","zero"],["uno","one"],["dos","two"],["tres","three"],["cuatro","four"],["cinco","five"],["seis","six"],["siete","seven"],["ocho","eight"],["nueve","nine"],["diez","ten"],["once","eleven"],["doce","twelve"],["trece","thirteen"],["catorce","fourteen"],["quince","fifteen"],["dieciséis","sixteen"],["diecisiete","seventeen"],["dieciocho","eighteen"],["diecinueve","nineteen"],["veinte","twenty"],["veintiuno","twenty-one"],["veintidós","twenty-two"],["treinta","thirty"],["treinta y uno","thirty-one"],["cuarenta","forty"],["cincuenta","fifty"],["sesenta","sixty"],["setenta","seventy"],["ochenta","eighty"],["noventa","ninety"],["cien / ciento","one hundred"],["doscientos","two hundred"],["quinientos","five hundred"],["mil","one thousand"],["un millón","one million"]]},{"theme":"Los números (Numbers)","subtheme":"Los números ordinales","pairs":[["primero","first"],["segundo","second"],["tercero","third"],["cuarto","fourth"],["quinto","fifth"],["sexto","sixth"],["séptimo","seventh"],["octavo","eighth"],["noveno","ninth"],["décimo","tenth"]]},{"theme":"Los números (Numbers)","subtheme":"Las fracciones","pairs":[["un medio / la mitad","a half"],["un tercio","a third"],["un cuarto","a quarter"],["dos tercios","two thirds"],["tres cuartos","three quarters"]]},{"theme":"Los números (Numbers)","subtheme":"Otro vocabulario numérico","pairs":[["algún/alguno","some, any"],["alrededor de","around, about"],["ambos","both"],["aproximadamente","approximately"],["cada","each"],["cantidad (f.)","quantity"],["casi","almost"],["cuánto","how much"],["doble","double"],["más","more"],["más o menos","more or less"],["mayoría (f.), máximo (m.), el mayor número","majority, maximum, the greatest number"],["menos","less"],["minoría (f.)","minority"],["nada","nothing"],["número (m.)","number"],["poco","little"],["sobre","about, on"],["suficiente","enough"],["tanto… como…","as much as"],["todo","all"],["total (m.)","total"],["único, el único","unique, the only one"],["varios","several"],["vez (f.), una vez, dos veces, tres veces","time, once, twice, three times"]]},{"theme":"Verbos comunes (Common Verbs)","subtheme":"Verbos comunes","pairs":[["acabar","to finish"],["acercarse","to approach"],["acordarse (de)","to remember"],["alojarse (en un hotel, camping…)","to stay (in a hotel, campsite...)"],["animar","to encourage"],["aparecer","to appear"],["aproximarse","to approach"],["arreglar","to fix, arrange"],["aumentar","to increase"],["ayudar","to help"],["bajar","to go down, lower"],["beber","to drink"],["buscar","to look for"],["caerse","to fall"],["calmar","to calm"],["coleccionar","to collect"],["comer","to eat"],["comenzar","to begin"],["comprender","to understand"],["comunicar","to communicate"],["conocer","to know (people/places)"],["conseguir","to get, achieve"],["contactar","to contact"],["contar","to tell, count"],["contestar","to answer"],["continuar","to continue"],["copiar","to copy"],["crear","to create"],["creer","to believe"],["dar","to give"],["deber","must, to owe"],["decir","to say"],["dejar","to leave, let"],["descender","to descend"],["describir","to describe"],["deshacer","to undo"],["devolver (algo)","to return (something)"],["disfrutar","to enjoy"],["empezar","to begin"],["empujar","to push"],["encantar","to love (something)"],["encontrar","to find"],["entender","to understand"],["entrar","to enter"],["escribir","to write"],["escuchar","to listen"],["esperar","to wait, hope"],["estar","to be"],["estar interesado en","to be interested in"],["estimular","to stimulate"],["existir","to exist"],["fomentar","to encourage, foster"],["gritar","to shout"],["gustar","to like"],["haber","to have (auxiliary)"],["hablar (con, de, sobre)","to speak (with, of, about)"],["hacer","to do, make"],["hacer una pregunta / preguntar","to ask a question"],["hay","there is/are"],["intentar","to try"],["invitar","to invite"],["ir","to go"],["leer","to read"],["llamar(se)","to call (oneself)"],["llegar","to arrive"],["llevar","to carry, wear"],["llorar","to cry"],["lograr","to achieve"],["mantener(se)","to maintain (oneself)"],["mentir, contar mentiras","to lie, tell lies"],["mirar","to look at"],["mover(se)","to move"],["mudarse (de casa)","to move house"],["necesitar","to need"],["ocurrir","to occur"],["odiar","to hate"],["oír","to hear"],["olvidar(se)","to forget"],["organizar","to organise"],["parar(se)","to stop"],["parecer(se)","to seem, resemble"],["pasar","to happen, pass"],["pedir","to ask for"],["perder","to lose"],["pensar","to think"],["permitir","to allow"],["pertenecer (a)","to belong (to)"],["poder","to be able to"],["poner","to put"],["preocupar(se) (por)","to worry (about)"],["probar","to try, taste"],["quedarse (en casa, en un hotel)","to stay (at home, in a hotel)"],["querer","to want, love"],["recibir","to receive"],["recordar","to remember"],["reducir","to reduce"],["reír","to laugh"],["repetir","to repeat"],["responder","to respond"],["resultar","to result, turn out"],["saber","to know (facts)"],["sacar","to take out"],["saludar","to greet"],["seguir","to follow, continue"],["sentarse","to sit down"],["sentir(se)","to feel"],["ser","to be"],["soler","to usually (do)"],["sonreír","to smile"],["soñar (con)","to dream (of)"],["soportar","to bear, stand"],["tener","to have"],["terminar/acabar","to finish"],["tirar (de)","to pull, throw"],["tomar (el autobús, el tren...)","to take (the bus, the train...)"],["traer","to bring"],["trabajar","to work"],["transportar","to transport"],["tranquilizar","to calm down"],["unir(se)","to join, unite"],["usar","to use"],["utilizar","to use"],["venir","to come"],["ver","to see"],["volver","to return"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Las expresiones de tiempo","pairs":[["(a) la una / (a) las dos","at one o'clock / at two o'clock"],["a veces","sometimes"],["al fin, por fin, finalmente","finally, at last"],["antes","before"],["aún","still, yet"],["cada día/semana/mes","every day/week/month"],["cuando","when"],["de repente","suddenly"],["de vez en cuando","from time to time"],["desde / desde que","since"],["después","after"],["durante, mientras","during, while"],["entonces","then"],["hasta","until"],["inmediato, inmediatamente","immediate, immediately"],["luego","then, later"],["mientras (tanto)","meanwhile"],["momento (m.)","moment"],["nunca","never"],["otra vez / de nuevo","again"],["primero / en primer lugar","first, firstly"],["pronto","soon"],["reloj (m.)","clock, watch"],["semana (f.), la semana proxima, la semana que viene, la semana siguiente, la semana pasada","week, next week, the following week, last week"],["siempre","always"],["siguiente (m.)","next, following"],["tarde, más tarde","late, later"],["temprano","early"],["turno (m.), mi/tu turno","turn, my/your turn"],["último","last"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Las expresiones de tiempo – Decir la hora","pairs":[["hora (f.)","hour, time"],["(son) las siete y media / (son) las siete menos cuarto / (son) las siete y cuarto","it's half past seven / quarter to seven / quarter past seven"],["media hora","half an hour"],["medianoche (f.)","midnight"],["mediodía (m.)","midday"],["minuto (m.)","minute"],["segundo (m.)","second"],["un cuarto de hora","a quarter of an hour"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Las expresiones de tiempo – Los días","pairs":[["anteayer","the day before yesterday"],["ayer","yesterday"],["día (m.)","day"],["hoy","today"],["mañana, por la mañana","tomorrow, in the morning"],["noche, por la noche","night, at night"],["tarde, por la tarde","afternoon, in the afternoon"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Las expresiones de tiempo – Los días de la semana","pairs":[["lunes (m.)","Monday"],["martes (m.)","Tuesday"],["miércoles (m.)","Wednesday"],["jueves (m.)","Thursday"],["viernes (m.)","Friday"],["sábado (m.)","Saturday"],["domingo (m.)","Sunday"],["fin de semana (m.)","weekend"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Las expresiones de tiempo – Los meses del año","pairs":[["enero (m.)","January"],["febrero (m.)","February"],["marzo (m.)","March"],["abril (m.)","April"],["mayo (m.)","May"],["junio (m.)","June"],["julio (m.)","July"],["agosto (m.)","August"],["septiembre (m.)","September"],["octubre (m.)","October"],["noviembre (m.)","November"],["diciembre (m.)","December"],["año (m.), anual, anualmente / cada año","year, annual, annually / every year"],["fecha (f.)","date"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Las expresiones de tiempo – Las estaciones","pairs":[["primavera (f.)","spring"],["verano (m.)","summer"],["otoño (m.)","autumn"],["invierno (m.)","winter"],["estaciones (f.pl.)","seasons"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – Las comidas","pairs":[["almuerzo (m.)","lunch"],["aperitivo (m.)","appetiser, snack"],["barbacoa (f.)","barbecue"],["cena (f.)","dinner"],["comida (f.) (vegetariana, vegana)","food, meal (vegetarian, vegan)"],["desayuno (m.)","breakfast"],["dieta (f.)","diet"],["picnic (m.)","picnic"],["plato principal (m.), segundo plato (m.)","main course, second course"],["postre (m.)","dessert"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – Las frutas y las verduras","pairs":[["albaricoque (m.)","apricot"],["banana (f.)","banana"],["berenjena (f.)","aubergine"],["cebolla (f.)","onion"],["cereza (f.)","cherry"],["champiñón (m.)","mushroom"],["ciruela (f.)","plum"],["coco (m.)","coconut"],["col (f.)","cabbage"],["coliflor (f.)","cauliflower"],["frambuesa (f.)","raspberry"],["fresa (f.)","strawberry"],["fruta (f.)","fruit"],["lechuga (f.)","lettuce"],["limón (m.)","lemon"],["mango (m.)","mango"],["manzana (f.)","apple"],["melocotón (m.)","peach"],["melón (m.)","melon"],["naranja (f.)","orange"],["patata (f.)","potato"],["pepino (m.)","cucumber"],["pera (f.)","pear"],["pimiento (m.)","pepper"],["piña (f.)","pineapple"],["plátano (m.)","banana"],["sandía (f.)","watermelon"],["tomate (m.)","tomato"],["uvas (f.pl.)","grapes"],["verduras (f.pl.)","vegetables"],["zanahoria (f.)","carrot"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – La carne, el pescado y el marisco","pairs":[["carne (f.)","meat"],["cerdo (m.)","pork"],["cordero (m.)","lamb"],["hamburguesa (f.)","hamburger"],["jamón (m.)","ham"],["marisco (m.)","seafood"],["pescado (m.)","fish"],["pollo (m.)","chicken"],["salchicha (f.)","sausage"],["ternera (f.)","beef, veal"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – Otras comidas","pairs":[["aceite (m.)","oil"],["ajo (m.)","garlic"],["arroz (m.)","rice"],["azúcar (m.)","sugar"],["harina (f.)","flour"],["helado (m.)","ice cream"],["huevo (m.)","egg"],["mantequilla (f.)","butter"],["mermelada (f.)","jam"],["nuez (f.)","nut, walnut"],["pan (m.)","bread"],["pasta (f.)","pasta"],["pimienta (f.)","pepper (spice)"],["queso (m.)","cheese"],["sal (f.)","salt"],["soja/soya (f.)","soy"],["tofu (m.)","tofu"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – Los picoteos","pairs":[["bocadillo (m.)","sandwich"],["chocolate (m.)","chocolate"],["chucherías (f.pl.) / caramelos (m.pl.)","sweets"],["dulces (m.pl.)","sweets"],["pastel (m.)","cake"],["patatas fritas (f.pl.)","crisps, chips"],["pizza (f.)","pizza"],["sopa (f.)","soup"],["tarta (f.)","cake, tart"],["tostada (f.)","toast"],["yogur (m.)","yoghurt"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – Las bebidas","pairs":[["agua (f.) (mineral, con gas, sin gas)","water (mineral, sparkling, still)"],["bebida (f.)","drink"],["café (m.)","coffee"],["hielo (m.)","ice"],["leche (f.)","milk"],["limonada (f.)","lemonade"],["refresco (m.)","soft drink"],["té (m.)","tea"],["zumo (m.)","juice"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – Verbos y expresiones","pairs":[["almorzar / tomar el almuerzo","to have lunch"],["beber, tomar una bebida","to drink, have a drink"],["cenar / tomar la cena","to have dinner"],["cortar","to cut"],["comer","to eat"],["desayunar / tomar el desayuno","to have breakfast"],["preparar (la comida)","to prepare (food)"],["tener hambre","to be hungry"],["tener sed","to be thirsty"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – Adjetivos","pairs":[["amargo","bitter"],["cocinado","cooked"],["crudo","raw"],["dulce","sweet"],["fresco","fresh"],["picante","spicy"],["sabroso","tasty"],["salado","salty"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La comida y la bebida – La cubertería y los utensilios","pairs":[["bol (m.)","bowl"],["copa (f.)","glass (wine)"],["cuchara (f.)","spoon"],["cuchillo (m.)","knife"],["plato (m.)","plate"],["sartén (f.)","frying pan"],["tenedor (m.)","fork"],["vaso (m.)","glass"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"El cuerpo y la salud – Las partes del cuerpo","pairs":[["boca (f.)","mouth"],["brazo (m.)","arm"],["cabeza (f.)","head"],["cara (f.)","face"],["corazón (m.)","heart"],["cuerpo (m.)","body"],["cuello (m.)","neck"],["dedo del pie (m.)","toe"],["dedo de la mano (m.)","finger"],["diente (m.)","tooth"],["espalda (f.)","back"],["estómago (m.)","stomach"],["garganta (f.)","throat"],["hombro (m.)","shoulder"],["hueso (m.)","bone"],["mano (f.)","hand"],["nariz (f.)","nose"],["ojo (m.)","eye"],["oreja (f.)","ear"],["pecho (m.)","chest"],["pelo (m.)","hair"],["pie (izquierdo/derecho) (m.)","foot (left/right)"],["piel (f.)","skin"],["pierna (f.)","leg"],["rodilla (f.)","knee"],["tobillo (m.)","ankle"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Las partes del cuerpo – Verbos y expresiones","pairs":[["escuchar","to listen"],["oír","to hear"],["oler","to smell"],["probar","to taste, try"],["respirar (hondo)","to breathe (deeply)"],["saborear","to savour"],["sentir","to feel"],["tocar","to touch"],["tomar(se) un respiro","to take a breath/break"],["ver","to see"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"El cuerpo y la salud – La salud","pairs":[["cita médica (f.)","medical appointment"],["dentista (m./f.)","dentist"],["doctor (m.), doctora (f.)","doctor"],["enfermero (m.), enfermera (f.)","nurse"],["farmacia (f.)","pharmacy"],["medicamento (m.), medicina (f.)","medicine"],["médico (m.), médica (f.)","doctor"],["tirita (f.)","plaster"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"La salud – Verbos y expresiones","pairs":[["caerse","to fall"],["cortarse (un dedo), tener un corte","to cut oneself (a finger), to have a cut"],["estar cansado","to be tired"],["estar enfermo, tener una enfermedad","to be ill, to have an illness"],["estar mareado, marearse","to be/feel dizzy"],["estar saludable / tener buena salud","to be healthy"],["hacer ejercicio","to exercise"],["hacerse daño","to hurt oneself"],["hacerse una herida/lesión","to injure oneself"],["ir al gimnasio","to go to the gym"],["limpiar","to clean"],["ponerse enfermo","to become ill"],["romper(se) (una pierna, un brazo)","to break (a leg, an arm)"],["sentirse bien","to feel well"],["sentirse enfermo","to feel ill"],["tener dolor de cabeza/estómago/muelas","to have a headache/stomach ache/toothache"],["tener fiebre","to have a fever"],["tener un resfriado/catarro","to have a cold"],["tener una alergia","to have an allergy"],["tumbarse","to lie down"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Los viajes y los transportes","pairs":[["ambulancia (f.)","ambulance"],["andén (m.)","platform"],["autobús (m.)","bus"],["autocar (m.)","coach"],["avión (m.)","plane"],["barco (m.), barca (f.)","boat, small boat"],["bicicleta (f.), moto (f.), motocicleta (f.)","bicycle, motorbike"],["billete (de ida / de ida y vuelta) (m.)","ticket (single/return)"],["coche (m.)","car"],["conductor (m.), conductora (f.)","driver"],["equipaje (m.)","luggage"],["indicaciones (f.pl.)","directions"],["maleta (f.)","suitcase"],["mapa (m.)","map"],["muelle (m.)","quay, dock"],["oficina de información turística (f.) / oficina de turismo (f.)","tourist information office"],["parada de autobús (f.)","bus stop"],["pasajero (m.)","passenger"],["pasaporte (m.)","passport"],["retraso (m.), retrasado","delay, delayed"],["tarjeta (de crédito, débito) (f.)","card (credit, debit)"],["taxi (m.)","taxi"],["tranvía (m.)","tram"],["trayecto (m.)","journey, route"],["tren (m.)","train"],["turista (m./f.)","tourist"],["vuelo (m.)","flight"]]},{"theme":"A. Actividades diarias (Everyday Activities)","subtheme":"Los viajes y los transportes – Verbos y expresiones","pairs":[["andar","to walk"],["aparcar","to park"],["bajarse (de)","to get off"],["buscar","to look for"],["caminar","to walk"],["conducir","to drive"],["cruzar (la carretera / la calle)","to cross (the road/street)"],["estar perdido / perderse","to be lost / get lost"],["girar","to turn"],["ir de viaje","to go on a trip"],["irse","to leave"],["llegar (con retraso)","to arrive (late)"],["pasear / ir de paseo","to go for a walk"],["seguir/continuar (todo) recto","to keep going straight on"],["subirse (a)","to get on"],["tomar (el autobús/tren/avión)","to take (the bus/train/plane)"],["viajar (en autobús/tren/avión)","to travel (by bus/train/plane)"],["volar","to fly"],["volver","to return"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Los saludos y las frases de conversación","pairs":[["adiós","goodbye"],["buenos días / buenas tardes / buenas noches","good morning / good afternoon / good night"],["¿Cómo estás?","How are you?"],["encantado (de conocerte)","pleased (to meet you)"],["gracias","thank you"],["hasta luego/mañana","see you later/tomorrow"],["hola","hello"],["lo siento / perdón","I'm sorry / excuse me"],["¿Perdón?","Pardon?"],["por favor","please"],["¿Qué tal?","How's it going?"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Las exclamaciones y las interjecciones","pairs":[["¡Bienvenido!","Welcome!"],["¡Qué bonito!","How nice/pretty!"],["¡Qué interesante!","How interesting!"],["¡Qué lástima!","What a shame!"],["¡Qué molesto!","How annoying!"],["¡Qué pena!","What a pity!"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Las invitaciones","pairs":[["aceptar/rechazar una invitación","to accept/decline an invitation"],["invitar","to invite"],["¿Por qué no…?","Why not...?"],["¿Te gustaría / Quieres (ir al cine)?","Would you like to / Do you want to (go to the cinema)?"],["tener ganas de / apetecer","to feel like"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"La familia y las relaciones","pairs":[["abuelo (m.), abuela (f.), abuelos (m.pl.)","grandfather, grandmother, grandparents"],["adolescente (m./f.)","teenager"],["adopción (f.), adoptivo, adoptado","adoption, adoptive, adopted"],["amigo (m.), amiga (f.)","friend"],["ancianos (m.pl.)","elderly people"],["apellido (m.)","surname"],["bebé (m.)","baby"],["boda (f.)","wedding"],["casar(se), casado","to get married, married"],["chico (m.), chica (f.)","boy, girl"],["comprometido","engaged"],["divorciado","divorced"],["esposo/marido (m.), esposa/mujer (f.)","husband, wife"],["familia (f.)","family"],["gemelos (m.pl.), mellizos (m.pl.)","twins"],["gente (f.) / personas (f.pl.)","people"],["hermano (m.) (mayor/menor), hermana (f.) (mayor/menor)","brother (older/younger), sister (older/younger)"],["hijo (m.), hija (f.)","son, daughter"],["hombre (m.), mujer (f.)","man, woman"],["infancia (f.)","childhood"],["joven (m./f.)","young person"],["juventud (f.)","youth"],["madre (f.)","mother"],["matrimonio (m.)","marriage"],["nieto (m.), nieta (f.)","grandson, granddaughter"],["niño (m.), niña (f.), niños (m.pl.)","boy, girl, children"],["nombre (m.)","name"],["novio (m.), novia (f.)","boyfriend, girlfriend"],["padrastro (m.), madrastra (f.)","stepfather, stepmother"],["padre (m.)","father"],["padres (m.pl.)","parents"],["pareja (f.)","partner, couple"],["pariente (m.)","relative"],["primo (m.), prima (f.)","cousin"],["prometido (m.), prometida (f.)","fiancé, fiancée"],["señor (m.), señora (f.), señorita (f.)","Mr, Mrs, Miss"],["sobrino (m.), sobrina (f.)","nephew, niece"],["soltero","single"],["Sr, Sra, Srta","Mr, Mrs, Miss"],["tío (m.), tía (f.)","uncle, aunt"],["vecino (m.)","neighbour"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"La familia y las relaciones – Verbos y expresiones","pairs":[["adoptar","to adopt"],["crecer","to grow up"],["criar, (ser) criado","to raise, (to be) raised"],["deletrear","to spell"],["estar embarazada","to be pregnant"],["llamar, llamarse","to call, to be called"],["morir","to die"],["nacer","to be born"],["tener","to have"],["vivir","to live"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Describir la apariencia física","pairs":[["alto","tall"],["altura (f.)","height"],["anciano","elderly"],["bajo","short"],["barba (f.)","beard"],["bigote (m.)","moustache"],["bonito","pretty"],["calvo","bald"],["color (m.)","colour"],["corto","short"],["delgado","thin, slim"],["edad (f.)","age"],["feo","ugly"],["(llevar) gafas","to wear glasses"],["gordo","fat"],["grueso","thick, stout"],["guapo","good-looking"],["joven","young"],["largo","long"],["liso","straight (hair)"],["mayor","older"],["ojos (m.pl.)","eyes"],["ondulado","wavy"],["oscuro","dark"],["pelo (m.)","hair"],["rizado","curly"],["rubio","blonde"],["sexo (m.), género (m.)","sex, gender"],["(llevar) sonotone (m.) / audífono (m.)","to wear a hearing aid"],["talla (f.)","size"],["viejo","old"],["voz (f.)","voice"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Describir el carácter y el humor","pairs":[["aburrido","bored, boring"],["activo","active"],["agotado","exhausted"],["agradable","pleasant"],["alegre, alegría (f.)","cheerful, joy"],["ansioso, ansiedad (f.)","anxious, anxiety"],["asustado, susto (m.)","scared, fright"],["cariñoso, cariño (m.)","affectionate, affection"],["cobarde","cowardly"],["contento","happy, content"],["curioso","curious"],["decepcionado, decepción (f.)","disappointed, disappointment"],["desagradable","unpleasant"],["divertido","fun, funny"],["enfadado","angry"],["enojado","angry"],["entusiasmado, entusiasmo (m.)","enthusiastic, enthusiasm"],["estar de buen humor","to be in a good mood"],["estar de mal humor","to be in a bad mood"],["estúpido","stupid"],["famoso","famous"],["feliz","happy"],["generoso, generosidad (f.)","generous, generosity"],["goloso","sweet-toothed"],["gracioso","funny"],["hablador","talkative"],["impaciente, impaciencia (f.)","impatient, impatience"],["importante","important"],["infeliz","unhappy"],["insatisfecho","dissatisfied"],["inteligente","intelligent"],["interesante","interesting"],["irritado, irritación (f.)","irritated, irritation"],["loco","crazy"],["maleducado","rude"],["malo","bad"],["nervioso","nervous"],["optimista, optimismo (m.)","optimistic, optimism"],["paciente, paciencia (f.)","patient, patience"],["perezoso","lazy"],["pesimista, pesimismo (m.)","pessimistic, pessimism"],["pobre","poor"],["preocupado, preocupación (f.)","worried, worry"],["satisfecho","satisfied"],["seguro (de sí mismo), seguridad (f.)","confident, confidence"],["serio","serious"],["sorprendido, sorpresa (f.)","surprised, surprise"],["tacaño","stingy"],["trabajador","hardworking"],["tranquilo, tranquilidad (f.)","calm, tranquility"],["triste, tristeza (f.)","sad, sadness"],["vago","lazy"],["valiente","brave"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Describir el carácter y el humor – Verbos y expresiones","pairs":[["abrazar","to hug"],["asustar","to scare"],["besar","to kiss"],["decepcionar","to disappoint"],["encantar","to delight, love"],["enfadarse","to get angry"],["entusiasmar","to excite, enthuse"],["gustar","to like"],["irritar(se)","to irritate, get irritated"],["llorar","to cry"],["molestarse","to bother, be annoyed"],["preocupar(se)","to worry"],["reaccionar","to react"],["reír","to laugh"],["sonreír","to smile"],["sorprender","to surprise"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"En casa – Las habitaciones y los muebles","pairs":[["balcón (m.)","balcony"],["comedor (m.)","dining room"],["entrada (f.)","entrance"],["escaleras (f.pl.)","stairs"],["estudio (m.)","study"],["garaje (m.)","garage"],["muro (m.)","wall"],["pared (f.)","wall"],["pasillo (m.)","corridor"],["puerta (f.)","door"],["recibidor (m.)","hallway"],["suelo (m.)","floor"],["techo (m.)","ceiling, roof"],["ventana (f.)","window"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El cuarto de baño","pairs":[["baño (m.)","bath, bathroom"],["cepillo (de dientes / del pelo) (m.)","brush (toothbrush/hairbrush)"],["champú (m.)","shampoo"],["desodorante (m.)","deodorant"],["ducha (f.)","shower"],["espejo (m.)","mirror"],["gel de baño (m.)","shower gel"],["jabón (m.)","soap"],["maquillaje (m.)","make-up"],["pasta de dientes (f.)","toothpaste"],["peine (m.)","comb"],["toalla (f.)","towel"],["váter (m.)","toilet"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El cuarto de baño – Verbos y expresiones","pairs":[["bañarse","to bathe"],["ducharse","to shower"],["lavarse (la cara, las manos, el pelo…)","to wash (one's face, hands, hair...)"],["lavarse/cepillarse los dientes","to brush one's teeth"],["maquillarse","to put on make-up"],["peinarse","to comb one's hair"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El salón","pairs":[["alfombra (f.)","rug, carpet"],["cómoda (f.)","chest of drawers"],["cuadro (m.)","picture"],["estante (m.), estantería (f.)","shelf, bookshelf"],["mesa (f.)","table"],["salón (m.)","living room"],["silla (f.)","chair"],["sofá (m.)","sofa"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"La cocina","pairs":[["botella (f.)","bottle"],["caja (f.)","box"],["fregadero (m.)","sink"],["lata (f.)","can"],["mesa (f.)","table"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"La cocina – Verbos y expresiones","pairs":[["almorzar","to have lunch"],["asar (a la parrilla/barbacoa)","to grill/barbecue"],["calentar, recalentar","to heat, reheat"],["cenar","to have dinner"],["cocinar","to cook"],["comprar","to buy"],["congelar","to freeze"],["cortar","to cut"],["desayunar","to have breakfast"],["freír","to fry"],["hervir","to boil"],["lavar","to wash"],["limpiar","to clean"],["merendar","to have a snack"],["preparar (el almuerzo / la cena)","to prepare (lunch/dinner)"],["trocear","to chop"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El dormitorio / La habitación","pairs":[["almohada (f.)","pillow"],["armario (m.)","wardrobe"],["cama (f.)","bed"],["lámpara (f.)","lamp"],["manta (f.)","blanket"],["póster (m.)","poster"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El dormitorio – Verbos y expresiones","pairs":[["acostarse","to go to bed"],["compartir","to share"],["descansar","to rest"],["despertarse","to wake up"],["dormir","to sleep"],["levantarse","to get up"],["tener sueño / estar cansado","to be sleepy / tired"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Las tareas de la casa","pairs":[["hacer la colada","to do the laundry"],["ordenar/arreglar/limpiar la casa","to tidy/fix/clean the house"],["pasar la aspiradora","to vacuum"],["planchar","to iron"],["poner la mesa, quitar la mesa","to set the table, clear the table"],["sacar la basura","to take out the rubbish"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El jardín","pairs":[["árbol (m.)","tree"],["césped (m.)","lawn"],["flor (f.)","flower"],["muro (m.)","wall"],["planta (f.)","plant"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El jardín – Verbos y expresiones","pairs":[["arreglar el jardín","to tidy the garden"],["cultivar (plantas)","to grow (plants)"],["plantar (flores/verduras)","to plant (flowers/vegetables)"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Los aparatos domésticos","pairs":[["aire acondicionado (m.)","air conditioning"],["altavoz (m.)","speaker"],["calefacción (f.)","heating"],["cargador (m.)","charger"],["cocina (f.)","cooker, kitchen"],["congelador (m.)","freezer"],["despertador (m.)","alarm clock"],["electricidad (f.)","electricity"],["fogón (m.)","stove, hob"],["frigorífico (m.)","fridge"],["gas (m.)","gas"],["horno (m.)","oven"],["lavadora (f.)","washing machine"],["lavaplatos (m.) / lavavajillas (m.)","dishwasher"],["microondas (m.)","microwave"],["nevera (f.)","fridge"],["plancha (f.)","iron"],["radio (f.)","radio"],["teléfono (m.)","telephone"],["televisión (f.)","television"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Los aparatos domésticos – Verbos y expresiones","pairs":[["abrir","to open"],["apagar","to turn off"],["cerrar","to close"],["empujar","to push"],["encender","to turn on"],["llamar","to call"],["reparar","to repair"],["romper","to break"],["tirar","to throw, pull"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"Colores","pairs":[["amarillo","yellow"],["azul","blue"],["blanco","white"],["claro","light (colour)"],["color","colour"],["dorado","golden"],["gris","grey"],["marrón","brown"],["morado","purple"],["naranja","orange"],["negro","black"],["oscuro","dark"],["plateado","silver"],["púrpura","purple"],["rojo","red"],["rosa","pink"],["verde","green"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"La ropa y los accesorios","pairs":[["a la moda, pasado de moda","fashionable, old-fashioned"],["abrigo (m.)","coat"],["ancho","wide"],["anillo (m.)","ring"],["bañador (m.)","swimsuit"],["blusa (f.)","blouse"],["bolsa (f.)","bag"],["bolsillo (m.)","pocket"],["bolso (m.)","handbag"],["botas (f.pl.)","boots"],["bufanda (f.)","scarf"],["calcetines (m.pl.)","socks"],["camisa (f.)","shirt"],["cartera (f.)","wallet"],["chaqueta (f.)","jacket"],["cinturón (m.)","belt"],["collar (m.)","necklace"],["corbata (f.)","tie"],["corto","short"],["estrecho","narrow, tight"],["falda (f.)","skirt"],["gafas (f.pl.)","glasses"],["gafas de sol (f.pl.)","sunglasses"],["gorra (f.)","cap"],["guantes (m.pl.)","gloves"],["jersey (m.)","jumper"],["joyas (f.pl.)","jewellery"],["largo","long"],["mochila (f.)","backpack"],["moda (f.)","fashion"],["monedero (m.)","purse"],["pantalones (m.pl.)","trousers"],["pantalones cortos (m.pl.)","shorts"],["paraguas (m.)","umbrella"],["pendientes (m.pl.)","earrings"],["reloj (m.)","watch"],["ropa (f.)","clothes"],["sandalias (f.pl.)","sandals"],["sombrero (m.)","hat"],["sudadera (f.)","sweatshirt"],["suelto","loose"],["suéter (m.)","sweater"],["traje (m.)","suit"],["traje de baño (m.)","swimsuit"],["un par de (calcetines/zapatos/guantes/pantalones)","a pair of (socks/shoes/gloves/trousers)"],["uniforme (m.)","uniform"],["vaqueros (m.pl.)","jeans"],["vestido (m.)","dress"],["zapatillas de deporte (f.pl.), zapatillas deportivas (f.pl.)","trainers"],["zapatos (m.pl.)","shoes"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"La ropa y los accesorios – Verbos y expresiones","pairs":[["desvestirse","to undress"],["es elegante","it's elegant"],["es informal","it's informal"],["llevar (puesto)","to wear"],["ponerse","to put on"],["probarse","to try on"],["¿Qué talla?","What size?"],["quitarse","to take off"],["Te queda bien.","It suits you."],["vestirse","to get dressed"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El ocio – Las cosas que hacer","pairs":[["escuchar música (pop, clásica, folclórica, rock…)","to listen to music (pop, classical, folk, rock...)"],["ir a un concierto, ir a un festival de música","to go to a concert, go to a music festival"],["leer (un libro)","to read (a book)"],["ver la tele, ver un thriller, ver una película romántica, ver una comedia","to watch TV, watch a thriller, watch a romantic film, watch a comedy"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El ocio – Los pasatiempos","pairs":[["auriculares (m.pl.)","headphones"],["canto (m.), cantar, canción (f.)","singing, to sing, song"],["dibujo (m.), dibujar","drawing, to draw"],["fotografía (f.), foto (f.), fotografiar","photography, photo, to photograph"],["jardinería (f.)","gardening"],["jugar (a un videojuego, a las cartas, al ajedrez, al fútbol, al baloncesto...)","to play (a video game, cards, chess, football, basketball...)"],["lectura (f.), leer","reading, to read"],["letra (f.)","lyrics, letter"],["pesca (f.), pescar","fishing, to fish"],["pintura (f.), pintar","painting, to paint"],["sacar/tomar fotos","to take photos"],["tocar (un instrumento, la batería, la flauta, la guitarra, el piano, el violín...)","to play (an instrument, drums, flute, guitar, piano, violin...)"]]},{"theme":"B. Vida personal y social (Personal and Social Life)","subtheme":"El ocio – El deporte","pairs":[["aficionado (m.), aficionada (f.)","fan"],["ajedrez (m.)","chess"],["atletismo (m.), atleta (m./f.)","athletics, athlete"],["bádminton (m.)","badminton"],["balón (m.) / pelota (f.) / bola (f.)","ball"],["baloncesto (m.)","basketball"],["bicicleta (de montaña) (f.) / bici (f.), montar en bicicleta","(mountain) bike, to ride a bike"],["campeón (m.)","champion"],["campo de fútbol/golf (m.)","football/golf pitch/course"],["cancha de baloncesto/tenis (f.)","basketball/tennis court"],["ciclismo (m.)","cycling"],["competir, competición (f.)","to compete, competition"],["correr (m.), footing (m.)","running, jogging"],["entrenar, entrenamiento (m.), entrenador (m.), entrenadora (f.)","to train, training, coach"],["equipamiento (m.)","equipment"],["equipo (de baloncesto) (m.)","team (basketball)"],["esquiar, esquí (m.)","to ski, skiing"],["fútbol (m.)","football"],["ganar (la/una carrera, la/una competición, una medalla)","to win (the/a race, the/a competition, a medal)"],["gimnasia (f.)","gymnastics"],["gol (m.)","goal"],["golf (m.)","golf"],["hockey (m.), hockey sobre ruedas (m.), hockey sobre hielo (m.)","hockey, roller hockey, ice hockey"],["juego (m.)","game"],["jugar","to play"],["marcar (un gol, un punto)","to score (a goal, a point)"],["medalla (f.)","medal"],["natación (f.)","swimming"],["navegar","to sail"],["palo (m.)","stick, club"],["partido (m.)","match"],["patinaje (sobre hielo) (m.)","(ice) skating"],["perder (la/una carrera, la/una competición, una medalla)","to lose (the/a race, the/a competition, a medal)"],["pista de atletismo (f.)","athletics track"],["premio (m.)","prize"],["raqueta (f.)","racket"],["rugby (m.)","rugby"],["surf (m.), surfear/hacer surf","surfing, to surf"],["tenis (m.)","tennis"],["vela (f.)","sailing"],["voleibol (m.)","volleyball"],["yoga (m.)","yoga"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Los continentes","pairs":[["África","Africa"],["América, América del Sur / Sudamérica, América del Norte / Norteamérica, América Central / Centroamérica","America, South America, North America, Central America"],["Antártida","Antarctica"],["Asia","Asia"],["Australasia/Oceanía","Australasia/Oceania"],["el Ártico","the Arctic"],["Europa","Europe"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Los puntos cardinales","pairs":[["este (m.)","east"],["norte (m.)","north"],["oeste (m.)","west"],["sur (m.)","south"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"El mundo natural y el medio ambiente","pairs":[["aire (m.), aéreo","air, aerial"],["arena (f.)","sand"],["bosque (m.)","forest"],["calentamiento global (m.)","global warming"],["catarata (f.)","waterfall"],["césped (m.)","lawn, grass"],["cielo (m.)","sky"],["cima (f.)","summit, peak"],["clima (m.)","climate"],["colina (f.)","hill"],["contaminar, contaminación (f.)","to pollute, pollution"],["costa (f.)","coast"],["deforestación (f.)","deforestation"],["desierto (m.)","desert"],["electricidad (f.), eléctrico","electricity, electric"],["estrella (f.)","star"],["gobierno (m.)","government"],["hierba (f.)","grass"],["isla (f.)","island"],["lago (m.)","lake"],["luna (f.)","moon"],["mar (m.)","sea"],["medio ambiente (m.), medioambiental","environment, environmental"],["montaña (f.)","mountain"],["mundo (m.)","world"],["naturaleza (f.)","nature"],["ola (f.)","wave"],["paisaje (m.)","landscape"],["piedra (f.)","stone"],["planeta (m.)","planet"],["plástico (m.)","plastic"],["playa (f.)","beach"],["polvo (m.)","dust"],["rama (f.)","branch"],["reciclar, reciclaje (m.)","to recycle, recycling"],["recursos naturales (m.pl.)","natural resources"],["región (f.)","region"],["reserva (natural) (f.)","(nature) reserve"],["río (m.)","river"],["sol (m.)","sun"],["sombra (f.)","shade, shadow"],["tierra (f.), La Tierra","earth, the Earth"],["vista (f.)","view"],["volcán (m.)","volcano"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"El mundo natural y el medio ambiente – Verbos y expresiones","pairs":[["ayudar a, ayuda (f.)","to help, help"],["cambiar, cambio (m.)","to change, change"],["colaborar, colaboración (f.)","to collaborate, collaboration"],["consumir, consumo (m.)","to consume, consumption"],["cuidar a","to take care of"],["donar, donación (f.)","to donate, donation"],["evitar","to avoid"],["luchar contra, lucha (f.)","to fight against, fight"],["malgastar, malgasto (m.)","to waste, waste"],["mejorar, mejora (f.)","to improve, improvement"],["promover, promoción (f.)","to promote, promotion"],["proteger, protección (f.)","to protect, protection"],["reducir, reducción (f.)","to reduce, reduction"],["separar, separación (f.)","to separate, separation"],["(re)usar/(re)utilizar, (re)uso (m.) / (re)utilización (f.)","to (re)use, (re)use"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"El clima y el tiempo","pairs":[["caliente","hot"],["calor (m.), hace calor","heat, it's hot"],["escarcha (f.)","frost"],["estación (del año) (f.)","season"],["frío (m.), frío (adj.), hace frío","cold (noun/adj), it's cold"],["grados (m.pl.)","degrees"],["granizo (m.)","hail"],["hielo (m.)","ice"],["húmedo","humid"],["huracán (m.)","hurricane"],["lluvia (f.), está lloviendo","rain, it's raining"],["mojado","wet"],["niebla (f.)","fog"],["nieve (f.)","snow"],["nube (f.)","cloud"],["previsión del tiempo (f.) / previsión meteorológica (f.)","weather forecast"],["rayo (m.)","lightning bolt"],["relámpago (m.)","lightning"],["sol (m.), luz del sol (f.)","sun, sunlight"],["tiempo (m.)","weather"],["tormenta (f.)","storm"],["trueno (m.)","thunder"],["viento (m.)","wind"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Los animales","pairs":[["animal (m.)","animal"],["araña (f.)","spider"],["caballo (m.)","horse"],["conejo (m.)","rabbit"],["elefante (m.)","elephant"],["gato (m.)","cat"],["león (m.)","lion"],["mono (m.)","monkey"],["mosca (f.)","fly"],["pájaro (m.)","bird"],["perro (m.)","dog"],["pez (m.)","fish"],["rata (f.)","rat"],["ratón (m.)","mouse"],["serpiente (f.)","snake"],["tigre (m.)","tiger"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"La comunicación y la tecnología – El mundo digital","pairs":[["aplicación (f.)","app"],["archivo (m.)","file"],["artículo (m.)","article"],["blog (m.)","blog"],["carpeta (f.)","folder"],["chat (m.), el grupo de chat (m.)","chat, chat group"],["conectado a Internet / en línea","connected to the internet / online"],["contraseña (f.)","password"],["correo electrónico (m.) / email (m.)","email"],["documento (m.)","document"],["en la red","online"],["grabación (f.)","recording"],["impresora (f.)","printer"],["inalámbrico","wireless"],["información (f.)","information"],["Internet (m./f.)","internet"],["juego (m.)","game"],["marca (f.)","brand"],["mensaje (m.)","message"],["móvil (m.) / celular (m.)","mobile phone"],["noticias (f.pl.)","news"],["ordenador (m.) / computadora (f.)","computer"],["página web (f.) / página de Internet (f.)","web page"],["pantalla (f.)","screen"],["pantalla táctil/interactiva (f.)","touch/interactive screen"],["película (f.)","film"],["portátil (m.)","laptop"],["ratón (m.)","mouse"],["red social (f.)","social network"],["seguridad en línea (f.)","online security"],["selfie (m.)","selfie"],["sitio web (m.)","website"],["software (m.)","software"],["tableta (f.)","tablet"],["teclado (m.)","keyboard"],["teléfono (m.)","telephone"],["USB (m.)","USB"],["vídeo (m.)","video"],["videoblog (m.)","vlog"],["videoaficionado (m.)","video enthusiast"],["wifi (m.)","wifi"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"El mundo digital – Verbos y expresiones","pairs":[["copiar","to copy"],["cortar","to cut"],["descargarse","to download"],["encontrar","to find"],["enviar","to send"],["grabar","to record"],["guardar","to save"],["hacer clic (en)","to click (on)"],["mandar","to send"],["navegar por Internet","to browse the internet"],["publicar en la red","to post online"],["rellenar","to fill in"],["subir","to upload"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Los documentos y los textos","pairs":[["anunciar, anuncio (m.)","to announce, advertisement"],["artículo (m.)","article"],["billete (m.)","ticket, note"],["carta (f.)","letter"],["certificado (m.) / diploma (m.) / título (m.)","certificate / diploma / title"],["cómic (m.)","comic"],["folleto (m.)","brochure"],["formulario (m.)","form"],["guía (f.)","guide"],["libreta (f.)","notebook"],["libro (m.)","book"],["lista (f.)","list"],["nota (f.)","note, grade"],["periódico (m.)","newspaper"],["revista (f.)","magazine"],["tarjeta postal (f.)","postcard"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"El entorno edificado – Los edificios y los servicios","pairs":[["aeropuerto (m.)","airport"],["ascensor (m.)","lift"],["ayuntamiento (m.)","town hall"],["biblioteca (f.)","library"],["cafetería (f.)","café"],["casa (f.)","house"],["castillo (m.)","castle"],["cine (m.)","cinema"],["clínica (f.)","clinic"],["Correos (m.) / oficina de Correos (f.)","post office"],["dentista (m./f.)","dentist"],["edificio (m.)","building"],["entrada (f.)","entrance"],["escuela (f.) / colegio (de primaria) (m.)","school / primary school"],["estación (de autobuses/servicio/tren) (f.)","(bus/service/train) station"],["estadio (m.)","stadium"],["fábrica (f.)","factory"],["gasolinera (f.)","petrol station"],["gimnasio (m.)","gym"],["granja (f.)","farm"],["hospital (m.)","hospital"],["hotel (m.)","hotel"],["instituto (de secundaria) (m.)","secondary school"],["museo (m.)","museum"],["oficina (f.)","office"],["piscina (f.)","swimming pool"],["piso (m.)","flat, floor"],["planta baja (f.), primera planta (f.), segunda planta (f.)","ground floor, first floor, second floor"],["polideportivo (m.)","sports centre"],["restaurante (m.)","restaurant"],["salida (f.)","exit"],["taller mecánico (m.)","mechanic's workshop"],["teatro (m.)","theatre"],["universidad (f.)","university"],["zoo(lógico) (m.)","zoo"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Las zonas urbanas","pairs":[["aparcamiento (m.)","car park"],["autovía (f.)","dual carriageway"],["barrio (m.)","neighbourhood"],["calle (f.)","street"],["carretera (f.)","road"],["ciudad (f.)","city"],["esquina (f.)","corner"],["lugar (m.)","place"],["metro (m.)","underground, metro"],["parada (de tren/autobús) (f.)","(train/bus) stop"],["paso de peatones (m.)","pedestrian crossing"],["plaza (f.)","square"],["pueblo (m.)","town, village"],["puente (m.)","bridge"],["rotonda (f.)","roundabout"],["semáforo (m.)","traffic light"],["sitio (m.)","place, site"],["tráfico (m.)","traffic"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Las compras","pairs":[["abierto","open"],["banco (m.), banquero (m.), banquera (f.)","bank, banker"],["bar (de tapas) (m.)","(tapas) bar"],["barato","cheap"],["billete (m.)","note, ticket"],["cajero (m.), cajera (f.)","cashier"],["camarero (m.), camarera (f.)","waiter, waitress"],["cambio (m.)","change"],["carnicería (f.), carnicero (m.), carnicera (f.)","butcher's, butcher"],["caro","expensive"],["cerrado","closed"],["cliente (m.), clienta (f.)","customer"],["cuenta (f.)","bill, account"],["dependiente (m.), dependienta (f.)","shop assistant"],["estanco (m.)","tobacconist's"],["frutería (f.), frutero (m.), frutera (f.)","greengrocer's, greengrocer"],["iglesia (f.)","church"],["mercado (m.)","market"],["moneda (f.)","coin, currency"],["panadería (f.), panadero (m.), panadera (f.)","bakery, baker"],["pastelería (f.), pastelero (m.), pastelera (f.)","cake shop, pastry chef"],["peluquería (f.), peluquero (m.), peluquera (f.)","hairdresser's, hairdresser"],["precio (m.)","price"],["quiosco (m.)","kiosk"],["rebajas (f.pl.), en rebajas","sales, on sale"],["recibo (m.)","receipt"],["supermercado (m.)","supermarket"],["talla (f.)","size"],["tarjeta de crédito (f.)","credit card"],["tienda (f.)","shop"],["vendedor (m.), vendedora (f.)","seller"],["vuelta (f.)","change (money)"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Las compras – Verbos y expresiones","pairs":[["alquilar (una bicicleta / un coche)","to hire (a bike/car)"],["comprar","to buy"],["conseguir un reembolso","to get a refund"],["¿Cuánto cuesta? / ¿Cuánto es?","How much does it cost? / How much is it?"],["devolver","to return, give back"],["gastar dinero","to spend money"],["hacer la compra","to do the shopping"],["ir de compras","to go shopping"],["pagar","to pay"],["quejarse / poner una queja","to complain / make a complaint"],["vender","to sell"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Las medidas","pairs":[["grado (m.)","degree"],["gramo (m.)","gram"],["kilogramo (m.)","kilogram"],["kilómetro (m.)","kilometre"],["litro (m.)","litre"],["metro (m.)","metre"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"El tamaño","pairs":[["alto","tall, high"],["bajo","short, low"],["corto","short"],["grande, enorme","big, huge"],["largo","long"],["mediano","medium"],["minúsculo","tiny"],["pequeño","small"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"La forma","pairs":[["círculo (m.), redondo","circle, round"],["cuadrado (m.), cuadrado (adj.)","square (noun/adj)"],["triángulo (m.), triangular","triangle, triangular"]]},{"theme":"C. El mundo que nos rodea (The World Around Us)","subtheme":"Los materiales","pairs":[["algodón (m.)","cotton"],["cuero (m.)","leather"],["cristal (m.)","glass, crystal"],["lana (f.)","wool"],["madera (f.)","wood"],["metal (m.)","metal"],["oro (m.)","gold"],["papel (m.)","paper"],["piel (f.)","leather, fur, skin"],["plástico (m.)","plastic"],["plata (f.)","silver"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"La educación – Las instituciones académicas","pairs":[["cantina (f.)","canteen"],["escuela (f.) / colegio (de primaria) (m.)","school / primary school"],["guardería (f.)","nursery"],["instituto (de secundaria) (m.)","secondary school"],["universidad (f.)","university"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"La educación y la formación","pairs":[["alumno (m.)","pupil"],["curso (de verano) (m.)","(summer) course"],["curso/año académico/escolar (m.)","academic/school year"],["departamento (m.)","department"],["director (m.), directora (f.)","headteacher, director"],["educación (f.), educativo","education, educational"],["estudiante (m./f.)","student"],["patio (m.)","playground, patio"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"En la clase, las herramientas de aprendizaje","pairs":[["bolígrafo (m.)","pen"],["borrador (m.) / goma (de borrar) (f.)","eraser"],["carpeta (f.)","folder"],["cuaderno (m.)","notebook"],["diccionario (m.)","dictionary"],["escritorio (m.)","desk"],["estuche (m.)","pencil case"],["lápiz (m.)","pencil"],["libreta (f.)","notebook"],["libro (m.)","book"],["mesa (f.)","table"],["papel (m.), hojas de papel (f.pl.) / folios (m.pl.)","paper, sheets of paper"],["pizarra (interactiva) (f.)","(interactive) whiteboard"],["regla (f.)","ruler"],["sacapuntas (m.)","pencil sharpener"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"Las asignaturas","pairs":[["biología (f.)","biology"],["ciencias (f.pl.)","science"],["dibujo (m.)","art, drawing"],["educación física (f.)","physical education"],["física (f.)","physics"],["geografía (f.)","geography"],["historia (f.)","history"],["idiomas (m.pl.) / lenguas (f.pl.)","languages"],["informática (f.)","ICT, computing"],["matemáticas (f.pl.)","mathematics"],["música (f.)","music"],["química (f.)","chemistry"],["religión (f.)","religious studies"],["teatro (m.)","drama"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"Estudiar","pairs":[["actividad (f.)","activity"],["clase (f.)","class"],["compañero (de clase) (m.)","classmate"],["deberes (m.pl.)","homework"],["ejemplo (m.)","example"],["ejercicio (m.)","exercise"],["examen (m.)","exam"],["horario (m.)","timetable"],["instrucciones (f.pl.)","instructions"],["nota (f.)","grade, note"],["pregunta (f.)","question"],["proyecto (m.)","project"],["prueba (f.)","test"],["resultado (m.)","result"],["tarea (f.)","task, homework"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"Estudiar – Verbos y expresiones","pairs":[["aprobar","to pass (exam)"],["comprender","to understand"],["conocer","to know (be familiar with)"],["contestar","to answer"],["entender","to understand"],["escribir, escritura (f.)","to write, writing"],["estudiar, estudio (m.)","to study, study"],["experimentar, experimento (m.)","to experiment, experiment"],["explicar","to explain"],["leer, lectura (f.)","to read, reading"],["practicar, práctica (f.)","to practise, practice"],["preguntar","to ask"],["responder, respuesta (f.)","to answer, answer"],["revisar, revisión (f.)","to revise, review"],["saber","to know"],["sacar buenas/malas notas","to get good/bad grades"],["suspender","to fail (exam)"],["tomar notas/apuntes","to take notes"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"Los trabajos y las profesiones","pairs":[["abogado (m.), abogada (f.)","lawyer"],["actor (m.), actriz (f.)","actor, actress"],["agricultor (m.), agricultora (f.)","farmer"],["albañil (m./f.)","builder, bricklayer"],["alcalde (m.), alcaldesa (f.)","mayor"],["amo de casa (m.), ama de casa (f.)","homemaker"],["arquitecto (m.), arquitecta (f.)","architect"],["asistente de vuelo (m./f.), azafato (m.), azafata (f.)","flight attendant"],["bombero (m.), bombera (f.)","firefighter"],["camarero (m.), camarera (f.)","waiter, waitress"],["carnicero (m.), carnicera (f.)","butcher"],["carpintero (m.), carpintera (f.)","carpenter"],["cartero (m.), cartera (f.)","postman, postwoman"],["conductor (de taxi, de autobús) (m.), conductora (de taxi, de autobús) (f.)","driver (taxi, bus)"],["constructor (m.), constructora (f.)","builder"],["dentista (m./f.)","dentist"],["deportista profesional (m./f.)","professional sportsperson"],["doctor (m.), doctora (f.)","doctor"],["enfermero (m.), enfermera (f.)","nurse"],["fontanero (m.), fontanera (f.)","plumber"],["granjero (m.), granjera (f.)","farmer"],["ingeniero (m.), ingeniera (f.)","engineer"],["intérprete (m./f.)","interpreter"],["jefe (m.), jefa (f.)","boss"],["jugador (de fútbol, baloncesto…) (m.), jugadora (de fútbol, baloncesto…) (f.)","player (football, basketball...)"],["maestro (m.), maestra (f.)","teacher"],["mecánico (m.), mecánica (f.)","mechanic"],["médico (m.), médica (f.)","doctor"],["panadero (m.), panadera (f.)","baker"],["peluquero (m.), peluquera (f.)","hairdresser"],["piloto (m./f.)","pilot"],["(agente de) policía (m./f.)","police officer"],["presidente (m.), presidenta (f.)","president"],["profesor (m.), profesora (f.)","teacher"],["secretario (m.), secretaria (f.)","secretary"],["soldado (m./f.)","soldier"],["veterinario (m.), veterinaria (f.)","vet"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"El lugar de trabajo","pairs":[["compañía (f.)","company"],["empleado (m.), empleada (f.)","employee"],["empleador (m.)","employer"],["empleo (m.), desempleo (m.)","employment, unemployment"],["empresa (f.)","company, business"],["huelga (f.)","strike"],["negocio (m.)","business"],["organización (f.)","organisation"],["patrón (m.), patrona (f.)","boss, employer"],["puesto (de trabajo) (m.)","job position"],["salario (m.)","salary"],["sueldo (m.)","salary"],["taller (m.)","workshop"],["trabajador (m.), trabajadora (f.)","worker"],["trabajo (m.)","work, job"]]},{"theme":"D. El mundo laboral (The World of Work)","subtheme":"El lugar de trabajo – Verbos y expresiones","pairs":[["actuar, actuación (f.)","to act, performance"],["buscar/conseguir/encontrar/obtener/perder un trabajo","to look for/get/find/obtain/lose a job"],["contratar","to hire"],["desempleado","unemployed"],["ganar/cobrar","to earn"],["irse de vacaciones","to go on holiday"],["jubilarse, jubilado, jubilación (f.)","to retire, retired, retirement"],["montar/poner (un negocio)","to set up (a business)"],["ser ascendido","to be promoted"],["ser despedido","to be fired"],["solicitar, solicitud (f.)","to apply, application"]]},{"theme":"E. El mundo internacional (The International World)","subtheme":"Los países, las nacionalidades y los idiomas","pairs":[["lengua materna del/de la estudiante + otros idiomas estudiados","the student's mother tongue + other languages studied"],["nacionalidad del/de la estudiante + país de residencia","the student's nationality + country of residence"],["países hispanohablantes","Spanish-speaking countries"]]},{"theme":"E. El mundo internacional (The International World)","subtheme":"La cultura – las costumbres, las creencias y las celebraciones","pairs":[["Año Nuevo (m.)","New Year"],["bautizo (m.)","baptism"],["Belén (m.), portal de Belén (m.)","nativity scene"],["celebración (f.)","celebration"],["cumpleaños (m.)","birthday"],["El Día de Todos los Santos","All Saints' Day"],["festival (m.)","festival"],["fiesta (f.)","party, festival"],["fiesta nacional (f.)","national holiday"],["fuegos artificiales (m.pl.)","fireworks"],["Los Reyes Magos","The Three Kings/Wise Men"],["misa (f.)","mass"],["Navidad (f.)","Christmas"],["Nochebuena (f.)","Christmas Eve"],["Nochevieja (f.)","New Year's Eve"],["ocasión especial (f.)","special occasion"],["religión (f.)","religion"],["santo (m.)","saint"],["templo (m.)","temple"]]},{"theme":"E. El mundo internacional (The International World)","subtheme":"La cultura – Verbos y expresiones","pairs":[["celebrar","to celebrate"],["creer en, tener fe, ser creyente / ser religioso","to believe in, have faith, be a believer / be religious"]]}]
+</script>
+<script>
+let UNITS = [];
+let customAdditions = {}; // unitIndex -> array of [es,en]
+let currentUnitIndex = -1; // -1 = all
+let direction = 'alt'; // 'alt' | 'es-en' | 'en-es'
+let deck = []; // array of {es,en}
+let pos = 0;
+let revealed = false;
+let frontIsSpanish = true;
+
+function unitPairs(idx){
+  const base = idx === -1 ? UNITS.flatMap(u => u.pairs) : UNITS[idx].pairs.slice();
+  const extra = idx === -1
+    ? Object.values(customAdditions).flat()
+    : (customAdditions[idx] || []);
+  return base.concat(extra);
+}
+
+function unitLabel(idx){
+  if(idx === -1) return 'Todo el vocabulario';
+  const u = UNITS[idx];
+  const count = unitPairs(idx).length;
+  return u.subtheme;
+}
+
+function unitCount(idx){
+  return unitPairs(idx).length;
+}
+
+function buildSelect(selectEl, includeAll){
+  selectEl.innerHTML = '';
+  if(includeAll){
+    const allCount = unitCount(-1);
+    const opt = document.createElement('option');
+    opt.value = '-1';
+    opt.textContent = `🔀 Todo el vocabulario (${allCount} palabras)`;
+    selectEl.appendChild(opt);
+  }
+  let lastTheme = null;
+  let group = null;
+  UNITS.forEach((u, i) => {
+    if(u.theme !== lastTheme){
+      group = document.createElement('optgroup');
+      group.label = u.theme;
+      selectEl.appendChild(group);
+      lastTheme = u.theme;
+    }
+    const opt = document.createElement('option');
+    opt.value = String(i);
+    opt.textContent = `${u.subtheme} (${unitCount(i)} palabras)`;
+    group.appendChild(opt);
+  });
+}
+
+function refreshUnitSelects(){
+  const studySel = document.getElementById('unit-select');
+  const addSel = document.getElementById('add-unit-select');
+  const prevStudy = studySel.value;
+  const prevAdd = addSel.value;
+  buildSelect(studySel, true);
+  buildSelect(addSel, false);
+  if([...studySel.options].some(o => o.value === prevStudy)) studySel.value = prevStudy;
+  if([...addSel.options].some(o => o.value === prevAdd)) addSel.value = prevAdd;
+}
+
+function shuffle(arr){
+  for(let i = arr.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function buildDeck(shuffled){
+  const pairs = unitPairs(currentUnitIndex).slice();
+  deck = pairs.map((p, i) => ({ es: p[0], en: p[1] }));
+  if(shuffled) shuffle(deck);
+  pos = 0;
+  revealed = false;
+  render();
+}
+
+function computeFrontIsSpanish(){
+  if(direction === 'es-en') return true;
+  if(direction === 'en-es') return false;
+  return pos % 2 === 0; // alternating
+}
+
+function render(){
+  const total = deck.length;
+  document.getElementById('card-counter').textContent = total ? `Tarjeta ${pos+1} de ${total}` : 'Sin tarjetas';
+  const card = deck[pos];
+  frontIsSpanish = computeFrontIsSpanish();
+  const label = document.getElementById('card-label');
+  const word = document.getElementById('card-word');
+  const hint = document.getElementById('card-hint');
+  if(!card){
+    label.textContent = '';
+    word.textContent = 'Añade palabras para empezar';
+    hint.textContent = '';
+    document.getElementById('prev-btn').disabled = true;
+    document.getElementById('next-btn').disabled = true;
+    document.getElementById('shuffle-btn').disabled = true;
+    return;
+  }
+  document.getElementById('prev-btn').disabled = pos <= 0;
+  document.getElementById('next-btn').disabled = pos >= total - 1;
+  document.getElementById('shuffle-btn').disabled = false;
+
+  if(!revealed){
+    label.textContent = frontIsSpanish ? 'ESPAÑOL' : 'ENGLISH';
+    word.textContent = frontIsSpanish ? card.es : card.en;
+    hint.textContent = 'Haz clic en la tarjeta para ver la traducción';
+  } else {
+    label.textContent = frontIsSpanish ? 'ENGLISH' : 'ESPAÑOL';
+    word.textContent = frontIsSpanish ? card.en : card.es;
+    hint.textContent = 'Haz clic de nuevo para volver';
+  }
+}
+
+function flipCard(){
+  if(!deck[pos]) return;
+  revealed = !revealed;
+  render();
+}
+
+function goPrev(){
+  if(pos > 0){ pos -= 1; revealed = false; render(); }
+}
+function goNext(){
+  if(pos < deck.length - 1){ pos += 1; revealed = false; render(); }
+}
+function doShuffle(){
+  shuffle(deck);
+  pos = 0;
+  revealed = false;
+  render();
+}
+
+function onUnitChange(){
+  currentUnitIndex = parseInt(document.getElementById('unit-select').value, 10);
+  buildDeck(false);
+}
+function onDirectionChange(){
+  direction = document.getElementById('direction-select').value;
+  render();
+}
+
+function addWord(){
+  const unitIdx = parseInt(document.getElementById('add-unit-select').value, 10);
+  const esInput = document.getElementById('input-es');
+  const enInput = document.getElementById('input-en');
+  const es = esInput.value.trim();
+  const en = enInput.value.trim();
+  const msg = document.getElementById('add-msg');
+  if(!es || !en){
+    msg.textContent = 'Escribe la palabra en español e inglés.';
+    msg.className = 'add-msg error';
+    return;
+  }
+  if(!customAdditions[unitIdx]) customAdditions[unitIdx] = [];
+  customAdditions[unitIdx].push([es, en]);
+  esInput.value = '';
+  enInput.value = '';
+  msg.textContent = `Añadido a "${UNITS[unitIdx].subtheme}".`;
+  msg.className = 'add-msg success';
+  refreshUnitSelects();
+  document.getElementById('unit-select').value = String(currentUnitIndex);
+  if(currentUnitIndex === unitIdx || currentUnitIndex === -1){
+    buildDeck(false);
+  }
+}
+
+function init(){
+  UNITS = JSON.parse(document.getElementById('units-data').textContent);
+  refreshUnitSelects();
+  document.getElementById('unit-select').value = '-1';
+  currentUnitIndex = -1;
+  buildDeck(false);
+
+  document.getElementById('unit-select').addEventListener('change', onUnitChange);
+  document.getElementById('direction-select').addEventListener('change', onDirectionChange);
+  document.getElementById('prev-btn').addEventListener('click', goPrev);
+  document.getElementById('next-btn').addEventListener('click', goNext);
+  document.getElementById('shuffle-btn').addEventListener('click', doShuffle);
+  document.getElementById('flashcard').addEventListener('click', flipCard);
+  document.getElementById('add-btn').addEventListener('click', addWord);
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'ArrowLeft') goPrev();
+    else if(e.key === 'ArrowRight') goNext();
+    else if(e.key === ' '){ e.preventDefault(); flipCard(); }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
+</script>
+</body>
+</html>
