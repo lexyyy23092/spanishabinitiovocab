@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulario Completo - Español Ab Initio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+
+  <h1 class="title">Banco de Vocabulario General</h1>
+  <p class="subtitle">Spanish Ab Initio SL — <span id="totalWordCount">0</span>+ Words Active Engine</p>
+
+  <div class="panel controls-panel">
+    <label class="field-label" for="unitSelect">Selecciona Bloque / Tema:</label>
+    <select id="unitSelect" class="select-input"></select>
+
+    <label class="field-label" for="directionSelect">Dirección del Estudio:</label>
+    <select id="directionSelect" class="select-input">
+      <option value="mixed">Alternando (English &lt;-&gt; Español)</option>
+      <option value="es-en">Español -&gt; English</option>
+      <option value="en-es">English -&gt; Español</option>
+    </select>
+  </div>
+
+  <div class="panel card-panel" id="flashcard">
+    <span class="card-lang" id="cardLang">ESPAÑOL</span>
+    <p class="card-word" id="cardWord">—</p>
+  </div>
+
+  <p class="card-counter" id="cardCounter">Tarjeta 0 de 0</p>
+
+  <div class="btn-row">
+    <button id="prevBtn" class="ctrl-btn">Anterior</button>
+    <button id="shuffleBtn" class="ctrl-btn">Mezclar (Shuffle)</button>
+    <button id="nextBtn" class="ctrl-btn">Siguiente</button>
+  </div>
+
+  <div class="panel add-panel">
+    <h2 class="add-title">Añadir vocabulario personalizado</h2>
+    <label class="field-label" for="addUnitSelect">Añadir a esta unidad:</label>
+    <select id="addUnitSelect" class="select-input"></select>
+
+    <div class="add-row">
+      <input type="text" id="addEs" class="text-input" placeholder="Español">
+      <input type="text" id="addEn" class="text-input" placeholder="English">
+      <button id="addBtn" class="ctrl-btn add-btn">Añadir</button>
+    </div>
+    <p class="add-hint" id="addHint"></p>
+  </div>
+
+</div>
+
+<script src="data/vocab.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
