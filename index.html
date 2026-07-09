@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fichero — Vocabulario Español Ab Initio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="drawer-rail" aria-hidden="true">
+  <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">📇</span>
+      <div>
+        <h1>Fichero</h1>
+        <p class="brand-sub">vocabulario español · ab initio SL</p>
+      </div>
+    </div>
+    <div class="stamp" id="sessionStamp">0 / 0 tarjetas</div>
+  </div>
+</header>
+
+<main class="layout">
+
+  <!-- SETUP VIEW -->
+  <section id="setupView" class="panel setup-panel">
+    <div class="setup-grid">
+
+      <div class="setup-col">
+        <h2 class="section-label"><span class="tab-index">01</span> Elige un tema</h2>
+        <div id="themeList" class="theme-list"></div>
+      </div>
+
+      <div class="setup-col">
+        <h2 class="section-label"><span class="tab-index">02</span> Subtemas</h2>
+        <div class="subtheme-actions">
+          <button class="link-btn" id="selectAllSub">seleccionar todo</button>
+          <button class="link-btn" id="selectNoneSub">ninguno</button>
+        </div>
+        <div id="subthemeList" class="subtheme-list">
+          <p class="hint">Elige un tema para ver sus subtemas.</p>
+        </div>
+      </div>
+
+      <div class="setup-col">
+        <h2 class="section-label"><span class="tab-index">03</span> Dirección</h2>
+        <div class="direction-options" id="directionOptions">
+          <button class="dir-btn active" data-dir="mixed">🔀 Mixto<span>ES ⇄ EN alterna</span></button>
+          <button class="dir-btn" data-dir="es-en">🇪🇸 → 🇬🇧<span>Español → Inglés</span></button>
+          <button class="dir-btn" data-dir="en-es">🇬🇧 → 🇪🇸<span>Inglés → Español</span></button>
+        </div>
+
+        <h2 class="section-label" style="margin-top:2rem;"><span class="tab-index">04</span> Orden</h2>
+        <div class="direction-options">
+          <button class="dir-btn active" data-shuffle="true">🎲 Aleatorio</button>
+          <button class="dir-btn" data-shuffle="false">📋 En orden</button>
+        </div>
+
+        <button id="startBtn" class="primary-btn" disabled>Empezar a estudiar →</button>
+        <p class="setup-count" id="setupCount">0 palabras seleccionadas</p>
+      </div>
+
+    </div>
+
+    <div class="my-words-block">
+      <div class="my-words-header">
+        <h2 class="section-label"><span class="tab-index">＋</span> Mis palabras</h2>
+        <button id="addWordBtn" class="secondary-btn">+ Añadir palabra</button>
+      </div>
+      <div id="myWordsList" class="my-words-list">
+        <p class="hint">Todavía no has añadido palabras propias.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDY VIEW -->
+  <section id="studyView" class="panel study-panel hidden">
+    <div class="study-toolbar">
+      <button id="backToSetup" class="link-btn">← temas</button>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <button id="shuffleAgain" class="link-btn">🔀 reordenar</button>
+    </div>
+
+    <div class="card-stage">
+      <div class="card-tab" id="cardTheme">tema</div>
+      <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Voltear tarjeta">
+        <div class="flashcard-inner" id="flashcardInner">
+          <div class="face face-front">
+            <span class="lang-flag" id="frontFlag">ES</span>
+            <p class="word-text" id="frontText">—</p>
+            <span class="tap-hint">toca para voltear</span>
+          </div>
+          <div class="face face-back">
+            <span class="lang-flag" id="backFlag">EN</span>
+            <p class="word-text" id="backText">—</p>
+            <span class="tap-hint">toca para voltear</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rating-row" id="ratingRow">
+        <button class="rate-btn rate-no" data-rate="again">😕 otra vez</button>
+        <button class="rate-btn rate-ok" data-rate="know">✅ lo sé</button>
+      </div>
+
+      <div class="nav-row">
+        <button id="prevCard" class="nav-btn">‹ anterior</button>
+        <button id="nextCard" class="nav-btn">siguiente ›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONE VIEW -->
+  <section id="doneView" class="panel done-panel hidden">
+    <div class="done-card">
+      <span class="done-mark">✓</span>
+      <h2>¡Fichero completado!</h2>
+      <p id="doneStats">Has repasado 0 tarjetas.</p>
+      <div class="done-actions">
+        <button id="restartSame" class="primary-btn">Repasar otra vez</button>
+        <button id="restartNew" class="secondary-btn">Elegir otro tema</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ADD WORD MODAL -->
+<div id="addWordModal" class="modal-overlay hidden">
+  <div class="modal-card">
+    <button class="modal-close" id="closeModal">×</button>
+    <h2 class="section-label"><span class="tab-index">＋</span> Añadir palabra</h2>
+    <form id="addWordForm">
+      <label>Español
+        <input type="text" id="inputEs" placeholder="p.ej. madrugar" required>
+      </label>
+      <label>Inglés
+        <input type="text" id="inputEn" placeholder="e.g. to get up early" required>
+      </label>
+      <label>Nota (opcional)
+        <input type="text" id="inputNote" placeholder="p.ej. tema: rutina diaria">
+      </label>
+      <button type="submit" class="primary-btn">Guardar tarjeta</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

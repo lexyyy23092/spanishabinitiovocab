@@ -1,0 +1,6100 @@
+{
+  "Adjetivos comunes (Common Adjectives)": {
+    "Adjetivos comunes": [
+      {
+        "es": "absurdo",
+        "en": "absurd"
+      },
+      {
+        "es": "aburrido",
+        "en": "boring"
+      },
+      {
+        "es": "acogedor",
+        "en": "cosy, welcoming"
+      },
+      {
+        "es": "agradable",
+        "en": "pleasant"
+      },
+      {
+        "es": "amable",
+        "en": "kind"
+      },
+      {
+        "es": "amigable",
+        "en": "friendly"
+      },
+      {
+        "es": "animado",
+        "en": "lively"
+      },
+      {
+        "es": "blando",
+        "en": "soft"
+      },
+      {
+        "es": "bueno, mejor",
+        "en": "good, better"
+      },
+      {
+        "es": "cálido",
+        "en": "warm"
+      },
+      {
+        "es": "caliente",
+        "en": "hot"
+      },
+      {
+        "es": "cierto",
+        "en": "certain, true"
+      },
+      {
+        "es": "cómodo",
+        "en": "comfortable"
+      },
+      {
+        "es": "correcto",
+        "en": "correct"
+      },
+      {
+        "es": "delgado",
+        "en": "thin, slim"
+      },
+      {
+        "es": "diferente",
+        "en": "different"
+      },
+      {
+        "es": "difícil",
+        "en": "difficult"
+      },
+      {
+        "es": "duro",
+        "en": "hard"
+      },
+      {
+        "es": "educado",
+        "en": "polite"
+      },
+      {
+        "es": "emocionante",
+        "en": "exciting"
+      },
+      {
+        "es": "enorme",
+        "en": "huge"
+      },
+      {
+        "es": "estrecho",
+        "en": "narrow"
+      },
+      {
+        "es": "estricto",
+        "en": "strict"
+      },
+      {
+        "es": "estupendo",
+        "en": "wonderful"
+      },
+      {
+        "es": "exacto",
+        "en": "exact"
+      },
+      {
+        "es": "fácil",
+        "en": "easy"
+      },
+      {
+        "es": "fantástico",
+        "en": "fantastic"
+      },
+      {
+        "es": "frío",
+        "en": "cold"
+      },
+      {
+        "es": "fuerte",
+        "en": "strong"
+      },
+      {
+        "es": "general",
+        "en": "general"
+      },
+      {
+        "es": "genial",
+        "en": "great"
+      },
+      {
+        "es": "grande, más grande/mayor, el más grande/mayor",
+        "en": "big, bigger, biggest"
+      },
+      {
+        "es": "gratis",
+        "en": "free (no cost)"
+      },
+      {
+        "es": "harto",
+        "en": "fed up"
+      },
+      {
+        "es": "húmedo",
+        "en": "humid, damp"
+      },
+      {
+        "es": "importante",
+        "en": "important"
+      },
+      {
+        "es": "imposible",
+        "en": "impossible"
+      },
+      {
+        "es": "incorrecto",
+        "en": "incorrect"
+      },
+      {
+        "es": "infeliz",
+        "en": "unhappy"
+      },
+      {
+        "es": "inteligente",
+        "en": "intelligent"
+      },
+      {
+        "es": "inútil",
+        "en": "useless"
+      },
+      {
+        "es": "lento",
+        "en": "slow"
+      },
+      {
+        "es": "libre",
+        "en": "free"
+      },
+      {
+        "es": "ligero",
+        "en": "light (weight)"
+      },
+      {
+        "es": "listo",
+        "en": "clever, ready"
+      },
+      {
+        "es": "lleno",
+        "en": "full"
+      },
+      {
+        "es": "maleducado",
+        "en": "rude, impolite"
+      },
+      {
+        "es": "malo, peor",
+        "en": "bad, worse"
+      },
+      {
+        "es": "mismo, el mismo que",
+        "en": "same, the same as"
+      },
+      {
+        "es": "moderno",
+        "en": "modern"
+      },
+      {
+        "es": "mojado",
+        "en": "wet"
+      },
+      {
+        "es": "necesario",
+        "en": "necessary"
+      },
+      {
+        "es": "negativo",
+        "en": "negative"
+      },
+      {
+        "es": "normal",
+        "en": "normal"
+      },
+      {
+        "es": "nuevo",
+        "en": "new"
+      },
+      {
+        "es": "parecido",
+        "en": "similar"
+      },
+      {
+        "es": "pequeño, más pequeño/menor, el más pequeño/menor",
+        "en": "small, smaller, smallest"
+      },
+      {
+        "es": "perfecto",
+        "en": "perfect"
+      },
+      {
+        "es": "pesado",
+        "en": "heavy"
+      },
+      {
+        "es": "popular",
+        "en": "popular"
+      },
+      {
+        "es": "posible",
+        "en": "possible"
+      },
+      {
+        "es": "positivo",
+        "en": "positive"
+      },
+      {
+        "es": "preparado",
+        "en": "prepared, ready"
+      },
+      {
+        "es": "previo",
+        "en": "previous"
+      },
+      {
+        "es": "probable",
+        "en": "probable"
+      },
+      {
+        "es": "profundo",
+        "en": "deep"
+      },
+      {
+        "es": "rápido",
+        "en": "fast"
+      },
+      {
+        "es": "reciente",
+        "en": "recent"
+      },
+      {
+        "es": "rico",
+        "en": "rich, tasty"
+      },
+      {
+        "es": "ruidoso",
+        "en": "noisy"
+      },
+      {
+        "es": "seco",
+        "en": "dry"
+      },
+      {
+        "es": "seguro",
+        "en": "safe, sure"
+      },
+      {
+        "es": "sencillo",
+        "en": "simple"
+      },
+      {
+        "es": "silencioso",
+        "en": "silent, quiet"
+      },
+      {
+        "es": "similar",
+        "en": "similar"
+      },
+      {
+        "es": "simple",
+        "en": "simple"
+      },
+      {
+        "es": "solitario",
+        "en": "lonely, solitary"
+      },
+      {
+        "es": "solo",
+        "en": "alone, only"
+      },
+      {
+        "es": "suave",
+        "en": "soft, smooth"
+      },
+      {
+        "es": "tímido",
+        "en": "shy"
+      },
+      {
+        "es": "típico",
+        "en": "typical"
+      },
+      {
+        "es": "tonto",
+        "en": "silly, stupid"
+      },
+      {
+        "es": "tradicional",
+        "en": "traditional"
+      },
+      {
+        "es": "útil",
+        "en": "useful"
+      },
+      {
+        "es": "vacante",
+        "en": "vacant"
+      },
+      {
+        "es": "vacío",
+        "en": "empty"
+      },
+      {
+        "es": "valioso",
+        "en": "valuable"
+      },
+      {
+        "es": "verdadero",
+        "en": "true, real"
+      },
+      {
+        "es": "viejo",
+        "en": "old"
+      }
+    ]
+  },
+  "Adverbios y preposiciones comunes (Common Adverbs and Prepositions)": {
+    "Adverbios y preposiciones comunes": [
+      {
+        "es": "a",
+        "en": "to, at"
+      },
+      {
+        "es": "afuera",
+        "en": "outside"
+      },
+      {
+        "es": "al lado de",
+        "en": "next to"
+      },
+      {
+        "es": "allí/allá",
+        "en": "there"
+      },
+      {
+        "es": "alrededor de",
+        "en": "around"
+      },
+      {
+        "es": "aquí/acá",
+        "en": "here"
+      },
+      {
+        "es": "bajo",
+        "en": "under"
+      },
+      {
+        "es": "con",
+        "en": "with"
+      },
+      {
+        "es": "de",
+        "en": "of, from"
+      },
+      {
+        "es": "debajo de",
+        "en": "under, below"
+      },
+      {
+        "es": "dentro de",
+        "en": "inside"
+      },
+      {
+        "es": "desde",
+        "en": "since, from"
+      },
+      {
+        "es": "detrás de",
+        "en": "behind"
+      },
+      {
+        "es": "en",
+        "en": "in, on"
+      },
+      {
+        "es": "en algún lugar / en algún sitio",
+        "en": "somewhere"
+      },
+      {
+        "es": "en lugar de / en vez de",
+        "en": "instead of"
+      },
+      {
+        "es": "encima de",
+        "en": "on top of"
+      },
+      {
+        "es": "entre",
+        "en": "between"
+      },
+      {
+        "es": "fuera",
+        "en": "outside"
+      },
+      {
+        "es": "hacia",
+        "en": "towards"
+      },
+      {
+        "es": "junto a",
+        "en": "next to"
+      },
+      {
+        "es": "para",
+        "en": "for, in order to"
+      },
+      {
+        "es": "por",
+        "en": "for, by, through"
+      },
+      {
+        "es": "sin",
+        "en": "without"
+      },
+      {
+        "es": "sobre",
+        "en": "on, about"
+      }
+    ],
+    "Posibilidad": [
+      {
+        "es": "ciertamente",
+        "en": "certainly"
+      },
+      {
+        "es": "definitivamente",
+        "en": "definitely"
+      },
+      {
+        "es": "probablemente",
+        "en": "probably"
+      },
+      {
+        "es": "quizá, quizás",
+        "en": "maybe, perhaps"
+      }
+    ],
+    "Frecuencia": [
+      {
+        "es": "a menudo",
+        "en": "often"
+      },
+      {
+        "es": "cada día / todos los días",
+        "en": "every day"
+      },
+      {
+        "es": "diario/diariamente",
+        "en": "daily"
+      },
+      {
+        "es": "normalmente",
+        "en": "normally"
+      },
+      {
+        "es": "nunca",
+        "en": "never"
+      },
+      {
+        "es": "raramente / rara vez",
+        "en": "rarely"
+      },
+      {
+        "es": "siempre",
+        "en": "always"
+      },
+      {
+        "es": "solo/solamente",
+        "en": "only"
+      }
+    ],
+    "Modo": [
+      {
+        "es": "bien",
+        "en": "well"
+      },
+      {
+        "es": "exactamente",
+        "en": "exactly"
+      },
+      {
+        "es": "despacio",
+        "en": "slowly"
+      },
+      {
+        "es": "lentamente/lento",
+        "en": "slowly"
+      },
+      {
+        "es": "mal",
+        "en": "badly"
+      },
+      {
+        "es": "rápidamente/rápido",
+        "en": "quickly"
+      }
+    ],
+    "Énfasis": [
+      {
+        "es": "especialmente",
+        "en": "especially"
+      },
+      {
+        "es": "realmente",
+        "en": "really"
+      },
+      {
+        "es": "verdaderamente",
+        "en": "truly"
+      }
+    ],
+    "Calificativos": [
+      {
+        "es": "bastante",
+        "en": "quite, enough"
+      },
+      {
+        "es": "demasiado (poco)",
+        "en": "too much (too little)"
+      },
+      {
+        "es": "insuficiente",
+        "en": "insufficient"
+      },
+      {
+        "es": "montón, un montón",
+        "en": "loads, a lot"
+      },
+      {
+        "es": "mucho",
+        "en": "a lot"
+      },
+      {
+        "es": "muy",
+        "en": "very"
+      },
+      {
+        "es": "poco",
+        "en": "little"
+      },
+      {
+        "es": "solo/solamente",
+        "en": "only"
+      },
+      {
+        "es": "tan",
+        "en": "so"
+      },
+      {
+        "es": "todo",
+        "en": "all, everything"
+      }
+    ]
+  },
+  "Los números (Numbers)": {
+    "Los números cardinales": [
+      {
+        "es": "cero",
+        "en": "zero"
+      },
+      {
+        "es": "uno",
+        "en": "one"
+      },
+      {
+        "es": "dos",
+        "en": "two"
+      },
+      {
+        "es": "tres",
+        "en": "three"
+      },
+      {
+        "es": "cuatro",
+        "en": "four"
+      },
+      {
+        "es": "cinco",
+        "en": "five"
+      },
+      {
+        "es": "seis",
+        "en": "six"
+      },
+      {
+        "es": "siete",
+        "en": "seven"
+      },
+      {
+        "es": "ocho",
+        "en": "eight"
+      },
+      {
+        "es": "nueve",
+        "en": "nine"
+      },
+      {
+        "es": "diez",
+        "en": "ten"
+      },
+      {
+        "es": "once",
+        "en": "eleven"
+      },
+      {
+        "es": "doce",
+        "en": "twelve"
+      },
+      {
+        "es": "trece",
+        "en": "thirteen"
+      },
+      {
+        "es": "catorce",
+        "en": "fourteen"
+      },
+      {
+        "es": "quince",
+        "en": "fifteen"
+      },
+      {
+        "es": "dieciséis",
+        "en": "sixteen"
+      },
+      {
+        "es": "diecisiete",
+        "en": "seventeen"
+      },
+      {
+        "es": "dieciocho",
+        "en": "eighteen"
+      },
+      {
+        "es": "diecinueve",
+        "en": "nineteen"
+      },
+      {
+        "es": "veinte",
+        "en": "twenty"
+      },
+      {
+        "es": "veintiuno",
+        "en": "twenty-one"
+      },
+      {
+        "es": "veintidós",
+        "en": "twenty-two"
+      },
+      {
+        "es": "treinta",
+        "en": "thirty"
+      },
+      {
+        "es": "cuarenta",
+        "en": "forty"
+      },
+      {
+        "es": "cincuenta",
+        "en": "fifty"
+      },
+      {
+        "es": "sesenta",
+        "en": "sixty"
+      },
+      {
+        "es": "setenta",
+        "en": "seventy"
+      },
+      {
+        "es": "ochenta",
+        "en": "eighty"
+      },
+      {
+        "es": "noventa",
+        "en": "ninety"
+      },
+      {
+        "es": "cien / ciento",
+        "en": "one hundred"
+      },
+      {
+        "es": "doscientos",
+        "en": "two hundred"
+      },
+      {
+        "es": "quinientos",
+        "en": "five hundred"
+      },
+      {
+        "es": "mil",
+        "en": "one thousand"
+      },
+      {
+        "es": "un millón",
+        "en": "one million"
+      }
+    ],
+    "Los números ordinales": [
+      {
+        "es": "primero/a",
+        "en": "first"
+      },
+      {
+        "es": "segundo/a",
+        "en": "second"
+      },
+      {
+        "es": "tercero/a",
+        "en": "third"
+      },
+      {
+        "es": "cuarto/a",
+        "en": "fourth"
+      },
+      {
+        "es": "quinto/a",
+        "en": "fifth"
+      },
+      {
+        "es": "sexto/a",
+        "en": "sixth"
+      },
+      {
+        "es": "séptimo/a",
+        "en": "seventh"
+      },
+      {
+        "es": "octavo/a",
+        "en": "eighth"
+      },
+      {
+        "es": "noveno/a",
+        "en": "ninth"
+      },
+      {
+        "es": "décimo/a",
+        "en": "tenth"
+      }
+    ],
+    "Las fracciones": [
+      {
+        "es": "medio / la mitad",
+        "en": "a half"
+      },
+      {
+        "es": "un tercio",
+        "en": "a third"
+      },
+      {
+        "es": "un cuarto",
+        "en": "a quarter"
+      },
+      {
+        "es": "dos tercios",
+        "en": "two thirds"
+      },
+      {
+        "es": "tres cuartos",
+        "en": "three quarters"
+      }
+    ],
+    "Otro vocabulario numérico": [
+      {
+        "es": "algún/alguno",
+        "en": "some, any"
+      },
+      {
+        "es": "alrededor de",
+        "en": "around, about"
+      },
+      {
+        "es": "ambos",
+        "en": "both"
+      },
+      {
+        "es": "aproximadamente",
+        "en": "approximately"
+      },
+      {
+        "es": "cada",
+        "en": "each"
+      },
+      {
+        "es": "cantidad (f.)",
+        "en": "quantity"
+      },
+      {
+        "es": "casi",
+        "en": "almost"
+      },
+      {
+        "es": "cuánto",
+        "en": "how much"
+      },
+      {
+        "es": "doble",
+        "en": "double"
+      },
+      {
+        "es": "más",
+        "en": "more"
+      },
+      {
+        "es": "más o menos",
+        "en": "more or less"
+      },
+      {
+        "es": "mayoría (f.), máximo (m.), el mayor número",
+        "en": "majority, maximum, the greatest number"
+      },
+      {
+        "es": "menos",
+        "en": "less"
+      },
+      {
+        "es": "minoría (f.)",
+        "en": "minority"
+      },
+      {
+        "es": "nada",
+        "en": "nothing"
+      },
+      {
+        "es": "número (m.)",
+        "en": "number"
+      },
+      {
+        "es": "poco",
+        "en": "little"
+      },
+      {
+        "es": "sobre",
+        "en": "about, on"
+      },
+      {
+        "es": "suficiente",
+        "en": "enough"
+      },
+      {
+        "es": "tanto… como…",
+        "en": "as much as"
+      },
+      {
+        "es": "todo",
+        "en": "all"
+      },
+      {
+        "es": "total (m.)",
+        "en": "total"
+      },
+      {
+        "es": "único, el único",
+        "en": "unique, the only one"
+      },
+      {
+        "es": "varios",
+        "en": "several"
+      },
+      {
+        "es": "vez (f.), una vez, dos veces, tres veces",
+        "en": "time, once, twice, three times"
+      }
+    ]
+  },
+  "A. Actividades diarias (Everyday Activities)": {
+    "Las expresiones de tiempo": [
+      {
+        "es": "(a) la una / (a) las dos",
+        "en": "at one o'clock / at two o'clock"
+      },
+      {
+        "es": "a veces",
+        "en": "sometimes"
+      },
+      {
+        "es": "al fin, por fin, finalmente",
+        "en": "finally, at last"
+      },
+      {
+        "es": "antes",
+        "en": "before"
+      },
+      {
+        "es": "aún",
+        "en": "still, yet"
+      },
+      {
+        "es": "cada día/semana/mes",
+        "en": "every day/week/month"
+      },
+      {
+        "es": "cuando",
+        "en": "when"
+      },
+      {
+        "es": "de repente",
+        "en": "suddenly"
+      },
+      {
+        "es": "de vez en cuando",
+        "en": "from time to time"
+      },
+      {
+        "es": "desde / desde que",
+        "en": "since"
+      },
+      {
+        "es": "después",
+        "en": "after"
+      },
+      {
+        "es": "durante, mientras",
+        "en": "during, while"
+      },
+      {
+        "es": "entonces",
+        "en": "then"
+      },
+      {
+        "es": "hasta",
+        "en": "until"
+      },
+      {
+        "es": "inmediato, inmediatamente",
+        "en": "immediate, immediately"
+      },
+      {
+        "es": "luego",
+        "en": "then, later"
+      },
+      {
+        "es": "mientras (tanto)",
+        "en": "meanwhile"
+      },
+      {
+        "es": "momento (m.)",
+        "en": "moment"
+      },
+      {
+        "es": "nunca",
+        "en": "never"
+      },
+      {
+        "es": "otra vez / de nuevo",
+        "en": "again"
+      },
+      {
+        "es": "primero / en primer lugar",
+        "en": "first, firstly"
+      },
+      {
+        "es": "pronto",
+        "en": "soon"
+      },
+      {
+        "es": "reloj (m.)",
+        "en": "clock, watch"
+      },
+      {
+        "es": "semana (f.), la semana proxima, la semana que viene, la semana siguiente, la semana pasada",
+        "en": "week, next week, the following week, last week"
+      },
+      {
+        "es": "siempre",
+        "en": "always"
+      },
+      {
+        "es": "siguiente (m.)",
+        "en": "next, following"
+      },
+      {
+        "es": "tarde, más tarde",
+        "en": "late, later"
+      },
+      {
+        "es": "temprano",
+        "en": "early"
+      },
+      {
+        "es": "turno (m.), mi/tu turno",
+        "en": "turn, my/your turn"
+      },
+      {
+        "es": "último",
+        "en": "last"
+      }
+    ],
+    "Las expresiones de tiempo – Decir la hora": [
+      {
+        "es": "hora (f.)",
+        "en": "hour, time"
+      },
+      {
+        "es": "(son) las siete y media / (son) las siete menos cuarto / (son) las siete y cuarto",
+        "en": "it's half past seven / quarter to seven / quarter past seven"
+      },
+      {
+        "es": "media hora",
+        "en": "half an hour"
+      },
+      {
+        "es": "medianoche (f.)",
+        "en": "midnight"
+      },
+      {
+        "es": "mediodía (m.)",
+        "en": "midday"
+      },
+      {
+        "es": "minuto (m.)",
+        "en": "minute"
+      },
+      {
+        "es": "segundo (m.)",
+        "en": "second"
+      },
+      {
+        "es": "un cuarto de hora",
+        "en": "a quarter of an hour"
+      }
+    ],
+    "Las expresiones de tiempo – Los días": [
+      {
+        "es": "anteayer",
+        "en": "the day before yesterday"
+      },
+      {
+        "es": "ayer",
+        "en": "yesterday"
+      },
+      {
+        "es": "día (m.)",
+        "en": "day"
+      },
+      {
+        "es": "hoy",
+        "en": "today"
+      },
+      {
+        "es": "mañana, por la mañana",
+        "en": "tomorrow, in the morning"
+      },
+      {
+        "es": "noche, por la noche",
+        "en": "night, at night"
+      },
+      {
+        "es": "tarde, por la tarde",
+        "en": "afternoon, in the afternoon"
+      }
+    ],
+    "Las expresiones de tiempo – Los días de la semana": [
+      {
+        "es": "lunes (m.)",
+        "en": "Monday"
+      },
+      {
+        "es": "martes (m.)",
+        "en": "Tuesday"
+      },
+      {
+        "es": "miércoles (m.)",
+        "en": "Wednesday"
+      },
+      {
+        "es": "jueves (m.)",
+        "en": "Thursday"
+      },
+      {
+        "es": "viernes (m.)",
+        "en": "Friday"
+      },
+      {
+        "es": "sábado (m.)",
+        "en": "Saturday"
+      },
+      {
+        "es": "domingo (m.)",
+        "en": "Sunday"
+      },
+      {
+        "es": "fin de semana (m.)",
+        "en": "weekend"
+      }
+    ],
+    "Las expresiones de tiempo – Los meses del año": [
+      {
+        "es": "enero (m.)",
+        "en": "January"
+      },
+      {
+        "es": "febrero (m.)",
+        "en": "February"
+      },
+      {
+        "es": "marzo (m.)",
+        "en": "March"
+      },
+      {
+        "es": "abril (m.)",
+        "en": "April"
+      },
+      {
+        "es": "mayo (m.)",
+        "en": "May"
+      },
+      {
+        "es": "junio (m.)",
+        "en": "June"
+      },
+      {
+        "es": "julio (m.)",
+        "en": "July"
+      },
+      {
+        "es": "agosto (m.)",
+        "en": "August"
+      },
+      {
+        "es": "septiembre (m.)",
+        "en": "September"
+      },
+      {
+        "es": "octubre (m.)",
+        "en": "October"
+      },
+      {
+        "es": "noviembre (m.)",
+        "en": "November"
+      },
+      {
+        "es": "diciembre (m.)",
+        "en": "December"
+      },
+      {
+        "es": "año (m.), anual, anualmente / cada año",
+        "en": "year, annual, annually / every year"
+      },
+      {
+        "es": "fecha (f.)",
+        "en": "date"
+      }
+    ],
+    "Las expresiones de tiempo – Las estaciones": [
+      {
+        "es": "primavera (f.)",
+        "en": "spring"
+      },
+      {
+        "es": "verano (m.)",
+        "en": "summer"
+      },
+      {
+        "es": "otoño (m.)",
+        "en": "autumn"
+      },
+      {
+        "es": "invierno (m.)",
+        "en": "winter"
+      },
+      {
+        "es": "estaciones (f.pl.)",
+        "en": "seasons"
+      }
+    ],
+    "La comida y la bebida – Las comidas": [
+      {
+        "es": "almuerzo (m.)",
+        "en": "lunch"
+      },
+      {
+        "es": "aperitivo (m.)",
+        "en": "appetiser, snack"
+      },
+      {
+        "es": "barbacoa (f.)",
+        "en": "barbecue"
+      },
+      {
+        "es": "cena (f.)",
+        "en": "dinner"
+      },
+      {
+        "es": "comida (f.) (vegetariana, vegana)",
+        "en": "food, meal (vegetarian, vegan)"
+      },
+      {
+        "es": "desayuno (m.)",
+        "en": "breakfast"
+      },
+      {
+        "es": "dieta (f.)",
+        "en": "diet"
+      },
+      {
+        "es": "picnic (m.)",
+        "en": "picnic"
+      },
+      {
+        "es": "plato principal (m.), segundo plato (m.)",
+        "en": "main course, second course"
+      },
+      {
+        "es": "postre (m.)",
+        "en": "dessert"
+      }
+    ],
+    "La comida y la bebida – Las frutas y las verduras": [
+      {
+        "es": "albaricoque (m.)",
+        "en": "apricot"
+      },
+      {
+        "es": "banana (f.)",
+        "en": "banana"
+      },
+      {
+        "es": "berenjena (f.)",
+        "en": "aubergine"
+      },
+      {
+        "es": "cebolla (f.)",
+        "en": "onion"
+      },
+      {
+        "es": "cereza (f.)",
+        "en": "cherry"
+      },
+      {
+        "es": "champiñón (m.)",
+        "en": "mushroom"
+      },
+      {
+        "es": "ciruela (f.)",
+        "en": "plum"
+      },
+      {
+        "es": "coco (m.)",
+        "en": "coconut"
+      },
+      {
+        "es": "col (f.)",
+        "en": "cabbage"
+      },
+      {
+        "es": "coliflor (f.)",
+        "en": "cauliflower"
+      },
+      {
+        "es": "frambuesa (f.)",
+        "en": "raspberry"
+      },
+      {
+        "es": "fresa (f.)",
+        "en": "strawberry"
+      },
+      {
+        "es": "fruta (f.)",
+        "en": "fruit"
+      },
+      {
+        "es": "lechuga (f.)",
+        "en": "lettuce"
+      },
+      {
+        "es": "limón (m.)",
+        "en": "lemon"
+      },
+      {
+        "es": "mango (m.)",
+        "en": "mango"
+      },
+      {
+        "es": "manzana (f.)",
+        "en": "apple"
+      },
+      {
+        "es": "melocotón (m.)",
+        "en": "peach"
+      },
+      {
+        "es": "melón (m.)",
+        "en": "melon"
+      },
+      {
+        "es": "naranja (f.)",
+        "en": "orange"
+      },
+      {
+        "es": "patata (f.)",
+        "en": "potato"
+      },
+      {
+        "es": "pepino (m.)",
+        "en": "cucumber"
+      },
+      {
+        "es": "pera (f.)",
+        "en": "pear"
+      },
+      {
+        "es": "pimiento (m.)",
+        "en": "pepper"
+      },
+      {
+        "es": "piña (f.)",
+        "en": "pineapple"
+      },
+      {
+        "es": "plátano (m.)",
+        "en": "banana"
+      },
+      {
+        "es": "sandía (f.)",
+        "en": "watermelon"
+      },
+      {
+        "es": "tomate (m.)",
+        "en": "tomato"
+      },
+      {
+        "es": "uvas (f.pl.)",
+        "en": "grapes"
+      },
+      {
+        "es": "verduras (f.pl.)",
+        "en": "vegetables"
+      },
+      {
+        "es": "zanahoria (f.)",
+        "en": "carrot"
+      }
+    ],
+    "La comida y la bebida – La carne, el pescado y el marisco": [
+      {
+        "es": "carne (f.)",
+        "en": "meat"
+      },
+      {
+        "es": "cerdo (m.)",
+        "en": "pork"
+      },
+      {
+        "es": "cordero (m.)",
+        "en": "lamb"
+      },
+      {
+        "es": "hamburguesa (f.)",
+        "en": "hamburger"
+      },
+      {
+        "es": "jamón (m.)",
+        "en": "ham"
+      },
+      {
+        "es": "marisco (m.)",
+        "en": "seafood"
+      },
+      {
+        "es": "pescado (m.)",
+        "en": "fish"
+      },
+      {
+        "es": "pollo (m.)",
+        "en": "chicken"
+      },
+      {
+        "es": "salchicha (f.)",
+        "en": "sausage"
+      },
+      {
+        "es": "ternera (f.)",
+        "en": "beef, veal"
+      }
+    ],
+    "La comida y la bebida – Otras comidas": [
+      {
+        "es": "aceite (m.)",
+        "en": "oil"
+      },
+      {
+        "es": "ajo (m.)",
+        "en": "garlic"
+      },
+      {
+        "es": "arroz (m.)",
+        "en": "rice"
+      },
+      {
+        "es": "azúcar (m.)",
+        "en": "sugar"
+      },
+      {
+        "es": "harina (f.)",
+        "en": "flour"
+      },
+      {
+        "es": "helado (m.)",
+        "en": "ice cream"
+      },
+      {
+        "es": "huevo (m.)",
+        "en": "egg"
+      },
+      {
+        "es": "mantequilla (f.)",
+        "en": "butter"
+      },
+      {
+        "es": "mermelada (f.)",
+        "en": "jam"
+      },
+      {
+        "es": "nuez (f.)",
+        "en": "nut, walnut"
+      },
+      {
+        "es": "pan (m.)",
+        "en": "bread"
+      },
+      {
+        "es": "pasta (f.)",
+        "en": "pasta"
+      },
+      {
+        "es": "pimienta (f.)",
+        "en": "pepper (spice)"
+      },
+      {
+        "es": "queso (m.)",
+        "en": "cheese"
+      },
+      {
+        "es": "sal (f.)",
+        "en": "salt"
+      },
+      {
+        "es": "soja/soya (f.)",
+        "en": "soy"
+      },
+      {
+        "es": "tofu (m.)",
+        "en": "tofu"
+      }
+    ],
+    "La comida y la bebida – Los picoteos": [
+      {
+        "es": "bocadillo (m.)",
+        "en": "sandwich"
+      },
+      {
+        "es": "chocolate (m.)",
+        "en": "chocolate"
+      },
+      {
+        "es": "chucherías (f.pl.) / caramelos (m.pl.)",
+        "en": "sweets"
+      },
+      {
+        "es": "dulces (m.pl.)",
+        "en": "sweets"
+      },
+      {
+        "es": "pastel (m.)",
+        "en": "cake"
+      },
+      {
+        "es": "patatas fritas (f.pl.)",
+        "en": "crisps, chips"
+      },
+      {
+        "es": "pizza (f.)",
+        "en": "pizza"
+      },
+      {
+        "es": "sopa (f.)",
+        "en": "soup"
+      },
+      {
+        "es": "tarta (f.)",
+        "en": "cake, tart"
+      },
+      {
+        "es": "tostada (f.)",
+        "en": "toast"
+      },
+      {
+        "es": "yogur (m.)",
+        "en": "yoghurt"
+      }
+    ],
+    "La comida y la bebida – Las bebidas": [
+      {
+        "es": "agua (f.) (mineral, con gas, sin gas)",
+        "en": "water (mineral, sparkling, still)"
+      },
+      {
+        "es": "bebida (f.)",
+        "en": "drink"
+      },
+      {
+        "es": "café (m.)",
+        "en": "coffee"
+      },
+      {
+        "es": "hielo (m.)",
+        "en": "ice"
+      },
+      {
+        "es": "leche (f.)",
+        "en": "milk"
+      },
+      {
+        "es": "limonada (f.)",
+        "en": "lemonade"
+      },
+      {
+        "es": "refresco (m.)",
+        "en": "soft drink"
+      },
+      {
+        "es": "té (m.)",
+        "en": "tea"
+      },
+      {
+        "es": "zumo (m.)",
+        "en": "juice"
+      }
+    ],
+    "La comida y la bebida – Verbos y expresiones": [
+      {
+        "es": "almorzar / tomar el almuerzo",
+        "en": "to have lunch"
+      },
+      {
+        "es": "beber, tomar una bebida",
+        "en": "to drink, have a drink"
+      },
+      {
+        "es": "cenar / tomar la cena",
+        "en": "to have dinner"
+      },
+      {
+        "es": "cortar",
+        "en": "to cut"
+      },
+      {
+        "es": "comer",
+        "en": "to eat"
+      },
+      {
+        "es": "desayunar / tomar el desayuno",
+        "en": "to have breakfast"
+      },
+      {
+        "es": "preparar (la comida)",
+        "en": "to prepare (food)"
+      },
+      {
+        "es": "tener hambre",
+        "en": "to be hungry"
+      },
+      {
+        "es": "tener sed",
+        "en": "to be thirsty"
+      }
+    ],
+    "La comida y la bebida – Adjetivos": [
+      {
+        "es": "amargo",
+        "en": "bitter"
+      },
+      {
+        "es": "cocinado",
+        "en": "cooked"
+      },
+      {
+        "es": "crudo",
+        "en": "raw"
+      },
+      {
+        "es": "dulce",
+        "en": "sweet"
+      },
+      {
+        "es": "fresco",
+        "en": "fresh"
+      },
+      {
+        "es": "picante",
+        "en": "spicy"
+      },
+      {
+        "es": "sabroso",
+        "en": "tasty"
+      },
+      {
+        "es": "salado",
+        "en": "salty"
+      }
+    ],
+    "La comida y la bebida – La cubertería y los utensilios": [
+      {
+        "es": "bol (m.)",
+        "en": "bowl"
+      },
+      {
+        "es": "copa (f.)",
+        "en": "glass (wine)"
+      },
+      {
+        "es": "cuchara (f.)",
+        "en": "spoon"
+      },
+      {
+        "es": "cuchillo (m.)",
+        "en": "knife"
+      },
+      {
+        "es": "plato (m.)",
+        "en": "plate"
+      },
+      {
+        "es": "sartén (f.)",
+        "en": "frying pan"
+      },
+      {
+        "es": "tenedor (m.)",
+        "en": "fork"
+      },
+      {
+        "es": "vaso (m.)",
+        "en": "glass"
+      }
+    ],
+    "El cuerpo y la salud – Las partes del cuerpo": [
+      {
+        "es": "boca (f.)",
+        "en": "mouth"
+      },
+      {
+        "es": "brazo (m.)",
+        "en": "arm"
+      },
+      {
+        "es": "cabeza (f.)",
+        "en": "head"
+      },
+      {
+        "es": "cara (f.)",
+        "en": "face"
+      },
+      {
+        "es": "corazón (m.)",
+        "en": "heart"
+      },
+      {
+        "es": "cuerpo (m.)",
+        "en": "body"
+      },
+      {
+        "es": "cuello (m.)",
+        "en": "neck"
+      },
+      {
+        "es": "dedo del pie (m.)",
+        "en": "toe"
+      },
+      {
+        "es": "dedo de la mano (m.)",
+        "en": "finger"
+      },
+      {
+        "es": "diente (m.)",
+        "en": "tooth"
+      },
+      {
+        "es": "espalda (f.)",
+        "en": "back"
+      },
+      {
+        "es": "estómago (m.)",
+        "en": "stomach"
+      },
+      {
+        "es": "garganta (f.)",
+        "en": "throat"
+      },
+      {
+        "es": "hombro (m.)",
+        "en": "shoulder"
+      },
+      {
+        "es": "hueso (m.)",
+        "en": "bone"
+      },
+      {
+        "es": "mano (f.)",
+        "en": "hand"
+      },
+      {
+        "es": "nariz (f.)",
+        "en": "nose"
+      },
+      {
+        "es": "ojo (m.)",
+        "en": "eye"
+      },
+      {
+        "es": "oreja (f.)",
+        "en": "ear"
+      },
+      {
+        "es": "pecho (m.)",
+        "en": "chest"
+      },
+      {
+        "es": "pelo (m.)",
+        "en": "hair"
+      },
+      {
+        "es": "pie (izquierdo/derecho) (m.)",
+        "en": "foot (left/right)"
+      },
+      {
+        "es": "piel (f.)",
+        "en": "skin"
+      },
+      {
+        "es": "pierna (f.)",
+        "en": "leg"
+      },
+      {
+        "es": "rodilla (f.)",
+        "en": "knee"
+      },
+      {
+        "es": "tobillo (m.)",
+        "en": "ankle"
+      }
+    ],
+    "Las partes del cuerpo – Verbos y expresiones": [
+      {
+        "es": "escuchar",
+        "en": "to listen"
+      },
+      {
+        "es": "oír",
+        "en": "to hear"
+      },
+      {
+        "es": "oler",
+        "en": "to smell"
+      },
+      {
+        "es": "probar",
+        "en": "to taste, try"
+      },
+      {
+        "es": "respirar (hondo)",
+        "en": "to breathe (deeply)"
+      },
+      {
+        "es": "saborear",
+        "en": "to savour"
+      },
+      {
+        "es": "sentir",
+        "en": "to feel"
+      },
+      {
+        "es": "tocar",
+        "en": "to touch"
+      },
+      {
+        "es": "tomar(se) un respiro",
+        "en": "to take a breath/break"
+      },
+      {
+        "es": "ver",
+        "en": "to see"
+      }
+    ],
+    "El cuerpo y la salud – La salud": [
+      {
+        "es": "cita médica (f.)",
+        "en": "medical appointment"
+      },
+      {
+        "es": "dentista (m./f.)",
+        "en": "dentist"
+      },
+      {
+        "es": "doctor (m.), doctora (f.)",
+        "en": "doctor"
+      },
+      {
+        "es": "enfermero (m.), enfermera (f.)",
+        "en": "nurse"
+      },
+      {
+        "es": "farmacia (f.)",
+        "en": "pharmacy"
+      },
+      {
+        "es": "medicamento (m.), medicina (f.)",
+        "en": "medicine"
+      },
+      {
+        "es": "médico (m.), médica (f.)",
+        "en": "doctor"
+      },
+      {
+        "es": "tirita (f.)",
+        "en": "plaster"
+      }
+    ],
+    "La salud – Verbos y expresiones": [
+      {
+        "es": "caerse",
+        "en": "to fall"
+      },
+      {
+        "es": "cortarse (un dedo), tener un corte",
+        "en": "to cut oneself (a finger), to have a cut"
+      },
+      {
+        "es": "estar cansado",
+        "en": "to be tired"
+      },
+      {
+        "es": "estar enfermo, tener una enfermedad",
+        "en": "to be ill, to have an illness"
+      },
+      {
+        "es": "estar mareado, marearse",
+        "en": "to be/feel dizzy"
+      },
+      {
+        "es": "estar saludable / tener buena salud",
+        "en": "to be healthy"
+      },
+      {
+        "es": "hacer ejercicio",
+        "en": "to exercise"
+      },
+      {
+        "es": "hacerse daño",
+        "en": "to hurt oneself"
+      },
+      {
+        "es": "hacerse una herida/lesión",
+        "en": "to injure oneself"
+      },
+      {
+        "es": "ir al gimnasio",
+        "en": "to go to the gym"
+      },
+      {
+        "es": "limpiar",
+        "en": "to clean"
+      },
+      {
+        "es": "ponerse enfermo",
+        "en": "to become ill"
+      },
+      {
+        "es": "romper(se) (una pierna, un brazo)",
+        "en": "to break (a leg, an arm)"
+      },
+      {
+        "es": "sentirse bien",
+        "en": "to feel well"
+      },
+      {
+        "es": "sentirse enfermo",
+        "en": "to feel ill"
+      },
+      {
+        "es": "tener dolor de cabeza/estómago/muelas",
+        "en": "to have a headache/stomach ache/toothache"
+      },
+      {
+        "es": "tener fiebre",
+        "en": "to have a fever"
+      },
+      {
+        "es": "tener un resfriado/catarro",
+        "en": "to have a cold"
+      },
+      {
+        "es": "tener una alergia",
+        "en": "to have an allergy"
+      },
+      {
+        "es": "tumbarse",
+        "en": "to lie down"
+      }
+    ],
+    "Los viajes y los transportes": [
+      {
+        "es": "ambulancia (f.)",
+        "en": "ambulance"
+      },
+      {
+        "es": "andén (m.)",
+        "en": "platform"
+      },
+      {
+        "es": "autobús (m.)",
+        "en": "bus"
+      },
+      {
+        "es": "autocar (m.)",
+        "en": "coach"
+      },
+      {
+        "es": "avión (m.)",
+        "en": "plane"
+      },
+      {
+        "es": "barco (m.), barca (f.)",
+        "en": "boat, small boat"
+      },
+      {
+        "es": "bicicleta (f.), moto (f.), motocicleta (f.)",
+        "en": "bicycle, motorbike"
+      },
+      {
+        "es": "billete (de ida / de ida y vuelta) (m.)",
+        "en": "ticket (single/return)"
+      },
+      {
+        "es": "coche (m.)",
+        "en": "car"
+      },
+      {
+        "es": "conductor (m.), conductora (f.)",
+        "en": "driver"
+      },
+      {
+        "es": "equipaje (m.)",
+        "en": "luggage"
+      },
+      {
+        "es": "indicaciones (f.pl.)",
+        "en": "directions"
+      },
+      {
+        "es": "maleta (f.)",
+        "en": "suitcase"
+      },
+      {
+        "es": "mapa (m.)",
+        "en": "map"
+      },
+      {
+        "es": "muelle (m.)",
+        "en": "quay, dock"
+      },
+      {
+        "es": "oficina de información turística (f.) / oficina de turismo (f.)",
+        "en": "tourist information office"
+      },
+      {
+        "es": "parada de autobús (f.)",
+        "en": "bus stop"
+      },
+      {
+        "es": "pasajero (m.)",
+        "en": "passenger"
+      },
+      {
+        "es": "pasaporte (m.)",
+        "en": "passport"
+      },
+      {
+        "es": "retraso (m.), retrasado",
+        "en": "delay, delayed"
+      },
+      {
+        "es": "tarjeta (de crédito, débito) (f.)",
+        "en": "card (credit, debit)"
+      },
+      {
+        "es": "taxi (m.)",
+        "en": "taxi"
+      },
+      {
+        "es": "tranvía (m.)",
+        "en": "tram"
+      },
+      {
+        "es": "trayecto (m.)",
+        "en": "journey, route"
+      },
+      {
+        "es": "tren (m.)",
+        "en": "train"
+      },
+      {
+        "es": "turista (m./f.)",
+        "en": "tourist"
+      },
+      {
+        "es": "vuelo (m.)",
+        "en": "flight"
+      }
+    ],
+    "Los viajes y los transportes – Verbos y expresiones": [
+      {
+        "es": "andar",
+        "en": "to walk"
+      },
+      {
+        "es": "aparcar",
+        "en": "to park"
+      },
+      {
+        "es": "bajarse (de)",
+        "en": "to get off"
+      },
+      {
+        "es": "buscar",
+        "en": "to look for"
+      },
+      {
+        "es": "caminar",
+        "en": "to walk"
+      },
+      {
+        "es": "conducir",
+        "en": "to drive"
+      },
+      {
+        "es": "cruzar (la carretera / la calle)",
+        "en": "to cross (the road/street)"
+      },
+      {
+        "es": "estar perdido / perderse",
+        "en": "to be lost / get lost"
+      },
+      {
+        "es": "girar",
+        "en": "to turn"
+      },
+      {
+        "es": "ir de viaje",
+        "en": "to go on a trip"
+      },
+      {
+        "es": "irse",
+        "en": "to leave"
+      },
+      {
+        "es": "llegar (con retraso)",
+        "en": "to arrive (late)"
+      },
+      {
+        "es": "pasear / ir de paseo",
+        "en": "to go for a walk"
+      },
+      {
+        "es": "seguir/continuar (todo) recto",
+        "en": "to keep going straight on"
+      },
+      {
+        "es": "subirse (a)",
+        "en": "to get on"
+      },
+      {
+        "es": "tomar (el autobús/tren/avión)",
+        "en": "to take (the bus/train/plane)"
+      },
+      {
+        "es": "viajar (en autobús/tren/avión)",
+        "en": "to travel (by bus/train/plane)"
+      },
+      {
+        "es": "volar",
+        "en": "to fly"
+      },
+      {
+        "es": "volver",
+        "en": "to return"
+      }
+    ]
+  },
+  "B. Vida personal y social (Personal and Social Life)": {
+    "Los saludos y las frases de conversación": [
+      {
+        "es": "adiós",
+        "en": "goodbye"
+      },
+      {
+        "es": "buenos días / buenas tardes / buenas noches",
+        "en": "good morning / good afternoon / good night"
+      },
+      {
+        "es": "¿Cómo estás?",
+        "en": "How are you?"
+      },
+      {
+        "es": "encantado (de conocerte)",
+        "en": "pleased (to meet you)"
+      },
+      {
+        "es": "gracias",
+        "en": "thank you"
+      },
+      {
+        "es": "hasta luego/mañana",
+        "en": "see you later/tomorrow"
+      },
+      {
+        "es": "hola",
+        "en": "hello"
+      },
+      {
+        "es": "lo siento / perdón",
+        "en": "I'm sorry / excuse me"
+      },
+      {
+        "es": "¿Perdón?",
+        "en": "Pardon?"
+      },
+      {
+        "es": "por favor",
+        "en": "please"
+      },
+      {
+        "es": "¿Qué tal?",
+        "en": "How's it going?"
+      }
+    ],
+    "Las exclamaciones y las interjecciones": [
+      {
+        "es": "¡Bienvenido!",
+        "en": "Welcome!"
+      },
+      {
+        "es": "¡Qué bonito!",
+        "en": "How nice/pretty!"
+      },
+      {
+        "es": "¡Qué interesante!",
+        "en": "How interesting!"
+      },
+      {
+        "es": "¡Qué lástima!",
+        "en": "What a shame!"
+      },
+      {
+        "es": "¡Qué molesto!",
+        "en": "How annoying!"
+      },
+      {
+        "es": "¡Qué pena!",
+        "en": "What a pity!"
+      }
+    ],
+    "Las invitaciones": [
+      {
+        "es": "aceptar/rechazar una invitación",
+        "en": "to accept/decline an invitation"
+      },
+      {
+        "es": "invitar",
+        "en": "to invite"
+      },
+      {
+        "es": "¿Por qué no…?",
+        "en": "Why not...?"
+      },
+      {
+        "es": "¿Te gustaría / Quieres (ir al cine)?",
+        "en": "Would you like to / Do you want to (go to the cinema)?"
+      },
+      {
+        "es": "tener ganas de / apetecer",
+        "en": "to feel like"
+      }
+    ],
+    "La familia y las relaciones": [
+      {
+        "es": "abuelo (m.), abuela (f.), abuelos (m.pl.)",
+        "en": "grandfather, grandmother, grandparents"
+      },
+      {
+        "es": "adolescente (m./f.)",
+        "en": "teenager"
+      },
+      {
+        "es": "adopción (f.), adoptivo, adoptado",
+        "en": "adoption, adoptive, adopted"
+      },
+      {
+        "es": "amigo (m.), amiga (f.)",
+        "en": "friend"
+      },
+      {
+        "es": "ancianos (m.pl.)",
+        "en": "elderly people"
+      },
+      {
+        "es": "apellido (m.)",
+        "en": "surname"
+      },
+      {
+        "es": "bebé (m.)",
+        "en": "baby"
+      },
+      {
+        "es": "boda (f.)",
+        "en": "wedding"
+      },
+      {
+        "es": "casar(se), casado",
+        "en": "to get married, married"
+      },
+      {
+        "es": "chico (m.), chica (f.)",
+        "en": "boy, girl"
+      },
+      {
+        "es": "comprometido",
+        "en": "engaged"
+      },
+      {
+        "es": "divorciado",
+        "en": "divorced"
+      },
+      {
+        "es": "esposo/marido (m.), esposa/mujer (f.)",
+        "en": "husband, wife"
+      },
+      {
+        "es": "familia (f.)",
+        "en": "family"
+      },
+      {
+        "es": "gemelos (m.pl.), mellizos (m.pl.)",
+        "en": "twins"
+      },
+      {
+        "es": "gente (f.) / personas (f.pl.)",
+        "en": "people"
+      },
+      {
+        "es": "hermano (m.) (mayor/menor), hermana (f.) (mayor/menor)",
+        "en": "brother (older/younger), sister (older/younger)"
+      },
+      {
+        "es": "hijo (m.), hija (f.)",
+        "en": "son, daughter"
+      },
+      {
+        "es": "hombre (m.), mujer (f.)",
+        "en": "man, woman"
+      },
+      {
+        "es": "infancia (f.)",
+        "en": "childhood"
+      },
+      {
+        "es": "joven (m./f.)",
+        "en": "young person"
+      },
+      {
+        "es": "juventud (f.)",
+        "en": "youth"
+      },
+      {
+        "es": "madre (f.)",
+        "en": "mother"
+      },
+      {
+        "es": "matrimonio (m.)",
+        "en": "marriage"
+      },
+      {
+        "es": "nieto (m.), nieta (f.)",
+        "en": "grandson, granddaughter"
+      },
+      {
+        "es": "niño (m.), niña (f.), niños (m.pl.)",
+        "en": "boy, girl, children"
+      },
+      {
+        "es": "nombre (m.)",
+        "en": "name"
+      },
+      {
+        "es": "novio (m.), novia (f.)",
+        "en": "boyfriend, girlfriend"
+      },
+      {
+        "es": "padrastro (m.), madrastra (f.)",
+        "en": "stepfather, stepmother"
+      },
+      {
+        "es": "padre (m.)",
+        "en": "father"
+      },
+      {
+        "es": "padres (m.pl.)",
+        "en": "parents"
+      },
+      {
+        "es": "pareja (f.)",
+        "en": "partner, couple"
+      },
+      {
+        "es": "pariente (m.)",
+        "en": "relative"
+      },
+      {
+        "es": "primo (m.), prima (f.)",
+        "en": "cousin"
+      },
+      {
+        "es": "prometido (m.), prometida (f.)",
+        "en": "fiancé, fiancée"
+      },
+      {
+        "es": "señor (m.), señora (f.), señorita (f.)",
+        "en": "Mr, Mrs, Miss"
+      },
+      {
+        "es": "sobrino (m.), sobrina (f.)",
+        "en": "nephew, niece"
+      },
+      {
+        "es": "soltero",
+        "en": "single"
+      },
+      {
+        "es": "Sr, Sra, Srta",
+        "en": "Mr, Mrs, Miss"
+      },
+      {
+        "es": "tío (m.), tía (f.)",
+        "en": "uncle, aunt"
+      },
+      {
+        "es": "vecino (m.)",
+        "en": "neighbour"
+      }
+    ],
+    "La familia y las relaciones – Verbos y expresiones": [
+      {
+        "es": "adoptar",
+        "en": "to adopt"
+      },
+      {
+        "es": "crecer",
+        "en": "to grow up"
+      },
+      {
+        "es": "criar, (ser) criado",
+        "en": "to raise, (to be) raised"
+      },
+      {
+        "es": "deletrear",
+        "en": "to spell"
+      },
+      {
+        "es": "estar embarazada",
+        "en": "to be pregnant"
+      },
+      {
+        "es": "llamar, llamarse",
+        "en": "to call, to be called"
+      },
+      {
+        "es": "morir",
+        "en": "to die"
+      },
+      {
+        "es": "nacer",
+        "en": "to be born"
+      },
+      {
+        "es": "tener",
+        "en": "to have"
+      },
+      {
+        "es": "vivir",
+        "en": "to live"
+      }
+    ],
+    "Describir la apariencia física": [
+      {
+        "es": "alto",
+        "en": "tall"
+      },
+      {
+        "es": "altura (f.)",
+        "en": "height"
+      },
+      {
+        "es": "anciano",
+        "en": "elderly"
+      },
+      {
+        "es": "bajo",
+        "en": "short"
+      },
+      {
+        "es": "barba (f.)",
+        "en": "beard"
+      },
+      {
+        "es": "bigote (m.)",
+        "en": "moustache"
+      },
+      {
+        "es": "bonito",
+        "en": "pretty"
+      },
+      {
+        "es": "calvo",
+        "en": "bald"
+      },
+      {
+        "es": "color (m.)",
+        "en": "colour"
+      },
+      {
+        "es": "corto",
+        "en": "short"
+      },
+      {
+        "es": "delgado",
+        "en": "thin, slim"
+      },
+      {
+        "es": "edad (f.)",
+        "en": "age"
+      },
+      {
+        "es": "feo",
+        "en": "ugly"
+      },
+      {
+        "es": "(llevar) gafas",
+        "en": "to wear glasses"
+      },
+      {
+        "es": "gordo",
+        "en": "fat"
+      },
+      {
+        "es": "grueso",
+        "en": "thick, stout"
+      },
+      {
+        "es": "guapo",
+        "en": "good-looking"
+      },
+      {
+        "es": "joven",
+        "en": "young"
+      },
+      {
+        "es": "largo",
+        "en": "long"
+      },
+      {
+        "es": "liso",
+        "en": "straight (hair)"
+      },
+      {
+        "es": "mayor",
+        "en": "older"
+      },
+      {
+        "es": "ojos (m.pl.)",
+        "en": "eyes"
+      },
+      {
+        "es": "ondulado",
+        "en": "wavy"
+      },
+      {
+        "es": "oscuro",
+        "en": "dark"
+      },
+      {
+        "es": "pelo (m.)",
+        "en": "hair"
+      },
+      {
+        "es": "rizado",
+        "en": "curly"
+      },
+      {
+        "es": "rubio",
+        "en": "blonde"
+      },
+      {
+        "es": "sexo (m.), género (m.)",
+        "en": "sex, gender"
+      },
+      {
+        "es": "(llevar) sonotone (m.) / audífono (m.)",
+        "en": "to wear a hearing aid"
+      },
+      {
+        "es": "talla (f.)",
+        "en": "size"
+      },
+      {
+        "es": "viejo",
+        "en": "old"
+      },
+      {
+        "es": "voz (f.)",
+        "en": "voice"
+      }
+    ],
+    "Describir el carácter y el humor": [
+      {
+        "es": "aburrido",
+        "en": "bored, boring"
+      },
+      {
+        "es": "activo",
+        "en": "active"
+      },
+      {
+        "es": "agotado",
+        "en": "exhausted"
+      },
+      {
+        "es": "agradable",
+        "en": "pleasant"
+      },
+      {
+        "es": "alegre, alegría (f.)",
+        "en": "cheerful, joy"
+      },
+      {
+        "es": "ansioso, ansiedad (f.)",
+        "en": "anxious, anxiety"
+      },
+      {
+        "es": "asustado, susto (m.)",
+        "en": "scared, fright"
+      },
+      {
+        "es": "cariñoso, cariño (m.)",
+        "en": "affectionate, affection"
+      },
+      {
+        "es": "cobarde",
+        "en": "cowardly"
+      },
+      {
+        "es": "contento",
+        "en": "happy, content"
+      },
+      {
+        "es": "curioso",
+        "en": "curious"
+      },
+      {
+        "es": "decepcionado, decepción (f.)",
+        "en": "disappointed, disappointment"
+      },
+      {
+        "es": "desagradable",
+        "en": "unpleasant"
+      },
+      {
+        "es": "divertido",
+        "en": "fun, funny"
+      },
+      {
+        "es": "enfadado",
+        "en": "angry"
+      },
+      {
+        "es": "enojado",
+        "en": "angry"
+      },
+      {
+        "es": "entusiasmado, entusiasmo (m.)",
+        "en": "enthusiastic, enthusiasm"
+      },
+      {
+        "es": "estar de buen humor",
+        "en": "to be in a good mood"
+      },
+      {
+        "es": "estar de mal humor",
+        "en": "to be in a bad mood"
+      },
+      {
+        "es": "estúpido",
+        "en": "stupid"
+      },
+      {
+        "es": "famoso",
+        "en": "famous"
+      },
+      {
+        "es": "feliz",
+        "en": "happy"
+      },
+      {
+        "es": "generoso, generosidad (f.)",
+        "en": "generous, generosity"
+      },
+      {
+        "es": "goloso",
+        "en": "sweet-toothed"
+      },
+      {
+        "es": "gracioso",
+        "en": "funny"
+      },
+      {
+        "es": "hablador",
+        "en": "talkative"
+      },
+      {
+        "es": "impaciente, impaciencia (f.)",
+        "en": "impatient, impatience"
+      },
+      {
+        "es": "importante",
+        "en": "important"
+      },
+      {
+        "es": "infeliz",
+        "en": "unhappy"
+      },
+      {
+        "es": "insatisfecho",
+        "en": "dissatisfied"
+      },
+      {
+        "es": "inteligente",
+        "en": "intelligent"
+      },
+      {
+        "es": "interesante",
+        "en": "interesting"
+      },
+      {
+        "es": "irritado, irritación (f.)",
+        "en": "irritated, irritation"
+      },
+      {
+        "es": "loco",
+        "en": "crazy"
+      },
+      {
+        "es": "maleducado",
+        "en": "rude"
+      },
+      {
+        "es": "malo",
+        "en": "bad"
+      },
+      {
+        "es": "nervioso",
+        "en": "nervous"
+      },
+      {
+        "es": "optimista, optimismo (m.)",
+        "en": "optimistic, optimism"
+      },
+      {
+        "es": "paciente, paciencia (f.)",
+        "en": "patient, patience"
+      },
+      {
+        "es": "perezoso",
+        "en": "lazy"
+      },
+      {
+        "es": "pesimista, pesimismo (m.)",
+        "en": "pessimistic, pessimism"
+      },
+      {
+        "es": "pobre",
+        "en": "poor"
+      },
+      {
+        "es": "preocupado, preocupación (f.)",
+        "en": "worried, worry"
+      },
+      {
+        "es": "satisfecho",
+        "en": "satisfied"
+      },
+      {
+        "es": "seguro (de sí mismo), seguridad (f.)",
+        "en": "confident, confidence"
+      },
+      {
+        "es": "serio",
+        "en": "serious"
+      },
+      {
+        "es": "sorprendido, sorpresa (f.)",
+        "en": "surprised, surprise"
+      },
+      {
+        "es": "tacaño",
+        "en": "stingy"
+      },
+      {
+        "es": "trabajador",
+        "en": "hardworking"
+      },
+      {
+        "es": "tranquilo, tranquilidad (f.)",
+        "en": "calm, tranquility"
+      },
+      {
+        "es": "triste, tristeza (f.)",
+        "en": "sad, sadness"
+      },
+      {
+        "es": "vago",
+        "en": "lazy"
+      },
+      {
+        "es": "valiente",
+        "en": "brave"
+      }
+    ],
+    "Describir el carácter y el humor – Verbos y expresiones": [
+      {
+        "es": "abrazar",
+        "en": "to hug"
+      },
+      {
+        "es": "asustar",
+        "en": "to scare"
+      },
+      {
+        "es": "besar",
+        "en": "to kiss"
+      },
+      {
+        "es": "decepcionar",
+        "en": "to disappoint"
+      },
+      {
+        "es": "encantar",
+        "en": "to delight, love"
+      },
+      {
+        "es": "enfadarse",
+        "en": "to get angry"
+      },
+      {
+        "es": "entusiasmar",
+        "en": "to excite, enthuse"
+      },
+      {
+        "es": "gustar",
+        "en": "to like"
+      },
+      {
+        "es": "irritar(se)",
+        "en": "to irritate, get irritated"
+      },
+      {
+        "es": "llorar",
+        "en": "to cry"
+      },
+      {
+        "es": "molestarse",
+        "en": "to bother, be annoyed"
+      },
+      {
+        "es": "preocupar(se)",
+        "en": "to worry"
+      },
+      {
+        "es": "reaccionar",
+        "en": "to react"
+      },
+      {
+        "es": "reír",
+        "en": "to laugh"
+      },
+      {
+        "es": "sonreír",
+        "en": "to smile"
+      },
+      {
+        "es": "sorprender",
+        "en": "to surprise"
+      }
+    ],
+    "En casa – Las habitaciones y los muebles": [
+      {
+        "es": "balcón (m.)",
+        "en": "balcony"
+      },
+      {
+        "es": "comedor (m.)",
+        "en": "dining room"
+      },
+      {
+        "es": "entrada (f.)",
+        "en": "entrance"
+      },
+      {
+        "es": "escaleras (f.pl.)",
+        "en": "stairs"
+      },
+      {
+        "es": "estudio (m.)",
+        "en": "study"
+      },
+      {
+        "es": "garaje (m.)",
+        "en": "garage"
+      },
+      {
+        "es": "muro (m.)",
+        "en": "wall"
+      },
+      {
+        "es": "pared (f.)",
+        "en": "wall"
+      },
+      {
+        "es": "pasillo (m.)",
+        "en": "corridor"
+      },
+      {
+        "es": "puerta (f.)",
+        "en": "door"
+      },
+      {
+        "es": "recibidor (m.)",
+        "en": "hallway"
+      },
+      {
+        "es": "suelo (m.)",
+        "en": "floor"
+      },
+      {
+        "es": "techo (m.)",
+        "en": "ceiling, roof"
+      },
+      {
+        "es": "ventana (f.)",
+        "en": "window"
+      }
+    ],
+    "El cuarto de baño": [
+      {
+        "es": "baño (m.)",
+        "en": "bath, bathroom"
+      },
+      {
+        "es": "cepillo (de dientes / del pelo) (m.)",
+        "en": "brush (toothbrush/hairbrush)"
+      },
+      {
+        "es": "champú (m.)",
+        "en": "shampoo"
+      },
+      {
+        "es": "desodorante (m.)",
+        "en": "deodorant"
+      },
+      {
+        "es": "ducha (f.)",
+        "en": "shower"
+      },
+      {
+        "es": "espejo (m.)",
+        "en": "mirror"
+      },
+      {
+        "es": "gel de baño (m.)",
+        "en": "shower gel"
+      },
+      {
+        "es": "jabón (m.)",
+        "en": "soap"
+      },
+      {
+        "es": "maquillaje (m.)",
+        "en": "make-up"
+      },
+      {
+        "es": "pasta de dientes (f.)",
+        "en": "toothpaste"
+      },
+      {
+        "es": "peine (m.)",
+        "en": "comb"
+      },
+      {
+        "es": "toalla (f.)",
+        "en": "towel"
+      },
+      {
+        "es": "váter (m.)",
+        "en": "toilet"
+      }
+    ],
+    "El cuarto de baño – Verbos y expresiones": [
+      {
+        "es": "bañarse",
+        "en": "to bathe"
+      },
+      {
+        "es": "ducharse",
+        "en": "to shower"
+      },
+      {
+        "es": "lavarse (la cara, las manos, el pelo…)",
+        "en": "to wash (one's face, hands, hair...)"
+      },
+      {
+        "es": "lavarse/cepillarse los dientes",
+        "en": "to brush one's teeth"
+      },
+      {
+        "es": "maquillarse",
+        "en": "to put on make-up"
+      },
+      {
+        "es": "peinarse",
+        "en": "to comb one's hair"
+      }
+    ],
+    "El salón": [
+      {
+        "es": "alfombra (f.)",
+        "en": "rug, carpet"
+      },
+      {
+        "es": "cómoda (f.)",
+        "en": "chest of drawers"
+      },
+      {
+        "es": "cuadro (m.)",
+        "en": "picture"
+      },
+      {
+        "es": "estante (m.), estantería (f.)",
+        "en": "shelf, bookshelf"
+      },
+      {
+        "es": "mesa (f.)",
+        "en": "table"
+      },
+      {
+        "es": "salón (m.)",
+        "en": "living room"
+      },
+      {
+        "es": "silla (f.)",
+        "en": "chair"
+      },
+      {
+        "es": "sofá (m.)",
+        "en": "sofa"
+      }
+    ],
+    "La cocina": [
+      {
+        "es": "botella (f.)",
+        "en": "bottle"
+      },
+      {
+        "es": "caja (f.)",
+        "en": "box"
+      },
+      {
+        "es": "fregadero (m.)",
+        "en": "sink"
+      },
+      {
+        "es": "lata (f.)",
+        "en": "can"
+      },
+      {
+        "es": "mesa (f.)",
+        "en": "table"
+      }
+    ],
+    "La cocina – Verbos y expresiones": [
+      {
+        "es": "almorzar",
+        "en": "to have lunch"
+      },
+      {
+        "es": "asar (a la parrilla/barbacoa)",
+        "en": "to grill/barbecue"
+      },
+      {
+        "es": "calentar, recalentar",
+        "en": "to heat, reheat"
+      },
+      {
+        "es": "cenar",
+        "en": "to have dinner"
+      },
+      {
+        "es": "cocinar",
+        "en": "to cook"
+      },
+      {
+        "es": "comprar",
+        "en": "to buy"
+      },
+      {
+        "es": "congelar",
+        "en": "to freeze"
+      },
+      {
+        "es": "cortar",
+        "en": "to cut"
+      },
+      {
+        "es": "desayunar",
+        "en": "to have breakfast"
+      },
+      {
+        "es": "freír",
+        "en": "to fry"
+      },
+      {
+        "es": "hervir",
+        "en": "to boil"
+      },
+      {
+        "es": "lavar",
+        "en": "to wash"
+      },
+      {
+        "es": "limpiar",
+        "en": "to clean"
+      },
+      {
+        "es": "merendar",
+        "en": "to have a snack"
+      },
+      {
+        "es": "preparar (el almuerzo / la cena)",
+        "en": "to prepare (lunch/dinner)"
+      },
+      {
+        "es": "trocear",
+        "en": "to chop"
+      }
+    ],
+    "El dormitorio / La habitación": [
+      {
+        "es": "almohada (f.)",
+        "en": "pillow"
+      },
+      {
+        "es": "armario (m.)",
+        "en": "wardrobe"
+      },
+      {
+        "es": "cama (f.)",
+        "en": "bed"
+      },
+      {
+        "es": "lámpara (f.)",
+        "en": "lamp"
+      },
+      {
+        "es": "manta (f.)",
+        "en": "blanket"
+      },
+      {
+        "es": "póster (m.)",
+        "en": "poster"
+      }
+    ],
+    "El dormitorio – Verbos y expresiones": [
+      {
+        "es": "acostarse",
+        "en": "to go to bed"
+      },
+      {
+        "es": "compartir",
+        "en": "to share"
+      },
+      {
+        "es": "descansar",
+        "en": "to rest"
+      },
+      {
+        "es": "despertarse",
+        "en": "to wake up"
+      },
+      {
+        "es": "dormir",
+        "en": "to sleep"
+      },
+      {
+        "es": "levantarse",
+        "en": "to get up"
+      },
+      {
+        "es": "tener sueño / estar cansado",
+        "en": "to be sleepy / tired"
+      }
+    ],
+    "Las tareas de la casa": [
+      {
+        "es": "hacer la colada",
+        "en": "to do the laundry"
+      },
+      {
+        "es": "ordenar/arreglar/limpiar la casa",
+        "en": "to tidy/fix/clean the house"
+      },
+      {
+        "es": "pasar la aspiradora",
+        "en": "to vacuum"
+      },
+      {
+        "es": "planchar",
+        "en": "to iron"
+      },
+      {
+        "es": "poner la mesa, quitar la mesa",
+        "en": "to set the table, clear the table"
+      },
+      {
+        "es": "sacar la basura",
+        "en": "to take out the rubbish"
+      }
+    ],
+    "El jardín": [
+      {
+        "es": "árbol (m.)",
+        "en": "tree"
+      },
+      {
+        "es": "césped (m.)",
+        "en": "lawn"
+      },
+      {
+        "es": "flor (f.)",
+        "en": "flower"
+      },
+      {
+        "es": "muro (m.)",
+        "en": "wall"
+      },
+      {
+        "es": "planta (f.)",
+        "en": "plant"
+      }
+    ],
+    "El jardín – Verbos y expresiones": [
+      {
+        "es": "arreglar el jardín",
+        "en": "to tidy the garden"
+      },
+      {
+        "es": "cultivar (plantas)",
+        "en": "to grow (plants)"
+      },
+      {
+        "es": "plantar (flores/verduras)",
+        "en": "to plant (flowers/vegetables)"
+      }
+    ],
+    "Los aparatos domésticos": [
+      {
+        "es": "aire acondicionado (m.)",
+        "en": "air conditioning"
+      },
+      {
+        "es": "altavoz (m.)",
+        "en": "speaker"
+      },
+      {
+        "es": "calefacción (f.)",
+        "en": "heating"
+      },
+      {
+        "es": "cargador (m.)",
+        "en": "charger"
+      },
+      {
+        "es": "cocina (f.)",
+        "en": "cooker, kitchen"
+      },
+      {
+        "es": "congelador (m.)",
+        "en": "freezer"
+      },
+      {
+        "es": "despertador (m.)",
+        "en": "alarm clock"
+      },
+      {
+        "es": "electricidad (f.)",
+        "en": "electricity"
+      },
+      {
+        "es": "fogón (m.)",
+        "en": "stove, hob"
+      },
+      {
+        "es": "frigorífico (m.)",
+        "en": "fridge"
+      },
+      {
+        "es": "gas (m.)",
+        "en": "gas"
+      },
+      {
+        "es": "horno (m.)",
+        "en": "oven"
+      },
+      {
+        "es": "lavadora (f.)",
+        "en": "washing machine"
+      },
+      {
+        "es": "lavaplatos (m.) / lavavajillas (m.)",
+        "en": "dishwasher"
+      },
+      {
+        "es": "microondas (m.)",
+        "en": "microwave"
+      },
+      {
+        "es": "nevera (f.)",
+        "en": "fridge"
+      },
+      {
+        "es": "plancha (f.)",
+        "en": "iron"
+      },
+      {
+        "es": "radio (f.)",
+        "en": "radio"
+      },
+      {
+        "es": "teléfono (m.)",
+        "en": "telephone"
+      },
+      {
+        "es": "televisión (f.)",
+        "en": "television"
+      }
+    ],
+    "Los aparatos domésticos – Verbos y expresiones": [
+      {
+        "es": "abrir",
+        "en": "to open"
+      },
+      {
+        "es": "apagar",
+        "en": "to turn off"
+      },
+      {
+        "es": "cerrar",
+        "en": "to close"
+      },
+      {
+        "es": "empujar",
+        "en": "to push"
+      },
+      {
+        "es": "encender",
+        "en": "to turn on"
+      },
+      {
+        "es": "llamar",
+        "en": "to call"
+      },
+      {
+        "es": "reparar",
+        "en": "to repair"
+      },
+      {
+        "es": "romper",
+        "en": "to break"
+      },
+      {
+        "es": "tirar",
+        "en": "to throw, pull"
+      }
+    ],
+    "Colores": [
+      {
+        "es": "amarillo",
+        "en": "yellow"
+      },
+      {
+        "es": "azul",
+        "en": "blue"
+      },
+      {
+        "es": "blanco",
+        "en": "white"
+      },
+      {
+        "es": "claro",
+        "en": "light (colour)"
+      },
+      {
+        "es": "color",
+        "en": "colour"
+      },
+      {
+        "es": "dorado",
+        "en": "golden"
+      },
+      {
+        "es": "gris",
+        "en": "grey"
+      },
+      {
+        "es": "marrón",
+        "en": "brown"
+      },
+      {
+        "es": "morado",
+        "en": "purple"
+      },
+      {
+        "es": "naranja",
+        "en": "orange"
+      },
+      {
+        "es": "negro",
+        "en": "black"
+      },
+      {
+        "es": "oscuro",
+        "en": "dark"
+      },
+      {
+        "es": "plateado",
+        "en": "silver"
+      },
+      {
+        "es": "púrpura",
+        "en": "purple"
+      },
+      {
+        "es": "rojo",
+        "en": "red"
+      },
+      {
+        "es": "rosa",
+        "en": "pink"
+      },
+      {
+        "es": "verde",
+        "en": "green"
+      }
+    ],
+    "La ropa y los accesorios": [
+      {
+        "es": "a la moda, pasado de moda",
+        "en": "fashionable, old-fashioned"
+      },
+      {
+        "es": "abrigo (m.)",
+        "en": "coat"
+      },
+      {
+        "es": "ancho",
+        "en": "wide"
+      },
+      {
+        "es": "anillo (m.)",
+        "en": "ring"
+      },
+      {
+        "es": "bañador (m.)",
+        "en": "swimsuit"
+      },
+      {
+        "es": "blusa (f.)",
+        "en": "blouse"
+      },
+      {
+        "es": "bolsa (f.)",
+        "en": "bag"
+      },
+      {
+        "es": "bolsillo (m.)",
+        "en": "pocket"
+      },
+      {
+        "es": "bolso (m.)",
+        "en": "handbag"
+      },
+      {
+        "es": "botas (f.pl.)",
+        "en": "boots"
+      },
+      {
+        "es": "bufanda (f.)",
+        "en": "scarf"
+      },
+      {
+        "es": "calcetines (m.pl.)",
+        "en": "socks"
+      },
+      {
+        "es": "camisa (f.)",
+        "en": "shirt"
+      },
+      {
+        "es": "cartera (f.)",
+        "en": "wallet"
+      },
+      {
+        "es": "chaqueta (f.)",
+        "en": "jacket"
+      },
+      {
+        "es": "cinturón (m.)",
+        "en": "belt"
+      },
+      {
+        "es": "collar (m.)",
+        "en": "necklace"
+      },
+      {
+        "es": "corbata (f.)",
+        "en": "tie"
+      },
+      {
+        "es": "corto",
+        "en": "short"
+      },
+      {
+        "es": "estrecho",
+        "en": "narrow, tight"
+      },
+      {
+        "es": "falda (f.)",
+        "en": "skirt"
+      },
+      {
+        "es": "gafas (f.pl.)",
+        "en": "glasses"
+      },
+      {
+        "es": "gafas de sol (f.pl.)",
+        "en": "sunglasses"
+      },
+      {
+        "es": "gorra (f.)",
+        "en": "cap"
+      },
+      {
+        "es": "guantes (m.pl.)",
+        "en": "gloves"
+      },
+      {
+        "es": "jersey (m.)",
+        "en": "jumper"
+      },
+      {
+        "es": "joyas (f.pl.)",
+        "en": "jewellery"
+      },
+      {
+        "es": "largo",
+        "en": "long"
+      },
+      {
+        "es": "mochila (f.)",
+        "en": "backpack"
+      },
+      {
+        "es": "moda (f.)",
+        "en": "fashion"
+      },
+      {
+        "es": "monedero (m.)",
+        "en": "purse"
+      },
+      {
+        "es": "pantalones (m.pl.)",
+        "en": "trousers"
+      },
+      {
+        "es": "pantalones cortos (m.pl.)",
+        "en": "shorts"
+      },
+      {
+        "es": "paraguas (m.)",
+        "en": "umbrella"
+      },
+      {
+        "es": "pendientes (m.pl.)",
+        "en": "earrings"
+      },
+      {
+        "es": "reloj (m.)",
+        "en": "watch"
+      },
+      {
+        "es": "ropa (f.)",
+        "en": "clothes"
+      },
+      {
+        "es": "sandalias (f.pl.)",
+        "en": "sandals"
+      },
+      {
+        "es": "sombrero (m.)",
+        "en": "hat"
+      },
+      {
+        "es": "sudadera (f.)",
+        "en": "sweatshirt"
+      },
+      {
+        "es": "suelto",
+        "en": "loose"
+      },
+      {
+        "es": "suéter (m.)",
+        "en": "sweater"
+      },
+      {
+        "es": "traje (m.)",
+        "en": "suit"
+      },
+      {
+        "es": "traje de baño (m.)",
+        "en": "swimsuit"
+      },
+      {
+        "es": "un par de (calcetines/zapatos/guantes/pantalones)",
+        "en": "a pair of (socks/shoes/gloves/trousers)"
+      },
+      {
+        "es": "uniforme (m.)",
+        "en": "uniform"
+      },
+      {
+        "es": "vaqueros (m.pl.)",
+        "en": "jeans"
+      },
+      {
+        "es": "vestido (m.)",
+        "en": "dress"
+      },
+      {
+        "es": "zapatillas de deporte (f.pl.), zapatillas deportivas (f.pl.)",
+        "en": "trainers"
+      },
+      {
+        "es": "zapatos (m.pl.)",
+        "en": "shoes"
+      }
+    ],
+    "La ropa y los accesorios – Verbos y expresiones": [
+      {
+        "es": "desvestirse",
+        "en": "to undress"
+      },
+      {
+        "es": "es elegante",
+        "en": "it's elegant"
+      },
+      {
+        "es": "es informal",
+        "en": "it's informal"
+      },
+      {
+        "es": "llevar (puesto)",
+        "en": "to wear"
+      },
+      {
+        "es": "ponerse",
+        "en": "to put on"
+      },
+      {
+        "es": "probarse",
+        "en": "to try on"
+      },
+      {
+        "es": "¿Qué talla?",
+        "en": "What size?"
+      },
+      {
+        "es": "quitarse",
+        "en": "to take off"
+      },
+      {
+        "es": "Te queda bien.",
+        "en": "It suits you."
+      },
+      {
+        "es": "vestirse",
+        "en": "to get dressed"
+      }
+    ],
+    "El ocio – Las cosas que hacer": [
+      {
+        "es": "escuchar música (pop, clásica, folclórica, rock…)",
+        "en": "to listen to music (pop, classical, folk, rock...)"
+      },
+      {
+        "es": "ir a un concierto, ir a un festival de música",
+        "en": "to go to a concert, go to a music festival"
+      },
+      {
+        "es": "leer (un libro)",
+        "en": "to read (a book)"
+      },
+      {
+        "es": "ver la tele, ver un thriller, ver una película romántica, ver una comedia",
+        "en": "to watch TV, watch a thriller, watch a romantic film, watch a comedy"
+      }
+    ],
+    "El ocio – Los pasatiempos": [
+      {
+        "es": "auriculares (m.pl.)",
+        "en": "headphones"
+      },
+      {
+        "es": "canto (m.), cantar, canción (f.)",
+        "en": "singing, to sing, song"
+      },
+      {
+        "es": "dibujo (m.), dibujar",
+        "en": "drawing, to draw"
+      },
+      {
+        "es": "fotografía (f.), foto (f.), fotografiar",
+        "en": "photography, photo, to photograph"
+      },
+      {
+        "es": "jardinería (f.)",
+        "en": "gardening"
+      },
+      {
+        "es": "jugar (a un videojuego, a las cartas, al ajedrez, al fútbol, al baloncesto...)",
+        "en": "to play (a video game, cards, chess, football, basketball...)"
+      },
+      {
+        "es": "lectura (f.), leer",
+        "en": "reading, to read"
+      },
+      {
+        "es": "letra (f.)",
+        "en": "lyrics, letter"
+      },
+      {
+        "es": "pesca (f.), pescar",
+        "en": "fishing, to fish"
+      },
+      {
+        "es": "pintura (f.), pintar",
+        "en": "painting, to paint"
+      },
+      {
+        "es": "sacar/tomar fotos",
+        "en": "to take photos"
+      },
+      {
+        "es": "tocar (un instrumento, la batería, la flauta, la guitarra, el piano, el violín...)",
+        "en": "to play (an instrument, drums, flute, guitar, piano, violin...)"
+      }
+    ],
+    "El ocio – El deporte": [
+      {
+        "es": "aficionado (m.), aficionada (f.)",
+        "en": "fan"
+      },
+      {
+        "es": "ajedrez (m.)",
+        "en": "chess"
+      },
+      {
+        "es": "atletismo (m.), atleta (m./f.)",
+        "en": "athletics, athlete"
+      },
+      {
+        "es": "bádminton (m.)",
+        "en": "badminton"
+      },
+      {
+        "es": "balón (m.) / pelota (f.) / bola (f.)",
+        "en": "ball"
+      },
+      {
+        "es": "baloncesto (m.)",
+        "en": "basketball"
+      },
+      {
+        "es": "bicicleta (de montaña) (f.) / bici (f.), montar en bicicleta",
+        "en": "(mountain) bike, to ride a bike"
+      },
+      {
+        "es": "campeón (m.)",
+        "en": "champion"
+      },
+      {
+        "es": "campo de fútbol/golf (m.)",
+        "en": "football/golf pitch/course"
+      },
+      {
+        "es": "cancha de baloncesto/tenis (f.)",
+        "en": "basketball/tennis court"
+      },
+      {
+        "es": "ciclismo (m.)",
+        "en": "cycling"
+      },
+      {
+        "es": "competir, competición (f.)",
+        "en": "to compete, competition"
+      },
+      {
+        "es": "correr (m.), footing (m.)",
+        "en": "running, jogging"
+      },
+      {
+        "es": "entrenar, entrenamiento (m.), entrenador (m.), entrenadora (f.)",
+        "en": "to train, training, coach"
+      },
+      {
+        "es": "equipamiento (m.)",
+        "en": "equipment"
+      },
+      {
+        "es": "equipo (de baloncesto) (m.)",
+        "en": "team (basketball)"
+      },
+      {
+        "es": "esquiar, esquí (m.)",
+        "en": "to ski, skiing"
+      },
+      {
+        "es": "fútbol (m.)",
+        "en": "football"
+      },
+      {
+        "es": "ganar (la/una carrera, la/una competición, una medalla)",
+        "en": "to win (the/a race, the/a competition, a medal)"
+      },
+      {
+        "es": "gimnasia (f.)",
+        "en": "gymnastics"
+      },
+      {
+        "es": "gol (m.)",
+        "en": "goal"
+      },
+      {
+        "es": "golf (m.)",
+        "en": "golf"
+      },
+      {
+        "es": "hockey (m.), hockey sobre ruedas (m.), hockey sobre hielo (m.)",
+        "en": "hockey, roller hockey, ice hockey"
+      },
+      {
+        "es": "juego (m.)",
+        "en": "game"
+      },
+      {
+        "es": "jugar",
+        "en": "to play"
+      },
+      {
+        "es": "marcar (un gol, un punto)",
+        "en": "to score (a goal, a point)"
+      },
+      {
+        "es": "medalla (f.)",
+        "en": "medal"
+      },
+      {
+        "es": "natación (f.)",
+        "en": "swimming"
+      },
+      {
+        "es": "navegar",
+        "en": "to sail"
+      },
+      {
+        "es": "palo (m.)",
+        "en": "stick, club"
+      },
+      {
+        "es": "partido (m.)",
+        "en": "match"
+      },
+      {
+        "es": "patinaje (sobre hielo) (m.)",
+        "en": "(ice) skating"
+      },
+      {
+        "es": "perder (la/una carrera, la/una competición, una medalla)",
+        "en": "to lose (the/a race, the/a competition, a medal)"
+      },
+      {
+        "es": "pista de atletismo (f.)",
+        "en": "athletics track"
+      },
+      {
+        "es": "premio (m.)",
+        "en": "prize"
+      },
+      {
+        "es": "raqueta (f.)",
+        "en": "racket"
+      },
+      {
+        "es": "rugby (m.)",
+        "en": "rugby"
+      },
+      {
+        "es": "surf (m.), surfear/hacer surf",
+        "en": "surfing, to surf"
+      },
+      {
+        "es": "tenis (m.)",
+        "en": "tennis"
+      },
+      {
+        "es": "vela (f.)",
+        "en": "sailing"
+      },
+      {
+        "es": "voleibol (m.)",
+        "en": "volleyball"
+      },
+      {
+        "es": "yoga (m.)",
+        "en": "yoga"
+      }
+    ]
+  },
+  "C. El mundo que nos rodea (The World Around Us)": {
+    "Los continentes": [
+      {
+        "es": "África",
+        "en": "Africa"
+      },
+      {
+        "es": "América, América del Sur / Sudamérica, América del Norte / Norteamérica, América Central / Centroamérica",
+        "en": "America, South America, North America, Central America"
+      },
+      {
+        "es": "Antártida",
+        "en": "Antarctica"
+      },
+      {
+        "es": "Asia",
+        "en": "Asia"
+      },
+      {
+        "es": "Australasia/Oceanía",
+        "en": "Australasia/Oceania"
+      },
+      {
+        "es": "el Ártico",
+        "en": "the Arctic"
+      },
+      {
+        "es": "Europa",
+        "en": "Europe"
+      }
+    ],
+    "Los puntos cardinales": [
+      {
+        "es": "este (m.)",
+        "en": "east"
+      },
+      {
+        "es": "norte (m.)",
+        "en": "north"
+      },
+      {
+        "es": "oeste (m.)",
+        "en": "west"
+      },
+      {
+        "es": "sur (m.)",
+        "en": "south"
+      }
+    ],
+    "El mundo natural y el medio ambiente": [
+      {
+        "es": "aire (m.), aéreo",
+        "en": "air, aerial"
+      },
+      {
+        "es": "arena (f.)",
+        "en": "sand"
+      },
+      {
+        "es": "bosque (m.)",
+        "en": "forest"
+      },
+      {
+        "es": "calentamiento global (m.)",
+        "en": "global warming"
+      },
+      {
+        "es": "catarata (f.)",
+        "en": "waterfall"
+      },
+      {
+        "es": "césped (m.)",
+        "en": "lawn, grass"
+      },
+      {
+        "es": "cielo (m.)",
+        "en": "sky"
+      },
+      {
+        "es": "cima (f.)",
+        "en": "summit, peak"
+      },
+      {
+        "es": "clima (m.)",
+        "en": "climate"
+      },
+      {
+        "es": "colina (f.)",
+        "en": "hill"
+      },
+      {
+        "es": "contaminar, contaminación (f.)",
+        "en": "to pollute, pollution"
+      },
+      {
+        "es": "costa (f.)",
+        "en": "coast"
+      },
+      {
+        "es": "deforestación (f.)",
+        "en": "deforestation"
+      },
+      {
+        "es": "desierto (m.)",
+        "en": "desert"
+      },
+      {
+        "es": "electricidad (f.), eléctrico",
+        "en": "electricity, electric"
+      },
+      {
+        "es": "estrella (f.)",
+        "en": "star"
+      },
+      {
+        "es": "gobierno (m.)",
+        "en": "government"
+      },
+      {
+        "es": "hierba (f.)",
+        "en": "grass"
+      },
+      {
+        "es": "isla (f.)",
+        "en": "island"
+      },
+      {
+        "es": "lago (m.)",
+        "en": "lake"
+      },
+      {
+        "es": "luna (f.)",
+        "en": "moon"
+      },
+      {
+        "es": "mar (m.)",
+        "en": "sea"
+      },
+      {
+        "es": "medio ambiente (m.), medioambiental",
+        "en": "environment, environmental"
+      },
+      {
+        "es": "montaña (f.)",
+        "en": "mountain"
+      },
+      {
+        "es": "mundo (m.)",
+        "en": "world"
+      },
+      {
+        "es": "naturaleza (f.)",
+        "en": "nature"
+      },
+      {
+        "es": "ola (f.)",
+        "en": "wave"
+      },
+      {
+        "es": "paisaje (m.)",
+        "en": "landscape"
+      },
+      {
+        "es": "piedra (f.)",
+        "en": "stone"
+      },
+      {
+        "es": "planeta (m.)",
+        "en": "planet"
+      },
+      {
+        "es": "plástico (m.)",
+        "en": "plastic"
+      },
+      {
+        "es": "playa (f.)",
+        "en": "beach"
+      },
+      {
+        "es": "polvo (m.)",
+        "en": "dust"
+      },
+      {
+        "es": "rama (f.)",
+        "en": "branch"
+      },
+      {
+        "es": "reciclar, reciclaje (m.)",
+        "en": "to recycle, recycling"
+      },
+      {
+        "es": "recursos naturales (m.pl.)",
+        "en": "natural resources"
+      },
+      {
+        "es": "región (f.)",
+        "en": "region"
+      },
+      {
+        "es": "reserva (natural) (f.)",
+        "en": "(nature) reserve"
+      },
+      {
+        "es": "río (m.)",
+        "en": "river"
+      },
+      {
+        "es": "sol (m.)",
+        "en": "sun"
+      },
+      {
+        "es": "sombra (f.)",
+        "en": "shade, shadow"
+      },
+      {
+        "es": "tierra (f.), La Tierra",
+        "en": "earth, the Earth"
+      },
+      {
+        "es": "vista (f.)",
+        "en": "view"
+      },
+      {
+        "es": "volcán (m.)",
+        "en": "volcano"
+      }
+    ],
+    "El mundo natural y el medio ambiente – Verbos y expresiones": [
+      {
+        "es": "ayudar a, ayuda (f.)",
+        "en": "to help, help"
+      },
+      {
+        "es": "cambiar, cambio (m.)",
+        "en": "to change, change"
+      },
+      {
+        "es": "colaborar, colaboración (f.)",
+        "en": "to collaborate, collaboration"
+      },
+      {
+        "es": "consumir, consumo (m.)",
+        "en": "to consume, consumption"
+      },
+      {
+        "es": "cuidar a",
+        "en": "to take care of"
+      },
+      {
+        "es": "donar, donación (f.)",
+        "en": "to donate, donation"
+      },
+      {
+        "es": "evitar",
+        "en": "to avoid"
+      },
+      {
+        "es": "luchar contra, lucha (f.)",
+        "en": "to fight against, fight"
+      },
+      {
+        "es": "malgastar, malgasto (m.)",
+        "en": "to waste, waste"
+      },
+      {
+        "es": "mejorar, mejora (f.)",
+        "en": "to improve, improvement"
+      },
+      {
+        "es": "promover, promoción (f.)",
+        "en": "to promote, promotion"
+      },
+      {
+        "es": "proteger, protección (f.)",
+        "en": "to protect, protection"
+      },
+      {
+        "es": "reducir, reducción (f.)",
+        "en": "to reduce, reduction"
+      },
+      {
+        "es": "separar, separación (f.)",
+        "en": "to separate, separation"
+      },
+      {
+        "es": "(re)usar/(re)utilizar, (re)uso (m.) / (re)utilización (f.)",
+        "en": "to (re)use, (re)use"
+      }
+    ],
+    "El clima y el tiempo": [
+      {
+        "es": "caliente",
+        "en": "hot"
+      },
+      {
+        "es": "calor (m.), hace calor",
+        "en": "heat, it's hot"
+      },
+      {
+        "es": "escarcha (f.)",
+        "en": "frost"
+      },
+      {
+        "es": "estación (del año) (f.)",
+        "en": "season"
+      },
+      {
+        "es": "frío (m.), frío (adj.), hace frío",
+        "en": "cold (noun/adj), it's cold"
+      },
+      {
+        "es": "grados (m.pl.)",
+        "en": "degrees"
+      },
+      {
+        "es": "granizo (m.)",
+        "en": "hail"
+      },
+      {
+        "es": "hielo (m.)",
+        "en": "ice"
+      },
+      {
+        "es": "húmedo",
+        "en": "humid"
+      },
+      {
+        "es": "huracán (m.)",
+        "en": "hurricane"
+      },
+      {
+        "es": "lluvia (f.), está lloviendo",
+        "en": "rain, it's raining"
+      },
+      {
+        "es": "mojado",
+        "en": "wet"
+      },
+      {
+        "es": "niebla (f.)",
+        "en": "fog"
+      },
+      {
+        "es": "nieve (f.)",
+        "en": "snow"
+      },
+      {
+        "es": "nube (f.)",
+        "en": "cloud"
+      },
+      {
+        "es": "previsión del tiempo (f.) / previsión meteorológica (f.)",
+        "en": "weather forecast"
+      },
+      {
+        "es": "rayo (m.)",
+        "en": "lightning bolt"
+      },
+      {
+        "es": "relámpago (m.)",
+        "en": "lightning"
+      },
+      {
+        "es": "sol (m.), luz del sol (f.)",
+        "en": "sun, sunlight"
+      },
+      {
+        "es": "tiempo (m.)",
+        "en": "weather"
+      },
+      {
+        "es": "tormenta (f.)",
+        "en": "storm"
+      },
+      {
+        "es": "trueno (m.)",
+        "en": "thunder"
+      },
+      {
+        "es": "viento (m.)",
+        "en": "wind"
+      }
+    ],
+    "Los animales": [
+      {
+        "es": "animal (m.)",
+        "en": "animal"
+      },
+      {
+        "es": "araña (f.)",
+        "en": "spider"
+      },
+      {
+        "es": "caballo (m.)",
+        "en": "horse"
+      },
+      {
+        "es": "conejo (m.)",
+        "en": "rabbit"
+      },
+      {
+        "es": "elefante (m.)",
+        "en": "elephant"
+      },
+      {
+        "es": "gato (m.)",
+        "en": "cat"
+      },
+      {
+        "es": "león (m.)",
+        "en": "lion"
+      },
+      {
+        "es": "mono (m.)",
+        "en": "monkey"
+      },
+      {
+        "es": "mosca (f.)",
+        "en": "fly"
+      },
+      {
+        "es": "pájaro (m.)",
+        "en": "bird"
+      },
+      {
+        "es": "perro (m.)",
+        "en": "dog"
+      },
+      {
+        "es": "pez (m.)",
+        "en": "fish"
+      },
+      {
+        "es": "rata (f.)",
+        "en": "rat"
+      },
+      {
+        "es": "ratón (m.)",
+        "en": "mouse"
+      },
+      {
+        "es": "serpiente (f.)",
+        "en": "snake"
+      },
+      {
+        "es": "tigre (m.)",
+        "en": "tiger"
+      }
+    ],
+    "La comunicación y la tecnología – El mundo digital": [
+      {
+        "es": "aplicación (f.)",
+        "en": "app"
+      },
+      {
+        "es": "archivo (m.)",
+        "en": "file"
+      },
+      {
+        "es": "artículo (m.)",
+        "en": "article"
+      },
+      {
+        "es": "blog (m.)",
+        "en": "blog"
+      },
+      {
+        "es": "carpeta (f.)",
+        "en": "folder"
+      },
+      {
+        "es": "chat (m.), el grupo de chat (m.)",
+        "en": "chat, chat group"
+      },
+      {
+        "es": "conectado a Internet / en línea",
+        "en": "connected to the internet / online"
+      },
+      {
+        "es": "contraseña (f.)",
+        "en": "password"
+      },
+      {
+        "es": "correo electrónico (m.) / email (m.)",
+        "en": "email"
+      },
+      {
+        "es": "documento (m.)",
+        "en": "document"
+      },
+      {
+        "es": "en la red",
+        "en": "online"
+      },
+      {
+        "es": "grabación (f.)",
+        "en": "recording"
+      },
+      {
+        "es": "impresora (f.)",
+        "en": "printer"
+      },
+      {
+        "es": "inalámbrico",
+        "en": "wireless"
+      },
+      {
+        "es": "información (f.)",
+        "en": "information"
+      },
+      {
+        "es": "Internet (m./f.)",
+        "en": "internet"
+      },
+      {
+        "es": "juego (m.)",
+        "en": "game"
+      },
+      {
+        "es": "marca (f.)",
+        "en": "brand"
+      },
+      {
+        "es": "mensaje (m.)",
+        "en": "message"
+      },
+      {
+        "es": "móvil (m.) / celular (m.)",
+        "en": "mobile phone"
+      },
+      {
+        "es": "noticias (f.pl.)",
+        "en": "news"
+      },
+      {
+        "es": "ordenador (m.) / computadora (f.)",
+        "en": "computer"
+      },
+      {
+        "es": "página web (f.) / página de Internet (f.)",
+        "en": "web page"
+      },
+      {
+        "es": "pantalla (f.)",
+        "en": "screen"
+      },
+      {
+        "es": "pantalla táctil/interactiva (f.)",
+        "en": "touch/interactive screen"
+      },
+      {
+        "es": "película (f.)",
+        "en": "film"
+      },
+      {
+        "es": "portátil (m.)",
+        "en": "laptop"
+      },
+      {
+        "es": "ratón (m.)",
+        "en": "mouse"
+      },
+      {
+        "es": "red social (f.)",
+        "en": "social network"
+      },
+      {
+        "es": "seguridad en línea (f.)",
+        "en": "online security"
+      },
+      {
+        "es": "selfie (m.)",
+        "en": "selfie"
+      },
+      {
+        "es": "sitio web (m.)",
+        "en": "website"
+      },
+      {
+        "es": "software (m.)",
+        "en": "software"
+      },
+      {
+        "es": "tableta (f.)",
+        "en": "tablet"
+      },
+      {
+        "es": "teclado (m.)",
+        "en": "keyboard"
+      },
+      {
+        "es": "teléfono (m.)",
+        "en": "telephone"
+      },
+      {
+        "es": "USB (m.)",
+        "en": "USB"
+      },
+      {
+        "es": "vídeo (m.)",
+        "en": "video"
+      },
+      {
+        "es": "videoblog (m.)",
+        "en": "vlog"
+      },
+      {
+        "es": "videoaficionado (m.)",
+        "en": "video enthusiast"
+      },
+      {
+        "es": "wifi (m.)",
+        "en": "wifi"
+      }
+    ],
+    "El mundo digital – Verbos y expresiones": [
+      {
+        "es": "copiar",
+        "en": "to copy"
+      },
+      {
+        "es": "cortar",
+        "en": "to cut"
+      },
+      {
+        "es": "descargarse",
+        "en": "to download"
+      },
+      {
+        "es": "encontrar",
+        "en": "to find"
+      },
+      {
+        "es": "enviar",
+        "en": "to send"
+      },
+      {
+        "es": "grabar",
+        "en": "to record"
+      },
+      {
+        "es": "guardar",
+        "en": "to save"
+      },
+      {
+        "es": "hacer clic (en)",
+        "en": "to click (on)"
+      },
+      {
+        "es": "mandar",
+        "en": "to send"
+      },
+      {
+        "es": "navegar por Internet",
+        "en": "to browse the internet"
+      },
+      {
+        "es": "publicar en la red",
+        "en": "to post online"
+      },
+      {
+        "es": "rellenar",
+        "en": "to fill in"
+      },
+      {
+        "es": "subir",
+        "en": "to upload"
+      }
+    ],
+    "Los documentos y los textos": [
+      {
+        "es": "anunciar, anuncio (m.)",
+        "en": "to announce, advertisement"
+      },
+      {
+        "es": "artículo (m.)",
+        "en": "article"
+      },
+      {
+        "es": "billete (m.)",
+        "en": "ticket, note"
+      },
+      {
+        "es": "carta (f.)",
+        "en": "letter"
+      },
+      {
+        "es": "certificado (m.) / diploma (m.) / título (m.)",
+        "en": "certificate / diploma / title"
+      },
+      {
+        "es": "cómic (m.)",
+        "en": "comic"
+      },
+      {
+        "es": "folleto (m.)",
+        "en": "brochure"
+      },
+      {
+        "es": "formulario (m.)",
+        "en": "form"
+      },
+      {
+        "es": "guía (f.)",
+        "en": "guide"
+      },
+      {
+        "es": "libreta (f.)",
+        "en": "notebook"
+      },
+      {
+        "es": "libro (m.)",
+        "en": "book"
+      },
+      {
+        "es": "lista (f.)",
+        "en": "list"
+      },
+      {
+        "es": "nota (f.)",
+        "en": "note, grade"
+      },
+      {
+        "es": "periódico (m.)",
+        "en": "newspaper"
+      },
+      {
+        "es": "revista (f.)",
+        "en": "magazine"
+      },
+      {
+        "es": "tarjeta postal (f.)",
+        "en": "postcard"
+      }
+    ],
+    "El entorno edificado – Los edificios y los servicios": [
+      {
+        "es": "aeropuerto (m.)",
+        "en": "airport"
+      },
+      {
+        "es": "ascensor (m.)",
+        "en": "lift"
+      },
+      {
+        "es": "ayuntamiento (m.)",
+        "en": "town hall"
+      },
+      {
+        "es": "biblioteca (f.)",
+        "en": "library"
+      },
+      {
+        "es": "cafetería (f.)",
+        "en": "café"
+      },
+      {
+        "es": "casa (f.)",
+        "en": "house"
+      },
+      {
+        "es": "castillo (m.)",
+        "en": "castle"
+      },
+      {
+        "es": "cine (m.)",
+        "en": "cinema"
+      },
+      {
+        "es": "clínica (f.)",
+        "en": "clinic"
+      },
+      {
+        "es": "Correos (m.) / oficina de Correos (f.)",
+        "en": "post office"
+      },
+      {
+        "es": "dentista (m./f.)",
+        "en": "dentist"
+      },
+      {
+        "es": "edificio (m.)",
+        "en": "building"
+      },
+      {
+        "es": "entrada (f.)",
+        "en": "entrance"
+      },
+      {
+        "es": "escuela (f.) / colegio (de primaria) (m.)",
+        "en": "school / primary school"
+      },
+      {
+        "es": "estación (de autobuses/servicio/tren) (f.)",
+        "en": "(bus/service/train) station"
+      },
+      {
+        "es": "estadio (m.)",
+        "en": "stadium"
+      },
+      {
+        "es": "fábrica (f.)",
+        "en": "factory"
+      },
+      {
+        "es": "gasolinera (f.)",
+        "en": "petrol station"
+      },
+      {
+        "es": "gimnasio (m.)",
+        "en": "gym"
+      },
+      {
+        "es": "granja (f.)",
+        "en": "farm"
+      },
+      {
+        "es": "hospital (m.)",
+        "en": "hospital"
+      },
+      {
+        "es": "hotel (m.)",
+        "en": "hotel"
+      },
+      {
+        "es": "instituto (de secundaria) (m.)",
+        "en": "secondary school"
+      },
+      {
+        "es": "museo (m.)",
+        "en": "museum"
+      },
+      {
+        "es": "oficina (f.)",
+        "en": "office"
+      },
+      {
+        "es": "piscina (f.)",
+        "en": "swimming pool"
+      },
+      {
+        "es": "piso (m.)",
+        "en": "flat, floor"
+      },
+      {
+        "es": "planta baja (f.), primera planta (f.), segunda planta (f.)",
+        "en": "ground floor, first floor, second floor"
+      },
+      {
+        "es": "polideportivo (m.)",
+        "en": "sports centre"
+      },
+      {
+        "es": "restaurante (m.)",
+        "en": "restaurant"
+      },
+      {
+        "es": "salida (f.)",
+        "en": "exit"
+      },
+      {
+        "es": "taller mecánico (m.)",
+        "en": "mechanic's workshop"
+      },
+      {
+        "es": "teatro (m.)",
+        "en": "theatre"
+      },
+      {
+        "es": "universidad (f.)",
+        "en": "university"
+      },
+      {
+        "es": "zoo(lógico) (m.)",
+        "en": "zoo"
+      }
+    ],
+    "Las zonas urbanas": [
+      {
+        "es": "aparcamiento (m.)",
+        "en": "car park"
+      },
+      {
+        "es": "autovía (f.)",
+        "en": "dual carriageway"
+      },
+      {
+        "es": "barrio (m.)",
+        "en": "neighbourhood"
+      },
+      {
+        "es": "calle (f.)",
+        "en": "street"
+      },
+      {
+        "es": "carretera (f.)",
+        "en": "road"
+      },
+      {
+        "es": "ciudad (f.)",
+        "en": "city"
+      },
+      {
+        "es": "esquina (f.)",
+        "en": "corner"
+      },
+      {
+        "es": "lugar (m.)",
+        "en": "place"
+      },
+      {
+        "es": "metro (m.)",
+        "en": "underground, metro"
+      },
+      {
+        "es": "parada (de tren/autobús) (f.)",
+        "en": "(train/bus) stop"
+      },
+      {
+        "es": "paso de peatones (m.)",
+        "en": "pedestrian crossing"
+      },
+      {
+        "es": "plaza (f.)",
+        "en": "square"
+      },
+      {
+        "es": "pueblo (m.)",
+        "en": "town, village"
+      },
+      {
+        "es": "puente (m.)",
+        "en": "bridge"
+      },
+      {
+        "es": "rotonda (f.)",
+        "en": "roundabout"
+      },
+      {
+        "es": "semáforo (m.)",
+        "en": "traffic light"
+      },
+      {
+        "es": "sitio (m.)",
+        "en": "place, site"
+      },
+      {
+        "es": "tráfico (m.)",
+        "en": "traffic"
+      }
+    ],
+    "Las compras": [
+      {
+        "es": "abierto",
+        "en": "open"
+      },
+      {
+        "es": "banco (m.), banquero (m.), banquera (f.)",
+        "en": "bank, banker"
+      },
+      {
+        "es": "bar (de tapas) (m.)",
+        "en": "(tapas) bar"
+      },
+      {
+        "es": "barato",
+        "en": "cheap"
+      },
+      {
+        "es": "billete (m.)",
+        "en": "note, ticket"
+      },
+      {
+        "es": "cajero (m.), cajera (f.)",
+        "en": "cashier"
+      },
+      {
+        "es": "camarero (m.), camarera (f.)",
+        "en": "waiter, waitress"
+      },
+      {
+        "es": "cambio (m.)",
+        "en": "change"
+      },
+      {
+        "es": "carnicería (f.), carnicero (m.), carnicera (f.)",
+        "en": "butcher's, butcher"
+      },
+      {
+        "es": "caro",
+        "en": "expensive"
+      },
+      {
+        "es": "cerrado",
+        "en": "closed"
+      },
+      {
+        "es": "cliente (m.), clienta (f.)",
+        "en": "customer"
+      },
+      {
+        "es": "cuenta (f.)",
+        "en": "bill, account"
+      },
+      {
+        "es": "dependiente (m.), dependienta (f.)",
+        "en": "shop assistant"
+      },
+      {
+        "es": "estanco (m.)",
+        "en": "tobacconist's"
+      },
+      {
+        "es": "frutería (f.), frutero (m.), frutera (f.)",
+        "en": "greengrocer's, greengrocer"
+      },
+      {
+        "es": "iglesia (f.)",
+        "en": "church"
+      },
+      {
+        "es": "mercado (m.)",
+        "en": "market"
+      },
+      {
+        "es": "moneda (f.)",
+        "en": "coin, currency"
+      },
+      {
+        "es": "panadería (f.), panadero (m.), panadera (f.)",
+        "en": "bakery, baker"
+      },
+      {
+        "es": "pastelería (f.), pastelero (m.), pastelera (f.)",
+        "en": "cake shop, pastry chef"
+      },
+      {
+        "es": "peluquería (f.), peluquero (m.), peluquera (f.)",
+        "en": "hairdresser's, hairdresser"
+      },
+      {
+        "es": "precio (m.)",
+        "en": "price"
+      },
+      {
+        "es": "quiosco (m.)",
+        "en": "kiosk"
+      },
+      {
+        "es": "rebajas (f.pl.), en rebajas",
+        "en": "sales, on sale"
+      },
+      {
+        "es": "recibo (m.)",
+        "en": "receipt"
+      },
+      {
+        "es": "supermercado (m.)",
+        "en": "supermarket"
+      },
+      {
+        "es": "talla (f.)",
+        "en": "size"
+      },
+      {
+        "es": "tarjeta de crédito (f.)",
+        "en": "credit card"
+      },
+      {
+        "es": "tienda (f.)",
+        "en": "shop"
+      },
+      {
+        "es": "vendedor (m.), vendedora (f.)",
+        "en": "seller"
+      },
+      {
+        "es": "vuelta (f.)",
+        "en": "change (money)"
+      }
+    ],
+    "Las compras – Verbos y expresiones": [
+      {
+        "es": "alquilar (una bicicleta / un coche)",
+        "en": "to hire (a bike/car)"
+      },
+      {
+        "es": "comprar",
+        "en": "to buy"
+      },
+      {
+        "es": "conseguir un reembolso",
+        "en": "to get a refund"
+      },
+      {
+        "es": "¿Cuánto cuesta? / ¿Cuánto es?",
+        "en": "How much does it cost? / How much is it?"
+      },
+      {
+        "es": "devolver",
+        "en": "to return, give back"
+      },
+      {
+        "es": "gastar dinero",
+        "en": "to spend money"
+      },
+      {
+        "es": "hacer la compra",
+        "en": "to do the shopping"
+      },
+      {
+        "es": "ir de compras",
+        "en": "to go shopping"
+      },
+      {
+        "es": "pagar",
+        "en": "to pay"
+      },
+      {
+        "es": "quejarse / poner una queja",
+        "en": "to complain / make a complaint"
+      },
+      {
+        "es": "vender",
+        "en": "to sell"
+      }
+    ],
+    "Las medidas": [
+      {
+        "es": "grado (m.)",
+        "en": "degree"
+      },
+      {
+        "es": "gramo (m.)",
+        "en": "gram"
+      },
+      {
+        "es": "kilogramo (m.)",
+        "en": "kilogram"
+      },
+      {
+        "es": "kilómetro (m.)",
+        "en": "kilometre"
+      },
+      {
+        "es": "litro (m.)",
+        "en": "litre"
+      },
+      {
+        "es": "metro (m.)",
+        "en": "metre"
+      }
+    ],
+    "El tamaño": [
+      {
+        "es": "alto",
+        "en": "tall, high"
+      },
+      {
+        "es": "bajo",
+        "en": "short, low"
+      },
+      {
+        "es": "corto",
+        "en": "short"
+      },
+      {
+        "es": "grande, enorme",
+        "en": "big, huge"
+      },
+      {
+        "es": "largo",
+        "en": "long"
+      },
+      {
+        "es": "mediano",
+        "en": "medium"
+      },
+      {
+        "es": "minúsculo",
+        "en": "tiny"
+      },
+      {
+        "es": "pequeño",
+        "en": "small"
+      }
+    ],
+    "La forma": [
+      {
+        "es": "círculo (m.), redondo",
+        "en": "circle, round"
+      },
+      {
+        "es": "cuadrado (m.), cuadrado (adj.)",
+        "en": "square (noun/adj)"
+      },
+      {
+        "es": "triángulo (m.), triangular",
+        "en": "triangle, triangular"
+      }
+    ],
+    "Los materiales": [
+      {
+        "es": "algodón (m.)",
+        "en": "cotton"
+      },
+      {
+        "es": "cuero (m.)",
+        "en": "leather"
+      },
+      {
+        "es": "cristal (m.)",
+        "en": "glass, crystal"
+      },
+      {
+        "es": "lana (f.)",
+        "en": "wool"
+      },
+      {
+        "es": "madera (f.)",
+        "en": "wood"
+      },
+      {
+        "es": "metal (m.)",
+        "en": "metal"
+      },
+      {
+        "es": "oro (m.)",
+        "en": "gold"
+      },
+      {
+        "es": "papel (m.)",
+        "en": "paper"
+      },
+      {
+        "es": "piel (f.)",
+        "en": "leather, fur, skin"
+      },
+      {
+        "es": "plástico (m.)",
+        "en": "plastic"
+      },
+      {
+        "es": "plata (f.)",
+        "en": "silver"
+      }
+    ]
+  },
+  "D. El mundo laboral (The World of Work)": {
+    "La educación – Las instituciones académicas": [
+      {
+        "es": "cantina (f.)",
+        "en": "canteen"
+      },
+      {
+        "es": "escuela (f.) / colegio (de primaria) (m.)",
+        "en": "school / primary school"
+      },
+      {
+        "es": "guardería (f.)",
+        "en": "nursery"
+      },
+      {
+        "es": "instituto (de secundaria) (m.)",
+        "en": "secondary school"
+      },
+      {
+        "es": "universidad (f.)",
+        "en": "university"
+      }
+    ],
+    "La educación y la formación": [
+      {
+        "es": "alumno (m.)",
+        "en": "pupil"
+      },
+      {
+        "es": "curso (de verano) (m.)",
+        "en": "(summer) course"
+      },
+      {
+        "es": "curso/año académico/escolar (m.)",
+        "en": "academic/school year"
+      },
+      {
+        "es": "departamento (m.)",
+        "en": "department"
+      },
+      {
+        "es": "director (m.), directora (f.)",
+        "en": "headteacher, director"
+      },
+      {
+        "es": "educación (f.), educativo",
+        "en": "education, educational"
+      },
+      {
+        "es": "estudiante (m./f.)",
+        "en": "student"
+      },
+      {
+        "es": "patio (m.)",
+        "en": "playground, patio"
+      }
+    ],
+    "En la clase, las herramientas de aprendizaje": [
+      {
+        "es": "bolígrafo (m.)",
+        "en": "pen"
+      },
+      {
+        "es": "borrador (m.) / goma (de borrar) (f.)",
+        "en": "eraser"
+      },
+      {
+        "es": "carpeta (f.)",
+        "en": "folder"
+      },
+      {
+        "es": "cuaderno (m.)",
+        "en": "notebook"
+      },
+      {
+        "es": "diccionario (m.)",
+        "en": "dictionary"
+      },
+      {
+        "es": "escritorio (m.)",
+        "en": "desk"
+      },
+      {
+        "es": "estuche (m.)",
+        "en": "pencil case"
+      },
+      {
+        "es": "lápiz (m.)",
+        "en": "pencil"
+      },
+      {
+        "es": "libreta (f.)",
+        "en": "notebook"
+      },
+      {
+        "es": "libro (m.)",
+        "en": "book"
+      },
+      {
+        "es": "mesa (f.)",
+        "en": "table"
+      },
+      {
+        "es": "papel (m.), hojas de papel (f.pl.) / folios (m.pl.)",
+        "en": "paper, sheets of paper"
+      },
+      {
+        "es": "pizarra (interactiva) (f.)",
+        "en": "(interactive) whiteboard"
+      },
+      {
+        "es": "regla (f.)",
+        "en": "ruler"
+      },
+      {
+        "es": "sacapuntas (m.)",
+        "en": "pencil sharpener"
+      }
+    ],
+    "Las asignaturas": [
+      {
+        "es": "biología (f.)",
+        "en": "biology"
+      },
+      {
+        "es": "ciencias (f.pl.)",
+        "en": "science"
+      },
+      {
+        "es": "dibujo (m.)",
+        "en": "art, drawing"
+      },
+      {
+        "es": "educación física (f.)",
+        "en": "physical education"
+      },
+      {
+        "es": "física (f.)",
+        "en": "physics"
+      },
+      {
+        "es": "geografía (f.)",
+        "en": "geography"
+      },
+      {
+        "es": "historia (f.)",
+        "en": "history"
+      },
+      {
+        "es": "idiomas (m.pl.) / lenguas (f.pl.)",
+        "en": "languages"
+      },
+      {
+        "es": "informática (f.)",
+        "en": "ICT, computing"
+      },
+      {
+        "es": "matemáticas (f.pl.)",
+        "en": "mathematics"
+      },
+      {
+        "es": "música (f.)",
+        "en": "music"
+      },
+      {
+        "es": "química (f.)",
+        "en": "chemistry"
+      },
+      {
+        "es": "religión (f.)",
+        "en": "religious studies"
+      },
+      {
+        "es": "teatro (m.)",
+        "en": "drama"
+      }
+    ],
+    "Estudiar": [
+      {
+        "es": "actividad (f.)",
+        "en": "activity"
+      },
+      {
+        "es": "clase (f.)",
+        "en": "class"
+      },
+      {
+        "es": "compañero (de clase) (m.)",
+        "en": "classmate"
+      },
+      {
+        "es": "deberes (m.pl.)",
+        "en": "homework"
+      },
+      {
+        "es": "ejemplo (m.)",
+        "en": "example"
+      },
+      {
+        "es": "ejercicio (m.)",
+        "en": "exercise"
+      },
+      {
+        "es": "examen (m.)",
+        "en": "exam"
+      },
+      {
+        "es": "horario (m.)",
+        "en": "timetable"
+      },
+      {
+        "es": "instrucciones (f.pl.)",
+        "en": "instructions"
+      },
+      {
+        "es": "nota (f.)",
+        "en": "grade, note"
+      },
+      {
+        "es": "pregunta (f.)",
+        "en": "question"
+      },
+      {
+        "es": "proyecto (m.)",
+        "en": "project"
+      },
+      {
+        "es": "prueba (f.)",
+        "en": "test"
+      },
+      {
+        "es": "resultado (m.)",
+        "en": "result"
+      },
+      {
+        "es": "tarea (f.)",
+        "en": "task, homework"
+      }
+    ],
+    "Estudiar – Verbos y expresiones": [
+      {
+        "es": "aprobar",
+        "en": "to pass (exam)"
+      },
+      {
+        "es": "comprender",
+        "en": "to understand"
+      },
+      {
+        "es": "conocer",
+        "en": "to know (be familiar with)"
+      },
+      {
+        "es": "contestar",
+        "en": "to answer"
+      },
+      {
+        "es": "entender",
+        "en": "to understand"
+      },
+      {
+        "es": "escribir, escritura (f.)",
+        "en": "to write, writing"
+      },
+      {
+        "es": "estudiar, estudio (m.)",
+        "en": "to study, study"
+      },
+      {
+        "es": "experimentar, experimento (m.)",
+        "en": "to experiment, experiment"
+      },
+      {
+        "es": "explicar",
+        "en": "to explain"
+      },
+      {
+        "es": "leer, lectura (f.)",
+        "en": "to read, reading"
+      },
+      {
+        "es": "practicar, práctica (f.)",
+        "en": "to practise, practice"
+      },
+      {
+        "es": "preguntar",
+        "en": "to ask"
+      },
+      {
+        "es": "responder, respuesta (f.)",
+        "en": "to answer, answer"
+      },
+      {
+        "es": "revisar, revisión (f.)",
+        "en": "to revise, review"
+      },
+      {
+        "es": "saber",
+        "en": "to know"
+      },
+      {
+        "es": "sacar buenas/malas notas",
+        "en": "to get good/bad grades"
+      },
+      {
+        "es": "suspender",
+        "en": "to fail (exam)"
+      },
+      {
+        "es": "tomar notas/apuntes",
+        "en": "to take notes"
+      }
+    ],
+    "Los trabajos y las profesiones": [
+      {
+        "es": "abogado (m.), abogada (f.)",
+        "en": "lawyer"
+      },
+      {
+        "es": "actor (m.), actriz (f.)",
+        "en": "actor, actress"
+      },
+      {
+        "es": "agricultor (m.), agricultora (f.)",
+        "en": "farmer"
+      },
+      {
+        "es": "albañil (m./f.)",
+        "en": "builder, bricklayer"
+      },
+      {
+        "es": "alcalde (m.), alcaldesa (f.)",
+        "en": "mayor"
+      },
+      {
+        "es": "amo de casa (m.), ama de casa (f.)",
+        "en": "homemaker"
+      },
+      {
+        "es": "arquitecto (m.), arquitecta (f.)",
+        "en": "architect"
+      },
+      {
+        "es": "asistente de vuelo (m./f.), azafato (m.), azafata (f.)",
+        "en": "flight attendant"
+      },
+      {
+        "es": "bombero (m.), bombera (f.)",
+        "en": "firefighter"
+      },
+      {
+        "es": "camarero (m.), camarera (f.)",
+        "en": "waiter, waitress"
+      },
+      {
+        "es": "carnicero (m.), carnicera (f.)",
+        "en": "butcher"
+      },
+      {
+        "es": "carpintero (m.), carpintera (f.)",
+        "en": "carpenter"
+      },
+      {
+        "es": "cartero (m.), cartera (f.)",
+        "en": "postman, postwoman"
+      },
+      {
+        "es": "conductor (de taxi, de autobús) (m.), conductora (de taxi, de autobús) (f.)",
+        "en": "driver (taxi, bus)"
+      },
+      {
+        "es": "constructor (m.), constructora (f.)",
+        "en": "builder"
+      },
+      {
+        "es": "dentista (m./f.)",
+        "en": "dentist"
+      },
+      {
+        "es": "deportista profesional (m./f.)",
+        "en": "professional sportsperson"
+      },
+      {
+        "es": "doctor (m.), doctora (f.)",
+        "en": "doctor"
+      },
+      {
+        "es": "enfermero (m.), enfermera (f.)",
+        "en": "nurse"
+      },
+      {
+        "es": "fontanero (m.), fontanera (f.)",
+        "en": "plumber"
+      },
+      {
+        "es": "granjero (m.), granjera (f.)",
+        "en": "farmer"
+      },
+      {
+        "es": "ingeniero (m.), ingeniera (f.)",
+        "en": "engineer"
+      },
+      {
+        "es": "intérprete (m./f.)",
+        "en": "interpreter"
+      },
+      {
+        "es": "jefe (m.), jefa (f.)",
+        "en": "boss"
+      },
+      {
+        "es": "jugador (de fútbol, baloncesto…) (m.), jugadora (de fútbol, baloncesto…) (f.)",
+        "en": "player (football, basketball...)"
+      },
+      {
+        "es": "maestro (m.), maestra (f.)",
+        "en": "teacher"
+      },
+      {
+        "es": "mecánico (m.), mecánica (f.)",
+        "en": "mechanic"
+      },
+      {
+        "es": "médico (m.), médica (f.)",
+        "en": "doctor"
+      },
+      {
+        "es": "panadero (m.), panadera (f.)",
+        "en": "baker"
+      },
+      {
+        "es": "peluquero (m.), peluquera (f.)",
+        "en": "hairdresser"
+      },
+      {
+        "es": "piloto (m./f.)",
+        "en": "pilot"
+      },
+      {
+        "es": "(agente de) policía (m./f.)",
+        "en": "police officer"
+      },
+      {
+        "es": "presidente (m.), presidenta (f.)",
+        "en": "president"
+      },
+      {
+        "es": "profesor (m.), profesora (f.)",
+        "en": "teacher"
+      },
+      {
+        "es": "secretario (m.), secretaria (f.)",
+        "en": "secretary"
+      },
+      {
+        "es": "soldado (m./f.)",
+        "en": "soldier"
+      },
+      {
+        "es": "veterinario (m.), veterinaria (f.)",
+        "en": "vet"
+      }
+    ],
+    "El lugar de trabajo": [
+      {
+        "es": "compañía (f.)",
+        "en": "company"
+      },
+      {
+        "es": "empleado (m.), empleada (f.)",
+        "en": "employee"
+      },
+      {
+        "es": "empleador (m.)",
+        "en": "employer"
+      },
+      {
+        "es": "empleo (m.), desempleo (m.)",
+        "en": "employment, unemployment"
+      },
+      {
+        "es": "empresa (f.)",
+        "en": "company, business"
+      },
+      {
+        "es": "huelga (f.)",
+        "en": "strike"
+      },
+      {
+        "es": "negocio (m.)",
+        "en": "business"
+      },
+      {
+        "es": "organización (f.)",
+        "en": "organisation"
+      },
+      {
+        "es": "patrón (m.), patrona (f.)",
+        "en": "boss, employer"
+      },
+      {
+        "es": "puesto (de trabajo) (m.)",
+        "en": "job position"
+      },
+      {
+        "es": "salario (m.)",
+        "en": "salary"
+      },
+      {
+        "es": "sueldo (m.)",
+        "en": "salary"
+      },
+      {
+        "es": "taller (m.)",
+        "en": "workshop"
+      },
+      {
+        "es": "trabajador (m.), trabajadora (f.)",
+        "en": "worker"
+      },
+      {
+        "es": "trabajo (m.)",
+        "en": "work, job"
+      }
+    ],
+    "El lugar de trabajo – Verbos y expresiones": [
+      {
+        "es": "actuar, actuación (f.)",
+        "en": "to act, performance"
+      },
+      {
+        "es": "buscar/conseguir/encontrar/obtener/perder un trabajo",
+        "en": "to look for/get/find/obtain/lose a job"
+      },
+      {
+        "es": "contratar",
+        "en": "to hire"
+      },
+      {
+        "es": "desempleado",
+        "en": "unemployed"
+      },
+      {
+        "es": "ganar/cobrar",
+        "en": "to earn"
+      },
+      {
+        "es": "irse de vacaciones",
+        "en": "to go on holiday"
+      },
+      {
+        "es": "jubilarse, jubilado, jubilación (f.)",
+        "en": "to retire, retired, retirement"
+      },
+      {
+        "es": "montar/poner (un negocio)",
+        "en": "to set up (a business)"
+      },
+      {
+        "es": "ser ascendido",
+        "en": "to be promoted"
+      },
+      {
+        "es": "ser despedido",
+        "en": "to be fired"
+      },
+      {
+        "es": "solicitar, solicitud (f.)",
+        "en": "to apply, application"
+      }
+    ]
+  },
+  "E. El mundo internacional (The International World)": {
+    "Los países, las nacionalidades y los idiomas": [
+      {
+        "es": "lengua materna del/de la estudiante + otros idiomas estudiados",
+        "en": "the student's mother tongue + other languages studied"
+      },
+      {
+        "es": "nacionalidad del/de la estudiante + país de residencia",
+        "en": "the student's nationality + country of residence"
+      },
+      {
+        "es": "países hispanohablantes",
+        "en": "Spanish-speaking countries"
+      }
+    ],
+    "La cultura – las costumbres, las creencias y las celebraciones": [
+      {
+        "es": "Año Nuevo (m.)",
+        "en": "New Year"
+      },
+      {
+        "es": "bautizo (m.)",
+        "en": "baptism"
+      },
+      {
+        "es": "Belén (m.), portal de Belén (m.)",
+        "en": "nativity scene"
+      },
+      {
+        "es": "celebración (f.)",
+        "en": "celebration"
+      },
+      {
+        "es": "cumpleaños (m.)",
+        "en": "birthday"
+      },
+      {
+        "es": "El Día de Todos los Santos",
+        "en": "All Saints' Day"
+      },
+      {
+        "es": "festival (m.)",
+        "en": "festival"
+      },
+      {
+        "es": "fiesta (f.)",
+        "en": "party, festival"
+      },
+      {
+        "es": "fiesta nacional (f.)",
+        "en": "national holiday"
+      },
+      {
+        "es": "fuegos artificiales (m.pl.)",
+        "en": "fireworks"
+      },
+      {
+        "es": "Los Reyes Magos",
+        "en": "The Three Kings/Wise Men"
+      },
+      {
+        "es": "misa (f.)",
+        "en": "mass"
+      },
+      {
+        "es": "Navidad (f.)",
+        "en": "Christmas"
+      },
+      {
+        "es": "Nochebuena (f.)",
+        "en": "Christmas Eve"
+      },
+      {
+        "es": "Nochevieja (f.)",
+        "en": "New Year's Eve"
+      },
+      {
+        "es": "ocasión especial (f.)",
+        "en": "special occasion"
+      },
+      {
+        "es": "religión (f.)",
+        "en": "religion"
+      },
+      {
+        "es": "santo (m.)",
+        "en": "saint"
+      },
+      {
+        "es": "templo (m.)",
+        "en": "temple"
+      }
+    ],
+    "La cultura – Verbos y expresiones": [
+      {
+        "es": "celebrar",
+        "en": "to celebrate"
+      },
+      {
+        "es": "creer en, tener fe, ser creyente / ser religioso",
+        "en": "to believe in, have faith, be a believer / be religious"
+      }
+    ]
+  },
+  "General / Estructura de oraciones (Sentence Structure & IO)": {
+    "Palabras interrogativas (Question words)": [
+      {
+        "es": "¿qué?",
+        "en": "what?"
+      },
+      {
+        "es": "¿quién?, ¿quiénes?",
+        "en": "who?"
+      },
+      {
+        "es": "¿cuándo?",
+        "en": "when?"
+      },
+      {
+        "es": "¿dónde?",
+        "en": "where?"
+      },
+      {
+        "es": "¿adónde?",
+        "en": "where to?"
+      },
+      {
+        "es": "¿por qué?",
+        "en": "why?"
+      },
+      {
+        "es": "¿cómo?",
+        "en": "how?"
+      },
+      {
+        "es": "¿cuánto/a?, ¿cuántos/as?",
+        "en": "how much?, how many?"
+      },
+      {
+        "es": "¿cuál?, ¿cuáles?",
+        "en": "which?"
+      }
+    ],
+    "Conectores y conjunciones (Connectors)": [
+      {
+        "es": "y, e",
+        "en": "and"
+      },
+      {
+        "es": "o, u",
+        "en": "or"
+      },
+      {
+        "es": "pero",
+        "en": "but"
+      },
+      {
+        "es": "sin embargo",
+        "en": "however"
+      },
+      {
+        "es": "aunque",
+        "en": "although"
+      },
+      {
+        "es": "porque",
+        "en": "because"
+      },
+      {
+        "es": "ya que",
+        "en": "since, as"
+      },
+      {
+        "es": "por lo tanto",
+        "en": "therefore"
+      },
+      {
+        "es": "además",
+        "en": "furthermore, also"
+      },
+      {
+        "es": "por otro lado",
+        "en": "on the other hand"
+      },
+      {
+        "es": "en cambio",
+        "en": "on the other hand, instead"
+      },
+      {
+        "es": "mientras que",
+        "en": "whereas, while"
+      },
+      {
+        "es": "si",
+        "en": "if"
+      },
+      {
+        "es": "cuando",
+        "en": "when"
+      },
+      {
+        "es": "entonces",
+        "en": "then, so"
+      },
+      {
+        "es": "primero",
+        "en": "first(ly)"
+      },
+      {
+        "es": "luego, después",
+        "en": "then, afterwards"
+      },
+      {
+        "es": "finalmente, por último",
+        "en": "finally"
+      },
+      {
+        "es": "en primer lugar",
+        "en": "in the first place"
+      },
+      {
+        "es": "en conclusión",
+        "en": "in conclusion"
+      },
+      {
+        "es": "por ejemplo",
+        "en": "for example"
+      },
+      {
+        "es": "es decir",
+        "en": "that is to say"
+      },
+      {
+        "es": "en mi opinión",
+        "en": "in my opinion"
+      },
+      {
+        "es": "creo que",
+        "en": "I think that"
+      },
+      {
+        "es": "pienso que",
+        "en": "I think that"
+      },
+      {
+        "es": "para mí",
+        "en": "for me"
+      },
+      {
+        "es": "de hecho",
+        "en": "in fact"
+      },
+      {
+        "es": "a pesar de",
+        "en": "despite"
+      },
+      {
+        "es": "a causa de",
+        "en": "because of"
+      },
+      {
+        "es": "como resultado",
+        "en": "as a result"
+      }
+    ],
+    "Pronombres (Pronouns)": [
+      {
+        "es": "yo",
+        "en": "I"
+      },
+      {
+        "es": "tú",
+        "en": "you (informal)"
+      },
+      {
+        "es": "usted",
+        "en": "you (formal)"
+      },
+      {
+        "es": "él",
+        "en": "he"
+      },
+      {
+        "es": "ella",
+        "en": "she"
+      },
+      {
+        "es": "nosotros/as",
+        "en": "we"
+      },
+      {
+        "es": "vosotros/as",
+        "en": "you all (informal, Spain)"
+      },
+      {
+        "es": "ustedes",
+        "en": "you all"
+      },
+      {
+        "es": "ellos/ellas",
+        "en": "they"
+      },
+      {
+        "es": "me, te, le, nos, os, les",
+        "en": "me, you, him/her/it, us, you all, them (indirect object)"
+      },
+      {
+        "es": "mi, tu, su, nuestro, vuestro",
+        "en": "my, your, his/her/its, our, your (all)"
+      },
+      {
+        "es": "este/a, ese/a, aquel/aquella",
+        "en": "this, that, that (over there)"
+      }
+    ],
+    "Expresiones útiles para el IO y ensayos (Useful phrases for oral/essays)": [
+      {
+        "es": "hoy en día",
+        "en": "nowadays"
+      },
+      {
+        "es": "cada vez más",
+        "en": "more and more"
+      },
+      {
+        "es": "por un lado... por otro lado...",
+        "en": "on one hand... on the other hand..."
+      },
+      {
+        "es": "no cabe duda de que",
+        "en": "there's no doubt that"
+      },
+      {
+        "es": "hay que tener en cuenta que",
+        "en": "it must be taken into account that"
+      },
+      {
+        "es": "está claro que",
+        "en": "it's clear that"
+      },
+      {
+        "es": "en cuanto a",
+        "en": "regarding, as for"
+      },
+      {
+        "es": "con respecto a",
+        "en": "with respect to"
+      },
+      {
+        "es": "vale la pena",
+        "en": "it's worth it"
+      },
+      {
+        "es": "de todos modos",
+        "en": "anyway"
+      },
+      {
+        "es": "por supuesto",
+        "en": "of course"
+      },
+      {
+        "es": "claro que sí",
+        "en": "of course"
+      },
+      {
+        "es": "a mi parecer",
+        "en": "in my view"
+      },
+      {
+        "es": "desde mi punto de vista",
+        "en": "from my point of view"
+      },
+      {
+        "es": "estoy de acuerdo con",
+        "en": "I agree with"
+      },
+      {
+        "es": "no estoy de acuerdo con",
+        "en": "I disagree with"
+      }
+    ]
+  }
+}
